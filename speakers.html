@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers | CODE-AI</title>
+    <link href="src/img/manipal logo.jpeg" rel="icon" type="image/png">
+    <link rel="stylesheet" href="src/css/speakers.css">
+    <link href="src/css/style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <img src="src/img/FINAL CODE AI.png" class="logo"></img>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="committee.html">Committees</a>
+            <a href="speakers.html">Speakers</a>
+            <a href="registration.html">Registration</a>
+            <a href="publication.html">Publications</a>
+            <a href="awards.html">Awards</a>
+            <a href="sponsor.html">Sponsorship</a>
+            <a href="call.html">Call for Papers</a>
+            <a href="callforPhd.html" class="register">Call for PhD Colloqium</a>   
+            <a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FCODEAI2025" class="register" target="_blank">Submit Paper</a> 
+        </nav>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="speakers">
+        <h2>Keynote Speakers</h2>
+        <div class="speakers-container">
+            <div class="speaker-card">
+                <img src="src/img/Speakers/honglin.jpg" alt="Speaker 1">
+                <h3>Dr. Hong Lin</h3>
+                <p>Professor <br>
+                Department of Computer Science<br>
+                University of Houston Downtown, USA</p>
+            </div>
+            <div class="speaker-card">
+                <img src="src/img/Speakers/jalil.jpg" alt="Speaker 2">
+                <h3>Dr. Jalil Piran</h3>
+                <p>Head<br>
+                Department of Computer Science and Engineering<br>
+                Sejong University Seoul, South Korea</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Dr. Shreyas J</p>
+                <p>+91 8970768504</p>
+                <p>codeai.mitblr@manipal.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="quick-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="committee.html">Committees</a></li>
+                        <li><a href="speakers.html">Speakers</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="publication.html">Publications</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="awards.html">Awards</a></li>
+                        <li><a href="sponsor.html">Sponsorship</a></li>
+                        <li><a href="call.html">Call for Paper</a></li>
+                        <li><a href="callforPhd.html">Call for PhD Colloqium</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <p>Get more information about the conference</p>
+                <div class="resources">
+                    <a href="src/file/CODE-AI 2025 Brochure.pdf" class="btn" download>Download Brochure</a>
+                    <a href="src/file/PHD COLLOQIUM.pdf" class="btn" download>PhD Colloqium Brochure</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Stay connected with us on social media for the latest updates</p>
+                <div class="social-icons">
+                    <a href="mailto:codeai.mitblr@manipal.edu" target="_blank"><i class='bx bx-envelope'></i></a>
+                    <a href="https://www.instagram.com/code.ai.mitb/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://linkedin.com/company/code-ai-mitb/about/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="bottom-socials">
+            <a href="mailto:acm.mitblr@manipal.edu" target="_blank"><i class='bx bx-envelope'></i></a>
+            <a href="https://www.instagram.com/acm_mitb/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.linkedin.com/company/mitb-acm-student-chapter/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        © MITB ACM; All Rights Reserved.
+    </div>
+</body>
+
+</html>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+
+    menuIcon.onclick = () => {
+        menuIcon.classList.toggle('bx-x');
+        navbar.classList.toggle('active');
+    };
+
+    ScrollReveal({ 
+    reset: false,
+    distance: '80px',
+    duration: 1500,
+    delay:100
+});
+
+ScrollReveal().reveal('.speakers h2', {origin: 'top'});
+ScrollReveal().reveal('.speakers-container', {origin: 'bottom'});
+</script>
