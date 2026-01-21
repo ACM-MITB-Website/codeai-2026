@@ -20,11 +20,11 @@ export default function Registration() {
                 <h1 className="section-title gradient-text">Registration</h1>
 
                 <div className="glass-card rounded-2xl p-8 mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-2">Registration Fees for Papers</h2>
-                    <p className="text-gray-600 mb-6">Regular Paper / Short Paper / Special Issue Track Papers</p>
+                    <h2 className="text-2xl font-semibold text-white mb-2">Registration Fees for Papers</h2>
+                    <p className="text-gray-300 mb-6">Regular Paper / Short Paper / Special Issue Track Papers</p>
 
-                    <h3 className="text-xl font-semibold text-blue-600 mb-4">Early Bird Registration</h3>
-                    <p className="text-gray-500 mb-4">Available till 31st December 2025</p>
+                    <h3 className="text-xl font-semibold text-yellow-400 mb-4">Early Bird Registration</h3>
+                    <p className="text-gray-400 mb-4">Available till 31st December 2025</p>
                     <div className="overflow-x-auto mb-8">
                         <table className="registration-table">
                             <thead>
@@ -50,7 +50,7 @@ export default function Registration() {
                         </table>
                     </div>
 
-                    <h3 className="text-xl font-semibold text-blue-600 mb-4">Regular Registration</h3>
+                    <h3 className="text-xl font-semibold text-yellow-400 mb-4">Regular Registration</h3>
                     <div className="overflow-x-auto">
                         <table className="registration-table">
                             <thead>
@@ -75,11 +75,11 @@ export default function Registration() {
                             </tbody>
                         </table>
                     </div>
-                    <p className="text-gray-500 text-sm mt-4">*Excluding GST</p>
+                    <p className="text-gray-400 text-sm mt-4">*Excluding GST</p>
                 </div>
 
                 <div className="glass-card rounded-2xl p-8">
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-6">PhD Colloquium Registration</h2>
+                    <h2 className="text-2xl font-semibold text-white mb-6">PhD Colloquium Registration</h2>
                     <div className="overflow-x-auto">
                         <table className="registration-table">
                             <thead>
@@ -98,7 +98,7 @@ export default function Registration() {
                             </tbody>
                         </table>
                     </div>
-                    <p className="text-gray-500 text-sm mt-4">
+                    <p className="text-gray-400 text-sm mt-4">
                         *Excluding GST. Registration includes kit, certificate, and meals during the conference.
                     </p>
                 </div>

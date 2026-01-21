@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AIBrainIllustration from '@/components/AIBrainIllustration';
 import Image from 'next/image';
+import HeroTitle from '@/components/HeroTitle';
+import LogoCarousel from '@/components/LogoCarousel';
 
 export default function Home() {
   const collaborators = [
@@ -26,10 +28,7 @@ export default function Home() {
               </div>
 
               <div>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-                  <span className="gradient-text">CODE AI</span>
-                  <span className="text-white"> 2026</span>
-                </h1>
+                <HeroTitle />
                 <p className="mt-4 text-2xl md:text-3xl font-semibold text-gray-200">Where Code Meets Intelligence</p>
               </div>
 
@@ -122,16 +121,25 @@ export default function Home() {
       </section>
 
       {/* Collaborators Section */}
-      <section className="py-16 bg-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-semibold text-center text-gray-200 mb-8">In Collaboration With</h2>
-          <div className="flex flex-wrap justify-center gap-8 items-center">
-            {collaborators.map((collab) => (
-              <div key={collab.name} className="glass-card rounded-lg p-4 hover:shadow-lg transition-shadow">
-                <Image src={collab.logo} alt={collab.name} width={100} height={60} className="h-12 w-auto object-contain" />
-              </div>
-            ))}
+      <section className="py-20 bg-black overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+          <div className="text-center">
+            <span className="inline-block px-4 py-1.5 bg-yellow-500/10 border border-yellow-500/20 rounded-full text-yellow-400 text-sm font-medium mb-4">
+              Our Partners
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              In Collaboration With
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Partnering with leading institutions and organizations worldwide
+            </p>
           </div>
+        </div>
+
+        {/* Two rows of scrolling logos */}
+        <div className="space-y-8">
+          <LogoCarousel logos={collaborators} direction="left" speed={25} />
+          <LogoCarousel logos={collaborators} direction="right" speed={30} />
         </div>
       </section>
     </main>

@@ -25,20 +25,16 @@ body {
   overflow-x: hidden;
 }
 
-/* Glassmorphism Utilities */
+/* Solid Dark Utilities */
 .glass {
-  background: rgba(20, 20, 20, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 215, 0, 0.2);
+  background: #111111;
+  border: 1px solid rgba(255, 215, 0, 0.15);
 }
 
 .glass-card {
-  background: rgba(30, 30, 30, 0.9);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 215, 0, 0.15);
-  box-shadow: 0 8px 32px rgba(255, 215, 0, 0.1);
+  background: #161616;
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Gradient Text */
@@ -106,6 +102,35 @@ body {
 
 .animate-pulse-glow {
   animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Infinite Scroll Animations */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-33.333%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right linear infinite;
 }
 
 /* Button Styles */

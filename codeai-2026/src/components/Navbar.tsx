@@ -18,7 +18,7 @@ export default function Navbar() {
         <>
             {/* Centered Floating Navbar */}
             <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
-                <div className="bg-black/80 backdrop-blur-xl border border-yellow-500/20 rounded-full px-2 py-1.5 shadow-lg shadow-yellow-500/10">
+                <div className="bg-black/95 border border-yellow-500/20 rounded-full px-2 py-1.5 shadow-lg shadow-black/50">
                     <div className="flex items-center gap-1">
                         {/* Logo */}
                         <Link href="/" className="flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-yellow-500/10 transition-colors">
@@ -69,7 +69,7 @@ export default function Navbar() {
             </nav>
 
             {/* Mobile Menu */}
-            <div className={`md:hidden fixed inset-0 top-16 z-40 bg-black/95 backdrop-blur-xl transition-all duration-300 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+            <div className={`md:hidden fixed inset-0 top-16 z-40 bg-black transition-all duration-300 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
                 <div className="flex flex-col items-center pt-12 gap-6">
                     {navLinks.map((link) => (
                         <Link
