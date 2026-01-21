@@ -21,35 +21,35 @@ export default function Home() {
             {/* Left Column */}
             <div className="space-y-8 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 glass-card rounded-full px-4 py-2">
-                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                <span className="text-sm font-medium text-gray-600">3rd International Conference • April 2026</span>
+                <span className="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
+                <span className="text-sm font-medium text-gray-300">3rd International Conference • April 2026</span>
               </div>
 
               <div>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
                   <span className="gradient-text">CODE AI</span>
-                  <span className="text-gray-800"> 2026</span>
+                  <span className="text-white"> 2026</span>
                 </h1>
-                <p className="mt-4 text-2xl md:text-3xl font-semibold text-gray-700">Where Code Meets Intelligence</p>
+                <p className="mt-4 text-2xl md:text-3xl font-semibold text-gray-200">Where Code Meets Intelligence</p>
               </div>
 
-              <p className="text-lg md:text-xl text-gray-600 max-w-xl mx-auto lg:mx-0">
+              <p className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto lg:mx-0">
                 International Conference on Data Science & Exploration in Artificial Intelligence
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <div className="glass-card rounded-xl px-4 py-3 flex items-center gap-3">
-                  <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <span className="text-sm font-medium text-gray-700">MIT Bengaluru, MAHE</span>
+                  <span className="text-sm font-medium text-gray-200">MIT Bengaluru, MAHE</span>
                 </div>
                 <div className="glass-card rounded-xl px-4 py-3 flex items-center gap-3">
-                  <svg className="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
-                  <span className="text-sm font-medium text-gray-700">April 7-8, 2026</span>
+                  <span className="text-sm font-medium text-gray-200">April 7-8, 2026</span>
                 </div>
               </div>
 
@@ -58,14 +58,14 @@ export default function Home() {
                 <Link href="/call-for-papers" className="btn-outline text-lg">Submit Paper</Link>
               </div>
 
-              <div className="pt-8 border-t border-gray-200/50">
-                <p className="text-sm text-gray-500 mb-4">Published by</p>
+              <div className="pt-8 border-t border-yellow-500/20">
+                <p className="text-sm text-gray-400 mb-4">Published by</p>
                 <div className="flex items-center gap-6 justify-center lg:justify-start">
                   <div className="glass-card rounded-lg px-4 py-2">
-                    <span className="text-sm font-semibold text-gray-700">Springer CCIS</span>
+                    <span className="text-sm font-semibold text-gray-200">Springer CCIS</span>
                   </div>
                   <div className="glass-card rounded-lg px-4 py-2">
-                    <span className="text-sm font-semibold text-gray-700">Scopus Indexed</span>
+                    <span className="text-sm font-semibold text-gray-200">Scopus Indexed</span>
                   </div>
                 </div>
               </div>
@@ -80,7 +80,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="section-title gradient-text">About CODE-AI</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -88,13 +88,13 @@ export default function Home() {
               <Image src="/img/dark-logo-new.png" alt="CODE AI Logo" width={400} height={300} className="mx-auto" />
             </div>
             <div className="space-y-6">
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-300 text-lg leading-relaxed">
                 CODE-AI 2026 serves as a nexus for global visionaries, uniting to bridge research gaps and foster international collaborations that shape the trajectory of careers.
               </p>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-300 text-lg leading-relaxed">
                 The heart of the conference lies in Intelligent Computing, where algorithms like Genetic Algorithms, Neural Networks, Machine Learning, and Quantum Computing converge to open doors to uncharted territories.
               </p>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-300 text-lg leading-relaxed">
                 In the realm of AI Applications, CODE-AI explores Biometrics, Pattern Recognition, Computer Vision, Expert Systems, and Smart Robotics.
               </p>
             </div>
@@ -109,22 +109,22 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="speaker-card">
               <Image src="/img/mitb.jpg" alt="MIT Bengaluru" width={600} height={300} className="rounded-lg mb-4 w-full object-cover h-48" />
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">MIT Bengaluru</h3>
-              <p className="text-gray-600">The Garden City of India, Bengaluru, is home to MIT Bengaluru, the latest constituent unit of Manipal Academy of Higher Education (MAHE), recognized as Institute of Eminence by MHRD.</p>
+              <h3 className="text-xl font-semibold text-white mb-2">MIT Bengaluru</h3>
+              <p className="text-gray-300">The Garden City of India, Bengaluru, is home to MIT Bengaluru, the latest constituent unit of Manipal Academy of Higher Education (MAHE), recognized as Institute of Eminence by MHRD.</p>
             </div>
             <div className="speaker-card">
               <Image src="/img/mahedub.jpg" alt="MAHE Dubai" width={600} height={300} className="rounded-lg mb-4 w-full object-cover h-48" />
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">MAHE Dubai</h3>
-              <p className="text-gray-600">Manipal Academy of Higher Education, Dubai is a 5-star rated university by KHDA and a proud recipient of the Forbes Middle East Higher Education Award 2019.</p>
+              <h3 className="text-xl font-semibold text-white mb-2">MAHE Dubai</h3>
+              <p className="text-gray-300">Manipal Academy of Higher Education, Dubai is a 5-star rated university by KHDA and a proud recipient of the Forbes Middle East Higher Education Award 2019.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Collaborators Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-semibold text-center text-gray-700 mb-8">In Collaboration With</h2>
+          <h2 className="text-2xl font-semibold text-center text-gray-200 mb-8">In Collaboration With</h2>
           <div className="flex flex-wrap justify-center gap-8 items-center">
             {collaborators.map((collab) => (
               <div key={collab.name} className="glass-card rounded-lg p-4 hover:shadow-lg transition-shadow">
