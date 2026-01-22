@@ -1,18 +1,18 @@
-export default function Registration() {
+function Registration() {
     const earlyBirdFees = [
         { category: 'Participants from India', student: 'INR 11000', faculty: 'INR 13000', industry: 'INR 15000', attendee: 'INR 4000' },
         { category: 'Participants from Abroad', student: 'USD 150', faculty: 'USD 180', industry: 'USD 200', attendee: 'USD 75' },
-    ];
+    ]
 
     const regularFees = [
         { category: 'Participants from India', student: 'INR 12000', faculty: 'INR 14000', industry: 'INR 16000', attendee: 'INR 5000' },
         { category: 'Participants from Abroad', student: 'USD 200', faculty: 'USD 250', industry: 'USD 300', attendee: 'USD 85' },
-    ];
+    ]
 
     const phdFees = [
         { category: 'Participants from India', fee: 'INR 10000' },
         { category: 'Participants from Abroad', fee: 'USD 150' },
-    ];
+    ]
 
     return (
         <main className="pt-24 pb-16 bg-gradient-soft min-h-screen">
@@ -104,5 +104,7 @@ export default function Registration() {
                 </div>
             </section>
         </main>
-    );
+    )
 }
+
+export default Registration

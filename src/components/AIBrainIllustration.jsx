@@ -1,6 +1,4 @@
-'use client';
-
-export default function AIBrainIllustration() {
+function AIBrainIllustration() {
     return (
         <div className="relative w-full h-full min-h-[400px] flex items-center justify-center">
             <div className="absolute w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-blue-400/20 to-purple-500/20 animate-pulse-glow"></div>
@@ -58,13 +56,15 @@ export default function AIBrainIllustration() {
             </svg>
 
             <div className="absolute top-10 right-10 glass-card rounded-lg p-3 animate-float-slow">
-                <code className="text-xs text-blue-600 font-mono">{'{ AI: "neural" }'}</code>
+                <code className="text-xs text-yellow-400 font-mono">{'{ AI: "neural" }'}</code>
             </div>
             <div className="absolute bottom-20 left-5 glass-card rounded-lg p-3 animate-float-slow" style={{ animationDelay: '2s' }}>
-                <code className="text-xs text-purple-600 font-mono">{'fn learn() {}'}</code>
+                <code className="text-xs text-yellow-400 font-mono">{'fn learn() {}'}</code>
             </div>
-            <div className="absolute top-5 left-1/4 w-4 h-4 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 animate-float" style={{ animationDelay: '0.5s' }}></div>
-            <div className="absolute bottom-10 right-1/4 w-6 h-6 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 animate-float" style={{ animationDelay: '1.5s' }}></div>
+            <div className="absolute top-5 left-1/4 w-4 h-4 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 animate-float" style={{ animationDelay: '0.5s' }}></div>
+            <div className="absolute bottom-10 right-1/4 w-6 h-6 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 animate-float" style={{ animationDelay: '1.5s' }}></div>
         </div>
-    );
+    )
 }
+
+export default AIBrainIllustration

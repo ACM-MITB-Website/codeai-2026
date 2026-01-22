@@ -1,24 +1,22 @@
-import Image from 'next/image';
-
-export default function Committees() {
+function Committees() {
     const chiefPatrons = [
         { name: 'Lt. Gen. (Dr.) M D Venkatesh', title: 'Vice Chancellor', institution: 'MAHE', image: '/img/committees/vc.jpg' },
-    ];
+    ]
 
     const patrons = [
         { name: 'Dr. Narayana Sabhahit', title: 'Pro Vice Chancellor', institution: 'MAHE Bengaluru', image: '/img/committees/pvc.jpg' },
         { name: 'Dr. Vinod V Thomas', title: 'Registrar', institution: 'MAHE Bengaluru', image: '/img/committees/registrar.jpg' },
-    ];
+    ]
 
     const generalChairs = [
         { name: 'Dr. Sreejith V', title: 'Director', institution: 'MIT Bengaluru', image: '/img/committees/director.jpg' },
         { name: 'Dr. Balachandra Muniyal', title: 'HOD, Computer Science', institution: 'MIT Bengaluru', image: '/img/committees/hod.jpg' },
-    ];
+    ]
 
     const organizingChairs = [
         { name: 'Dr. Deepa Shenoy', title: 'Professor', institution: 'MIT Bengaluru' },
         { name: 'Dr. Anand Kumar M', title: 'Associate Professor', institution: 'MIT Bengaluru' },
-    ];
+    ]
 
     const technicalCommittee = [
         'Dr. James Wilson, Stanford University',
@@ -27,14 +25,14 @@ export default function Committees() {
         'Dr. Priya Sharma, IIT Delhi',
         'Dr. David Kim, Seoul National University',
         'Dr. Emma Davis, ETH Zurich',
-    ];
+    ]
 
     const advisoryBoard = [
         'Prof. Robert Johnson, Harvard University',
         'Prof. Lisa Wang, Tsinghua University',
         'Prof. Ahmed Hassan, Cairo University',
         'Prof. Maria Garcia, TU Munich',
-    ];
+    ]
 
     return (
         <main className="min-h-screen bg-gradient-to-b from-black via-gray-950 to-black">
@@ -68,11 +66,10 @@ export default function Committees() {
                             <div className="relative">
                                 <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full blur-lg opacity-50"></div>
                                 <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-yellow-500/30">
-                                    <Image
+                                    <img
                                         src={chiefPatrons[0].image}
                                         alt={chiefPatrons[0].name}
-                                        fill
-                                        className="object-cover"
+                                        className="object-cover w-full h-full"
                                     />
                                 </div>
                             </div>
@@ -101,11 +98,9 @@ export default function Committees() {
                             <div className="relative bg-gray-900/80 border border-gray-800 group-hover:border-yellow-500/30 rounded-2xl p-6 transition-all">
                                 <div className="flex items-center gap-5">
                                     <div className="w-20 h-20 rounded-xl overflow-hidden border-2 border-yellow-500/20 flex-shrink-0">
-                                        <Image
+                                        <img
                                             src={patron.image}
                                             alt={patron.name}
-                                            width={80}
-                                            height={80}
                                             className="object-cover w-full h-full"
                                         />
                                     </div>
@@ -133,11 +128,9 @@ export default function Committees() {
                             <div className="relative bg-gray-900/80 border border-gray-800 group-hover:border-yellow-500/30 rounded-2xl p-6 transition-all">
                                 <div className="flex items-center gap-5">
                                     <div className="w-20 h-20 rounded-xl overflow-hidden border-2 border-yellow-500/20 flex-shrink-0">
-                                        <Image
+                                        <img
                                             src={chair.image}
                                             alt={chair.name}
-                                            width={80}
-                                            height={80}
                                             className="object-cover w-full h-full"
                                         />
                                     </div>
@@ -217,5 +210,7 @@ export default function Committees() {
                 </div>
             </section>
         </main>
-    );
+    )
 }
+
+export default Committees

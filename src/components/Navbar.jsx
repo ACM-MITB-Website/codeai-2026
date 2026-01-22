@@ -1,10 +1,8 @@
-'use client';
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-import { useState } from 'react';
-import Link from 'next/link';
-
-export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
+function Navbar() {
+    const [isOpen, setIsOpen] = useState(false)
 
     const navLinks = [
         { name: 'Home', href: '/' },
@@ -12,29 +10,28 @@ export default function Navbar() {
         { name: 'Speakers', href: '/speakers' },
         { name: 'Registration', href: '/registration' },
         { name: 'Call for Papers', href: '/call-for-papers' },
-    ];
+    ]
 
     return (
         <>
             {/* Centered Floating Navbar */}
             <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
-                <div className="bg-black/95 border border-yellow-500/20 rounded-full px-2 py-1.5 shadow-lg shadow-black/50">
-                    <div className="flex items-center gap-1">
+                <div className="bg-black/95 border border-yellow-500/20 rounded-full px-6 py-2 shadow-lg shadow-black/50">
+                    <div className="flex items-center gap-4">
                         {/* Logo */}
-                        <Link href="/" className="flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-yellow-500/10 transition-colors">
-                            <div className="w-7 h-7 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center">
-                                <span className="text-black font-bold text-xs">C</span>
+                        <Link to="/" className="flex items-center px-2 py-1.5 rounded-full hover:bg-yellow-500/10 transition-colors">
+                            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center">
+                                <span className="text-black font-bold text-sm">C</span>
                             </div>
-                            <span className="text-white font-semibold text-sm hidden sm:block">CODE AI</span>
                         </Link>
 
                         {/* Desktop Navigation */}
-                        <div className="hidden md:flex items-center">
+                        <div className="hidden md:flex items-center gap-2">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
-                                    href={link.href}
-                                    className="text-gray-300 hover:text-yellow-400 font-medium text-sm px-3 py-1.5 relative group transition-colors"
+                                    to={link.href}
+                                    className="text-gray-300 hover:text-yellow-400 font-medium text-sm px-4 py-2 relative group transition-colors"
                                 >
                                     {link.name}
                                     <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-yellow-400 group-hover:w-3/4 transition-all duration-300"></span>
@@ -44,7 +41,7 @@ export default function Navbar() {
 
                         {/* CTA Button */}
                         <Link
-                            href="/registration"
+                            to="/registration"
                             className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-semibold text-sm px-4 py-1.5 rounded-full hover:from-yellow-300 hover:to-yellow-400 transition-all ml-1"
                         >
                             Register
@@ -74,7 +71,7 @@ export default function Navbar() {
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
-                            href={link.href}
+                            to={link.href}
                             onClick={() => setIsOpen(false)}
                             className="text-xl font-medium text-gray-200 hover:text-yellow-400 transition-colors"
                         >
@@ -82,7 +79,7 @@ export default function Navbar() {
                         </Link>
                     ))}
                     <Link
-                        href="/registration"
+                        to="/registration"
                         onClick={() => setIsOpen(false)}
                         className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-semibold px-6 py-2.5 rounded-full mt-4"
                     >
@@ -91,5 +88,7 @@ export default function Navbar() {
                 </div>
             </div>
         </>
-    );
+    )
 }
+
+export default Navbar
