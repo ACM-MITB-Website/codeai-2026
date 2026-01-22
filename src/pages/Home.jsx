@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import AIBrainIllustration from '../components/AIBrainIllustration'
 import HeroTitle from '../components/HeroTitle'
 import LogoCarousel from '../components/LogoCarousel'
 
@@ -16,62 +15,55 @@ function Home() {
     return (
         <main>
             {/* Hero Section */}
-            <section className="min-h-screen hero-bg bg-gradient-soft pt-24 pb-16">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-8rem)]">
-                        {/* Left Column */}
-                        <div className="space-y-8 text-center lg:text-left">
-                            <div className="inline-flex items-center gap-2 glass-card rounded-full px-4 py-2">
-                                <span className="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
-                                <span className="text-sm font-medium text-gray-300">3rd International Conference • April 2026</span>
+            <section className="min-h-screen hero-bg bg-gradient-soft pt-24 pb-16 flex items-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+                    <div className="flex flex-col items-center justify-center text-center space-y-8 min-h-[calc(100vh-12rem)]">
+
+                        <div className="inline-flex items-center gap-2 glass-card rounded-full px-4 py-2">
+                            <span className="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
+                            <span className="text-sm font-medium text-gray-300">3rd International Conference • April 2026</span>
+                        </div>
+
+                        <div className="space-y-4">
+                            <HeroTitle />
+                            <p className="mt-4 text-2xl md:text-3xl font-semibold text-gray-200">Where Code Meets Intelligence</p>
+                        </div>
+
+                        <p className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto">
+                            International Conference on Data Science & Exploration in Artificial Intelligence
+                        </p>
+
+                        <div className="flex flex-wrap gap-4 justify-center">
+                            <div className="glass-card rounded-xl px-4 py-3 flex items-center gap-3">
+                                <svg className="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                <span className="text-sm font-medium text-gray-200">MIT Bengaluru, MAHE</span>
                             </div>
-
-                            <div>
-                                <HeroTitle />
-                                <p className="mt-4 text-2xl md:text-3xl font-semibold text-gray-200">Where Code Meets Intelligence</p>
-                            </div>
-
-                            <p className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto lg:mx-0">
-                                International Conference on Data Science & Exploration in Artificial Intelligence
-                            </p>
-
-                            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                                <div className="glass-card rounded-xl px-4 py-3 flex items-center gap-3">
-                                    <svg className="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                    <span className="text-sm font-medium text-gray-200">MIT Bengaluru, MAHE</span>
-                                </div>
-                                <div className="glass-card rounded-xl px-4 py-3 flex items-center gap-3">
-                                    <svg className="w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                    </svg>
-                                    <span className="text-sm font-medium text-gray-200">April 7-8, 2026</span>
-                                </div>
-                            </div>
-
-                            <div className="flex flex-wrap gap-4 justify-center lg:justify-start pt-4">
-                                <Link to="/registration" className="btn-primary text-lg">Register Now</Link>
-                                <Link to="/call-for-papers" className="btn-outline text-lg">Submit Paper</Link>
-                            </div>
-
-                            <div className="pt-8 border-t border-yellow-500/20">
-                                <p className="text-sm text-gray-400 mb-4">Published by</p>
-                                <div className="flex items-center gap-6 justify-center lg:justify-start">
-                                    <div className="glass-card rounded-lg px-4 py-2">
-                                        <span className="text-sm font-semibold text-gray-200">Springer CCIS</span>
-                                    </div>
-                                    <div className="glass-card rounded-lg px-4 py-2">
-                                        <span className="text-sm font-semibold text-gray-200">Scopus Indexed</span>
-                                    </div>
-                                </div>
+                            <div className="glass-card rounded-xl px-4 py-3 flex items-center gap-3">
+                                <svg className="w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                <span className="text-sm font-medium text-gray-200">April 7-8, 2026</span>
                             </div>
                         </div>
 
-                        {/* Right Column */}
-                        <div className="relative lg:h-full flex items-center justify-center">
-                            <AIBrainIllustration />
+                        <div className="flex flex-wrap gap-4 justify-center pt-4">
+                            <Link to="/registration" className="btn-primary text-lg">Register Now</Link>
+                            <Link to="/call-for-papers" className="btn-outline text-lg">Submit Paper</Link>
+                        </div>
+
+                        <div className="pt-8 border-t border-yellow-500/20 w-full max-w-3xl">
+                            <p className="text-sm text-gray-400 mb-4">Published by</p>
+                            <div className="flex items-center gap-6 justify-center">
+                                <div className="glass-card rounded-lg px-4 py-2">
+                                    <span className="text-sm font-semibold text-gray-200">Springer CCIS</span>
+                                </div>
+                                <div className="glass-card rounded-lg px-4 py-2">
+                                    <span className="text-sm font-semibold text-gray-200">Scopus Indexed</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
