@@ -222,9 +222,6 @@ function Committees() {
             <section className="relative pt-32 pb-20 overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center mb-16">
-                        <span className="inline-block px-4 py-1.5 bg-yellow-500/10 border border-yellow-500/20 rounded-full text-yellow-400 text-sm font-medium mb-6">
-                            Meet Our Team
-                        </span>
                         <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
                             Conference <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Committees</span>
                         </h1>
