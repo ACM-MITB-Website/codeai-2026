@@ -7,6 +7,12 @@ import Speakers from './pages/Speakers'
 import Registration from './pages/Registration'
 import CallForPapers from './pages/CallForPapers'
 
+import Awards from './pages/Awards'
+
+import Publications from './pages/Publications'
+
+import ConferenceSouvenir from './pages/ConferenceSouvenir'
+
 function App() {
     return (
         <div className="min-h-screen bg-black text-white">
@@ -17,6 +23,9 @@ function App() {
                 <Route path="/speakers" element={<Speakers />} />
                 <Route path="/registration" element={<Registration />} />
                 <Route path="/call-for-papers" element={<CallForPapers />} />
+                <Route path="/awards" element={<Awards />} />
+                <Route path="/publications" element={<Publications />} />
+                <Route path="/conference-souvenir" element={<ConferenceSouvenir />} />
             </Routes>
             <Footer />
         </div>

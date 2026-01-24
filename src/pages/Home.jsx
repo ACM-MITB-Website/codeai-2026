@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import HeroTitle from '../components/HeroTitle'
 import LogoCarousel from '../components/LogoCarousel'
+import AcademicPartners from '../components/AcademicPartners'
 
 function Home() {
     const collaborators = [
@@ -93,15 +94,42 @@ function Home() {
             <section className="py-20 bg-black">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title gradient-text">Organizers</h2>
-                    <div className="max-w-2xl mx-auto">
-                        <div className="speaker-card">
+                    <div className="grid md:grid-cols-2 gap-8">
+                        {/* MIT Bengaluru */}
+                        <div className="speaker-card h-full flex flex-col">
                             <img src="/img/mitb.jpg" alt="MIT Bengaluru" className="rounded-lg mb-4 w-full object-cover h-48" />
                             <h3 className="text-xl font-semibold text-white mb-2">MIT Bengaluru</h3>
-                            <p className="text-gray-300">The Garden City of India, Bengaluru, is home to MIT Bengaluru, the latest constituent unit of Manipal Academy of Higher Education (MAHE), recognized as Institute of Eminence by MHRD.</p>
+                            <div className="text-gray-300 space-y-4 flex-1">
+                                <p>
+                                    The Garden City of India, Bengaluru, is now home to a new engineering institution, “MIT Bengaluru”, the latest constituent unit of Manipal Academy of Higher Education (MAHE).
+                                </p>
+                                <p>
+                                    MAHE is recognized as a deemed-to-be university since 1993 and has been accorded the status of Institute of Eminence (IoE) by MHRD, Government of India. Over the years, MAHE has transformed itself into a centre of excellence that offers knowledge to about 33000+ students from 67+ nations, ably supported by 2500 faculty and almost 10000 support and service staff.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* ACM MITB */}
+                        <div className="speaker-card h-full flex flex-col">
+                            <div className="h-48 bg-white/5 rounded-lg mb-4 flex items-center justify-center p-6 border border-white/10">
+                                <img src="/img/sponsors/acm mitb.png" alt="ACM MITB" className="max-h-full max-w-full object-contain" />
+                            </div>
+                            <h3 className="text-xl font-semibold text-white mb-2">About ACM MITB</h3>
+                            <div className="text-gray-300 space-y-4 flex-1">
+                                <p>
+                                    The MITB ACM student chapter is a community of students passionate about computer science and technology. We strive to create a collaborative and inclusive environment for students to learn, grow, and make a difference in the world.
+                                </p>
+                                <p>
+                                    Our chapter is affiliated with the Association for Computing Machinery (ACM), the world's largest educational and scientific computing society, which hosts a variety of events, including technical talks, workshops, hackathons, and networking opportunities, to engage and inspire our members.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            {/* Academic Partners Section */}
+            <AcademicPartners />
 
             {/* Collaborators Section */}
             <section className="py-20 bg-black overflow-hidden">
