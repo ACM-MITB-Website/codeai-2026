@@ -3,6 +3,7 @@ import HeroTitle from '../components/HeroTitle'
 import LogoCarousel from '../components/LogoCarousel'
 import AcademicPartners from '../components/AcademicPartners'
 import Highlights from '../components/Highlights'
+import Sponsors from '../components/Sponsors'
 
 function Home() {
     const collaborators = [
@@ -136,13 +137,13 @@ function Home() {
             {/* Academic Partners Section */}
             <AcademicPartners />
 
+            {/* Sponsors & Organizers Section */}
+            <Sponsors />
+
             {/* Collaborators Section */}
             <section className="py-20 bg-black overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
                     <div className="text-center">
-                        <span className="inline-block px-4 py-1.5 bg-yellow-500/10 border border-yellow-500/20 rounded-full text-yellow-400 text-sm font-medium mb-4">
-                            Our Partners
-                        </span>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                             In Collaboration With
                         </h2>
