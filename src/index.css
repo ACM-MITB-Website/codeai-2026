@@ -403,7 +403,7 @@ html {
     position: relative;
     width: 100%;
     height: 100%;
-    min-height: 450px;
+    min-height: 280px;
     max-width: 550px;
     margin: 0 auto;
     border-radius: 1rem;
@@ -419,8 +419,29 @@ html {
 .aurora-hologram-canvas {
     width: 100%;
     height: 100%;
-    min-height: 450px;
+    min-height: 280px;
     display: block;
+}
+
+/* Responsive adjustments for mobile */
+@media (min-width: 640px) {
+    .aurora-hologram-container {
+        min-height: 350px;
+    }
+
+    .aurora-hologram-canvas {
+        min-height: 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .aurora-hologram-container {
+        min-height: 450px;
+    }
+
+    .aurora-hologram-canvas {
+        min-height: 450px;
+    }
 }
 
 .aurora-hologram-overlay {
@@ -436,8 +457,15 @@ html {
 .hologram-text {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    margin-bottom: 20px;
+    gap: 2px;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 640px) {
+    .hologram-text {
+        gap: 4px;
+        margin-bottom: 20px;
+    }
 }
 
 .hologram-label {

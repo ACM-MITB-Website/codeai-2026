@@ -72,9 +72,9 @@ function Home() {
                             </div>
                         </div>
 
-                        {/* Right Column - Aurora Hologram Animation */}
-                        <div className="hidden lg:flex items-center justify-center">
-                            <div className="w-full max-w-lg xl:max-w-xl h-[480px]">
+                        {/* Aurora Hologram Animation - Now visible on all screens */}
+                        <div className="flex items-center justify-center order-first lg:order-last">
+                            <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl h-[300px] sm:h-[350px] lg:h-[480px]">
                                 <AuroraHologram />
                             </div>
                         </div>
