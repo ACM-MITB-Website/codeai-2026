@@ -21,15 +21,15 @@ function Committees() {
 
     // General Chairs
     const generalChairs = [
-        { name: 'Dr. Dayananda P', title: 'Professor and Head', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.Dayananda.jpg' },
+        { name: 'Dr. Dayananda P', title: 'Professor and Head', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Dayananda.jpg' },
     ]
 
     // Program Chairs
     const programChairs = [
-        { name: 'Dr. Gururaj H L', title: 'Associate Professor', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.Gururaj.jpg' },
-        { name: 'Dr. Shreyas J', title: 'Assistant Professor', institution: 'Department of IT - MIT Bengaluru', image: '/img/Dr.Shreyas.jpg' },
+        { name: 'Dr. Gururaj H L', title: 'Associate Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Gururaj.jpg' },
+        { name: 'Dr. Shreyas J', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Dr.Shreyas.jpg' },
         { name: 'Dr. Sophia Rahaman', title: 'Program Director - Comp. Sci & IT', institution: 'SoEIT - MAHE, Dubai, UAE', image: '/img/Organisers/Dr.Sophia.png' },
-        { name: 'Dr. Gopalakrishnan T', title: 'Associate Professor', institution: 'Department of IT - MIT Bengaluru', image: '/img/Dr.GopalkrishnanT.jpg' },
+        { name: 'Dr. Gopalakrishnan T', title: 'Associate Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Dr.GopalkrishnanT.jpg' },
     ]
 
     // Technical Co-Chairs
@@ -48,23 +48,23 @@ function Committees() {
 
     // Organising Committee
     const organisingCommittee = [
-        { name: 'Dr. Abhijit Das', title: 'Assistant Professor-Senior Scale', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.Abhijit.jpg' },
-        { name: 'Dr. Amreen Ayesha', title: 'Assistant Professor-Senior Scale', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.Amreen.jpg' },
-        { name: 'Dr. Anitha Premkumar', title: 'Assistant Professor-Senior Scale', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.Anitha.jpg' },
-        { name: 'Dr. Arun Balakrishnan', title: 'Associate Professor', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr. Arun .jpg' },
-        { name: 'Dr. P Devisivasankar', title: 'Assistant Professor', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/P.Devisivasankari.jpg' },
-        { name: 'Dr. G. Ignisha Rajathi', title: 'Assistant Professor-Senior Scale', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.Ignisha.jpg' },
-        { name: 'Dr. Karthik Vasu', title: 'Assistant Professor', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.Karthik.jpg' },
-        { name: 'Dr. S K Mahmudul Hassan', title: 'Assistant Professor', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.SK.jpg' },
-        { name: 'Dr. Preethi', title: 'Assistant Professor-Senior Scale', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.Preethi.jpg' },
-        { name: 'Dr. S. Priya', title: 'Assistant Professor', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.S.priya.jpg' },
-        { name: 'Dr. Raghavendra M Devadas', title: 'Assistant Professor-Senior Scale', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.Raghavendra.jpg' },
-        { name: 'Dr. Ruhul Amin Hazarika', title: 'Assistant Professor', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.RuhulAH.jpg' },
-        { name: 'Dr. Sangeeta Sangani', title: 'Assistant Professor', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.Sangeeta.jpg' },
-        { name: 'Ms. Sapna R', title: 'Assistant Professor', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Ms.SapnaR.jpg' },
-        { name: 'Dr. Sumanth V', title: 'Assistant Professor', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.Sumanth.jpg' },
-        { name: 'Dr. Usha M', title: 'Assistant Professor-Senior Scale', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.Usha.jpg' },
-        { name: 'Dr. Vishnu Srinivasa Murthy Y', title: 'Associate Professor', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Dr.VishnuSMY.jpg' },
+        { name: 'Dr. Abhijit Das', title: 'Assistant Professor-Senior Scale', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Abhijit.jpg' },
+        { name: 'Dr. Amreen Ayesha', title: 'Assistant Professor-Senior Scale', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Amreen.jpg' },
+        { name: 'Dr. Anitha Premkumar', title: 'Assistant Professor-Senior Scale', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Anitha.jpg' },
+        { name: 'Dr. Arun Balakrishnan', title: 'Associate Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr. Arun .jpg' },
+        { name: 'Dr. P Devisivasankar', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/P.Devisivasankari.jpg' },
+        { name: 'Dr. G. Ignisha Rajathi', title: 'Assistant Professor-Senior Scale', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Ignisha.jpg' },
+        { name: 'Dr. Karthik Vasu', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Karthik.jpg' },
+        { name: 'Dr. S K Mahmudul Hassan', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.SK.jpg' },
+        { name: 'Dr. Preethi', title: 'Assistant Professor-Senior Scale', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Preethi.jpg' },
+        { name: 'Dr. S. Priya', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.S.priya.jpg' },
+        { name: 'Dr. Raghavendra M Devadas', title: 'Assistant Professor-Senior Scale', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Raghavendra.jpg' },
+        { name: 'Dr. Ruhul Amin Hazarika', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.RuhulAH.jpg' },
+        { name: 'Dr. Sangeeta Sangani', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Sangeeta.jpg' },
+        { name: 'Ms. Sapna R', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Ms.SapnaR.jpg' },
+        { name: 'Dr. Sumanth V', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Sumanth.jpg' },
+        { name: 'Dr. Usha M', title: 'Assistant Professor-Senior Scale', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Usha.jpg' },
+        { name: 'Dr. Vishnu Srinivasa Murthy Y', title: 'Associate Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.VishnuSMY.jpg' },
         { name: 'Dr. Abdulla K P', title: 'Assistant Professor-Selection Grade', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/drabdulla.jpg' },
         { name: 'Dr. Deepa Varghese', title: 'Assistant Professor-Senior Scale', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/drdeepa.jpg' },
         { name: 'Dr. Ganesan Subramanian', title: 'Assistant Professor-Senior Grade', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/drganesan.jpg' },
@@ -75,11 +75,11 @@ function Committees() {
         { name: 'Sachidananda H K', title: 'Associate Professor', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/Sachidananda HK.jpg' },
         { name: 'Sampath Suranjan Salins', title: 'Assistant Professor-Senior Scale', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/Sampath Suranjan Salins.jpg' },
         { name: 'Suresha R', title: 'Assistant Professor-Senior Scale', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/Suresha R.png' },
-        { name: 'Mr. Guru Shankar H B', title: 'Research Scholar', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/GuruShankar.jpg' },
-        { name: 'Ms. Shreelakshmi Yadav N', title: 'Research Scholar', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Shreelakshmi.jpg' },
-        { name: 'Ms. Soundarya B C', title: 'Research Scholar', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Soundarya.jpg' },
-        { name: 'Ms. Sowmya T Rao', title: 'Research Scholar', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Sowmya.jpg' },
-        { name: 'Mr. Udaya Prasad P K', title: 'Research Scholar', institution: 'Department of IT - MIT Bengaluru', image: '/img/Organisers/Udayaprasad.jpg' },
+        { name: 'Mr. Guru Shankar H B', title: 'Research Scholar', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/GuruShankar.jpg' },
+        { name: 'Ms. Shreelakshmi Yadav N', title: 'Research Scholar', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Shreelakshmi.jpg' },
+        { name: 'Ms. Soundarya B C', title: 'Research Scholar', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Soundarya.jpg' },
+        { name: 'Ms. Sowmya T Rao', title: 'Research Scholar', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Sowmya.jpg' },
+        { name: 'Mr. Udaya Prasad P K', title: 'Research Scholar', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Udayaprasad.jpg' },
     ]
 
     // Student Organising Committee

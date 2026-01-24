@@ -4,6 +4,7 @@ import LogoCarousel from '../components/LogoCarousel'
 import AcademicPartners from '../components/AcademicPartners'
 import Highlights from '../components/Highlights'
 import Sponsors from '../components/Sponsors'
+import EventLocation from '../components/EventLocation'
 
 function Home() {
     const collaborators = [
@@ -74,7 +75,7 @@ function Home() {
             </section>
 
             {/* About Section */}
-            <section id="about" className="py-20 bg-black">
+            <section id="about" className="py-20 bg-black reveal">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title gradient-text">About CODE-AI</h2>
                     <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -97,7 +98,7 @@ function Home() {
             </section>
 
             {/* Organizers Section */}
-            <section className="py-20 bg-black">
+            <section className="py-20 bg-black reveal">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title gradient-text">Organizers</h2>
                     <div className="grid md:grid-cols-2 gap-8">
@@ -135,13 +136,17 @@ function Home() {
             </section>
 
             {/* Academic Partners Section */}
-            <AcademicPartners />
+            <div className="reveal">
+                <AcademicPartners />
+            </div>
 
             {/* Sponsors & Organizers Section */}
-            <Sponsors />
+            <div className="reveal">
+                <Sponsors />
+            </div>
 
             {/* Collaborators Section */}
-            <section className="py-20 bg-black overflow-hidden">
+            <section className="py-20 bg-black overflow-hidden reveal">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
                     <div className="text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -160,8 +165,15 @@ function Home() {
                 </div>
             </section>
 
+            {/* Event Location Section */}
+            <div className="reveal">
+                <EventLocation />
+            </div>
+
             {/* Highlights Section */}
-            <Highlights />
+            <div className="reveal">
+                <Highlights />
+            </div>
         </main>
     )
 }

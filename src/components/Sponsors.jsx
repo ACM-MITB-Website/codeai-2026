@@ -26,7 +26,7 @@ function Sponsors() {
         ],
         association: [
             {
-                name: 'Department of Information Technology',
+                name: 'SoCE',
                 sub: 'Manipal Institute of Technology, Bengaluru',
                 logo: '/img/mitb-logo.png'
             }

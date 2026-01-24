@@ -13,7 +13,26 @@ import Publications from './pages/Publications'
 
 import ConferenceSouvenir from './pages/ConferenceSouvenir'
 
+import { useEffect } from 'react'
+
 function App() {
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active')
+                }
+            })
+        }, {
+            threshold: 0.1
+        })
+
+        const elements = document.querySelectorAll('.reveal')
+        elements.forEach((el) => observer.observe(el))
+
+        return () => observer.disconnect()
+    }) // running on every render to catch new elements (simple approach for this app)
+
     return (
         <div className="min-h-screen bg-black text-white">
             <Navbar />
