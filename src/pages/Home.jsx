@@ -54,13 +54,9 @@ function Home() {
 
                         <div className="pt-8 border-t border-yellow-500/20 w-full max-w-3xl">
                             <p className="text-sm text-gray-400 mb-4">Published by</p>
-                            <div className="flex items-center gap-6 justify-center">
-                                <div className="glass-card rounded-lg px-4 py-2">
-                                    <span className="text-sm font-semibold text-gray-200">Springer CCIS</span>
-                                </div>
-                                <div className="glass-card rounded-lg px-4 py-2">
-                                    <span className="text-sm font-semibold text-gray-200">Scopus Indexed</span>
-                                </div>
+                            <div className="flex items-center gap-12 justify-center">
+                                <img src="/img/springerccis.png" alt="Springer CCIS" className="h-24 md:h-32 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                                <img src="/img/sponsors/scopus.png" alt="Scopus Indexed" className="h-24 md:h-32 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity" />
                             </div>
                         </div>
                     </div>
