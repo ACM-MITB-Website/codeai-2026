@@ -101,7 +101,7 @@ function Home() {
             <section id="about" className="w-full snap-center flex flex-col justify-center relative bg-black reveal py-12">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title gradient-text">About CODE-AI</h2>
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div className="glass-card rounded-2xl p-8">
                             <img src="/img/dark-logo-new.png" alt="CODE AI Logo" className="mx-auto max-w-full h-auto" />
                         </div>
@@ -124,7 +124,7 @@ function Home() {
             <section className="w-full snap-center flex flex-col justify-center relative bg-black reveal py-12">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title gradient-text">Organizers</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* MIT Bengaluru */}
                         <div className="speaker-card h-full flex flex-col">
                             <img src="/img/mitb.jpg" alt="MIT Bengaluru" className="rounded-lg mb-4 w-full object-cover h-48" />
