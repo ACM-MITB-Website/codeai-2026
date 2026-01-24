@@ -13,9 +13,9 @@ function Committees() {
         { name: 'Dr. Narayana Sabhahit', title: 'Pro Vice Chancellor, Technology and Science', institution: 'MAHE', image: '/img/Dr.Narayana.png' },
         { name: 'Dr. Giridar Kini P', title: 'Registrar', institution: 'MAHE Manipal', image: '/img/Dr-Giridhar-Kini.jpg' },
         { name: 'Dr. Raghavendra Prabhu', title: 'Deputy Registrar', institution: 'MAHE Bengaluru', image: '/img/Dr-Raghavendra-Prabhu-P.jpg' },
-        { name: 'Dr. S Sudhindra', title: 'Academic President', institution: 'MAHE Dubai, UAE', image: '/img/placeholder.png' },
-        { name: 'Dr. Iven Jose', title: 'Director', institution: 'MIT Bengaluru', image: '/img/placeholder.png' },
-        { name: 'Dr. S K Pandey', title: 'Dean - STEM Programs', institution: 'MAHE, Dubai, UAE', image: '/img/placeholder.png' },
+        { name: 'Dr. S Sudhindra', title: 'Academic President', institution: 'MAHE Dubai, UAE', image: '/img/committee/Dr.S.Sudhindra.png' },
+        { name: 'Dr. Iven Jose', title: 'Director', institution: 'MIT Bengaluru', image: '/img/committee/Dr.Iven.Jose.png' },
+        { name: 'Dr. S K Pandey', title: 'Dean - STEM Programs', institution: 'MAHE, Dubai, UAE', image: '/img/committee/Dr.S.K.Pandey.png' },
         { name: 'Dr. Prema K V', title: 'Associate Director, Professor and Head', institution: 'Department of CSE - MIT Bengaluru', image: '/img/Dr Prema KV.png' },
     ]
 
@@ -26,24 +26,24 @@ function Committees() {
 
     // Program Chairs
     const programChairs = [
-        { name: 'Dr. Gururaj H L', title: 'Associate Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Gururaj.jpg' },
+        { name: 'Dr. Gururaj H L', title: 'Associate Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/committee/Dr.Gururaj.H.L.jpg' },
         { name: 'Dr. Shreyas J', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Dr.Shreyas.jpg' },
-        { name: 'Dr. Sophia Rahaman', title: 'Program Director - Comp. Sci & IT', institution: 'SoEIT - MAHE, Dubai, UAE', image: '/img/Organisers/Dr.Sophia.png' },
+        { name: 'Dr. Sophia Rahaman', title: 'Program Director - Comp. Sci & IT', institution: 'SoEIT - MAHE, Dubai, UAE', image: '/img/committee/Dr.Sophia.Rahaman.png' },
         { name: 'Dr. Gopalakrishnan T', title: 'Associate Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Dr.GopalkrishnanT.jpg' },
     ]
 
     // Technical Co-Chairs
     const technicalCoChairs = [
-        { name: 'Mr. Aryan Chaudhary', title: 'Chief Scientific Advisor', institution: 'BioTech Sphere Research, India', image: '/img/placeholder.png' },
+        { name: 'Mr. Aryan Chaudhary', title: 'Chief Scientific Advisor', institution: 'BioTech Sphere Research, India', image: '/img/committee/Mr.Aryan.Chaudhary.png' },
         { name: 'Prof. Keshav Kaushik', title: 'Assistant Professor', institution: 'AMITY University Punjab', image: '/img/Dr. Shubham.jpg' },
     ]
 
     // Scientific Committee
     const scientificCommittee = [
-        { name: 'Dr. Osamah Ibrahim Khalaf', institution: 'Department of Solar, Al-Nahrain Research Center for Renewable Energy, Al-Nahrain University, Iraq' },
-        { name: 'Dr. Ghaidaa Muttasher Abdulsaheb', institution: 'Department of Computer Engineering, University of Technology, Iraq' },
-        { name: 'Dr. Shin-Hung Pan', institution: 'Department of Information Management, Chaoyang University of Technology, Taiwan' },
-        { name: 'Dr. Wing-Keung Wong', institution: 'Asia University, Taiwan' },
+        { name: 'Dr. Osamah Ibrahim Khalaf', institution: 'Department of Solar, Al-Nahrain Research Center for Renewable Energy, Al-Nahrain University, Iraq', image: '/img/committee/Dr.Osamah.Ibrahim.Khalaf.png' },
+        { name: 'Dr. Ghaidaa Muttasher Abdulsaheb', institution: 'Department of Computer Engineering, University of Technology, Iraq', image: '/img/committee/Dr.Ghaidaa.Muttasher.Abdulsaheb.png' },
+        { name: 'Dr. Shin-Hung Pan', institution: 'Department of Information Management, Chaoyang University of Technology, Taiwan', image: '/img/committee/Dr.Shin-Hung.Pan.png' },
+        { name: 'Dr. Wing-Keung Wong', institution: 'Asia University, Taiwan', image: '/img/committee/Dr.Wing-Keung.Wong.png' },
     ]
 
     // Organising Committee
@@ -58,7 +58,7 @@ function Committees() {
         { name: 'Dr. S K Mahmudul Hassan', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.SK.jpg' },
         { name: 'Dr. Preethi', title: 'Assistant Professor-Senior Scale', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Preethi.jpg' },
         { name: 'Dr. S. Priya', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.S.priya.jpg' },
-        { name: 'Dr. Raghavendra M Devadas', title: 'Assistant Professor-Senior Scale', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Raghavendra.jpg' },
+        { name: 'Dr. Raghavendra M Devadas', title: 'Assistant Professor-Senior Scale', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Raghavendra.jpg', objectPosition: 'top' },
         { name: 'Dr. Ruhul Amin Hazarika', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.RuhulAH.jpg' },
         { name: 'Dr. Sangeeta Sangani', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Sangeeta.jpg' },
         { name: 'Ms. Sapna R', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Ms.SapnaR.jpg' },
@@ -72,7 +72,7 @@ function Committees() {
         { name: 'Prof. Ramaprasad Poojary', title: 'Assistant Professor - Selection Scale', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/drramaprasad.jpg' },
         { name: 'Dr. Ravishankar Dudhe', title: 'Associate Professor', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/drravishankar.jpg' },
         { name: 'Dr. Roma Raina', title: 'Assistant Professor-Selection Grade', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/Dr Roma Raina.jpg' },
-        { name: 'Sachidananda H K', title: 'Associate Professor', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/Sachidananda HK.jpg' },
+        { name: 'Sachidananda H K', title: 'Associate Professor', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/Sachidananda HK.jpg', objectPosition: 'top' },
         { name: 'Sampath Suranjan Salins', title: 'Assistant Professor-Senior Scale', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/Sampath Suranjan Salins.jpg' },
         { name: 'Suresha R', title: 'Assistant Professor-Senior Scale', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/Suresha R.png' },
         { name: 'Mr. Guru Shankar H B', title: 'Research Scholar', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/GuruShankar.jpg' },
@@ -84,19 +84,19 @@ function Committees() {
 
     // Student Organising Committee
     const studentOrganisingCommittee = [
-        { name: 'Mr. Shivansh Gautam', role: 'Chair', chapter: 'MITB ACM Student Chapter', image: '/img/Organisers/Shivansh.jpg' },
-        { name: 'Ms. Medha Udupa', role: 'Vice-Chair', chapter: 'MITB ACM Student Chapter', image: '/img/placeholder.png' },
-        { name: 'Mr. Sashi Pritam M A', role: 'General Secretary', chapter: 'MITB ACM Student Chapter', image: '/img/Organisers/Pritam.jpg' },
-        { name: 'Ms. Anvitha Karanth', role: 'Chair', chapter: 'MITB ACM-W Student Chapter', image: '/img/placeholder.png' },
-        { name: 'Ms. Nihitha H R', role: 'Vice Chair', chapter: 'MITB ACM-W Student Chapter', image: '/img/placeholder.png' },
-        { name: 'Mr. Shivansh Gautam', role: 'Chair', chapter: 'MITB ACM SIG-AI', image: '/img/Organisers/Shivansh.jpg' },
-        { name: 'Mr. Anchit Goel', role: 'Web-Master', chapter: 'MITB ACM SIG-AI', image: '/img/placeholder.png' },
+
+        { name: 'Mr. Shivansh Gautam', role: 'Chair', chapter: 'MITB ACM Student Chapter', image: '/img/committee/Shivansh.Gautam.jpg' },
+        { name: 'Ms. Medha Udupa', role: 'Vice-Chair', chapter: 'MITB ACM Student Chapter', image: '/img/committee/Medha.Udupa.jpg' },
+        { name: 'Mr. S.P. Bharath', role: 'General Secretary', chapter: 'MITB ACM Student Chapter', image: '/img/committee/SP.Bharath.jpg' },
+        { name: 'Ms. Vaishnavi Ashopa', role: 'Chair', chapter: 'MITB ACM-W Student Chapter', image: '/img/committee/Vaishnavi.Ashopa.jpg' },
+        { name: 'Ms. Ruchitankshi A', role: 'Vice Chair', chapter: 'MITB ACM-W Student Chapter', image: '/img/committee/Ruchitankshi.A.png' },
+        { name: 'K L Vaibhav Jyotish', role: 'Chair', chapter: 'MITB ACM SIG-AI', image: '/img/committee/K.L.Vaibhav.Jyotish.png' },
         { name: 'Mr. Ryan Gupta', role: 'Web-Master', chapter: 'MITB ACM Student Chapter', image: '/img/placeholder.png' },
-        { name: 'Mr. Shouraya Sharma', role: 'Web-Master', chapter: 'MITB ACM Student Chapter', image: '/img/placeholder.png' },
-        { name: 'Mr. Samyak Bargale', role: 'Chair', chapter: 'MITB ACM SIG-Soft', image: '/img/placeholder.png' },
-        { name: 'Mr. Nandan S B', role: 'Souvenir Coordinator', chapter: 'MIT Bengaluru', image: '/img/placeholder.png' },
-        { name: 'Mr. Lakshya Banga', role: 'Creative Lead', chapter: 'MITB ACM SIG-SOFT', image: '/img/placeholder.png' },
-        { name: 'Mr. Dheeraj Sai Samineni', role: 'Sponsorship Lead', chapter: 'MITB ACM Student Chapter', image: '/img/Organisers/Dheeraj Sai.jpg' },
+        { name: 'Mr. Anchit Goel', role: 'Web-Master', chapter: 'MITB ACM SIG-Soft', image: '/img/committee/Anchit.Goel.jpg' },
+        { name: 'Mr. Shouraya Sharma', role: 'Web-Master', chapter: 'MITB ACM SIG-AI', image: '/img/committee/Shouraya.Sharma.png' },
+        { name: 'Shane Chellam', role: 'Chair', chapter: 'MITB ACM SIG-Soft', image: '/img/committee/Shane.Chellam.png' },
+        { name: 'Mr. Nandan S B', role: 'Souvenir Coordinator', chapter: 'MIT Bengaluru', image: '/img/committee/Nandan.S.B.png' },
+
     ]
 
     // Advisory Committee
@@ -196,7 +196,7 @@ function Committees() {
     ]
 
     // Image component that shows real image or placeholder
-    const MemberImage = ({ src, name }) => {
+    const MemberImage = ({ src, name, objectPosition = 'center' }) => {
         const isPlaceholder = src === '/img/placeholder.png' || !src;
 
         if (isPlaceholder) {
@@ -212,6 +212,7 @@ function Committees() {
                 src={src}
                 alt={name}
                 className="w-full h-full object-cover"
+                style={{ objectPosition }}
             />
         );
     }
@@ -351,18 +352,16 @@ function Committees() {
                 <h2 className="text-3xl font-bold text-center text-white mb-12">
                     <span className="text-yellow-400">◆</span> Scientific Committee <span className="text-yellow-400">◆</span>
                 </h2>
-                <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 max-w-4xl mx-auto">
-                    <ul className="grid md:grid-cols-2 gap-4">
-                        {scientificCommittee.map((member, index) => (
-                            <li key={index} className="flex items-start gap-3 text-gray-300">
-                                <span className="w-1.5 h-1.5 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></span>
-                                <div>
-                                    <span className="font-medium text-white">{member.name}</span>
-                                    <p className="text-gray-500 text-sm">{member.institution}</p>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
+                <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    {scientificCommittee.map((member, index) => (
+                        <div key={index} className="bg-gray-900/50 border border-gray-800 hover:border-yellow-500/30 rounded-xl p-5 text-center transition-all group">
+                            <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-yellow-500/20 mx-auto mb-4">
+                                <MemberImage src={member.image} name={member.name} />
+                            </div>
+                            <h3 className="text-lg font-semibold text-white">{member.name}</h3>
+                            <p className="text-gray-500 text-xs mt-2">{member.institution}</p>
+                        </div>
+                    ))}
                 </div>
             </section>
 
@@ -375,7 +374,7 @@ function Committees() {
                     {organisingCommittee.map((member, index) => (
                         <div key={index} className="bg-gray-900/50 border border-gray-800 hover:border-yellow-500/30 rounded-xl p-4 text-center transition-all">
                             <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-yellow-500/20 mx-auto mb-3">
-                                <MemberImage src={member.image} name={member.name} />
+                                <MemberImage src={member.image} name={member.name} objectPosition={member.objectPosition} />
                             </div>
                             <h3 className="text-sm font-semibold text-white">{member.name}</h3>
                             <p className="text-yellow-500 text-xs font-medium">{member.title}</p>
