@@ -11,7 +11,7 @@ import Awards from './pages/Awards'
 
 import Publications from './pages/Publications'
 
-import ConferenceSouvenir from './pages/ConferenceSouvenir'
+
 import Schedule from './pages/Schedule'
 
 import { useEffect } from 'react'
@@ -46,7 +46,7 @@ function App() {
                 <Route path="/awards" element={<Awards />} />
                 <Route path="/publications" element={<Publications />} />
                 <Route path="/schedule" element={<Schedule />} />
-                <Route path="/conference-souvenir" element={<ConferenceSouvenir />} />
+
             </Routes>
             <Footer />
         </div>

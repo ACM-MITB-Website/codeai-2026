@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import HeroTitle from '../components/HeroTitle'
 import LogoCarousel from '../components/LogoCarousel'
 import AcademicPartners from '../components/AcademicPartners'
-import Highlights from '../components/Highlights'
+
 import Sponsors from '../components/Sponsors'
 import EventLocation from '../components/EventLocation'
 import CountdownTimer from '../components/CountdownTimer'
@@ -47,6 +47,7 @@ function Home() {
                                 </p>
                             </div>
 
+
                             <div className="space-y-2">
                                 <p className="text-sm text-yellow-500 font-bold uppercase tracking-widest">In Collaboration with</p>
                                 <p className="text-lg md:text-xl text-gray-300 font-medium">
@@ -70,6 +71,8 @@ function Home() {
                                 <img src="/img/sponsors/scopus.png" alt="Scopus Indexed" className="h-24 md:h-32 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity" />
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </section>
@@ -170,10 +173,7 @@ function Home() {
                 <EventLocation />
             </div>
 
-            {/* Highlights Section */}
-            <div className="min-h-screen w-full snap-center flex flex-col justify-center relative reveal">
-                <Highlights />
-            </div>
+
         </main>
     )
 }

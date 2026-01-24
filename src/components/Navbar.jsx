@@ -12,7 +12,6 @@ function Navbar() {
         { name: 'Publications', href: '/publications' },
         { name: 'Awards', href: '/awards' },
         { name: 'Schedule', href: '/schedule' },
-        { name: 'Conference Souvenir', href: '/conference-souvenir' },
     ]
 
     return (
