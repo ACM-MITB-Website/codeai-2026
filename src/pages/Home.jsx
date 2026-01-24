@@ -19,10 +19,7 @@ function Home() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
                     <div className="flex flex-col items-center justify-center text-center space-y-8 min-h-[calc(100vh-12rem)]">
 
-                        <div className="inline-flex items-center gap-2 glass-card rounded-full px-4 py-2">
-                            <span className="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
-                            <span className="text-sm font-medium text-gray-300">3rd International Conference • April 2026</span>
-                        </div>
+
 
                         <div className="space-y-4">
                             <HeroTitle />
