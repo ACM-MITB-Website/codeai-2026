@@ -180,9 +180,10 @@ body {
     background: rgba(255, 215, 0, 0.05);
 }
 
-/* Smooth Scrolling */
+/* Smooth Scrolling & Soft Snap */
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
 }
 
 /* Scroll Reveal Animations */

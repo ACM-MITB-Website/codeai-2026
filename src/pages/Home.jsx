@@ -17,7 +17,7 @@ function Home() {
     ]
 
     return (
-        <main className="h-screen w-full overflow-y-scroll snap-y snap-proximity scroll-smooth">
+        <main className="w-full">
             {/* Hero Section */}
             <section className="min-h-screen w-full snap-center flex flex-col justify-center relative bg-black pt-24 pb-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
