@@ -84,13 +84,15 @@ function Committees() {
 
     // Student Organising Committee
     const studentOrganisingCommittee = [
-        { name: 'Mr. Karthikeya Chowdary', role: 'Chair', chapter: 'MITB ACM Student Chapter', image: '/img/placeholder.png' },
-        { name: 'Mr. Nishanth Shet', role: 'Vice-Chair', chapter: 'MITB ACM Student Chapter', image: '/img/Nishanth(1).jpg' },
+        { name: 'Mr. Shivansh Gautam', role: 'Chair', chapter: 'MITB ACM Student Chapter', image: '/img/placeholder.png' },
+        { name: 'Ms. Medha Udupa', role: 'Vice-Chair', chapter: 'MITB ACM Student Chapter', image: '/img/placeholder.png' },
         { name: 'Mr. Sashi Pritam M A', role: 'General Secretary', chapter: 'MITB ACM Student Chapter', image: '/img/placeholder.png' },
         { name: 'Ms. Anvitha Karanth', role: 'Chair', chapter: 'MITB ACM-W Student Chapter', image: '/img/placeholder.png' },
         { name: 'Ms. Nihitha H R', role: 'Vice Chair', chapter: 'MITB ACM-W Student Chapter', image: '/img/placeholder.png' },
         { name: 'Mr. Shivansh Gautam', role: 'Chair', chapter: 'MITB ACM SIG-AI', image: '/img/placeholder.png' },
-        { name: 'Mr. Shane Chellam', role: 'Web-Master', chapter: 'MITB ACM SIG-AI', image: '/img/placeholder.png' },
+        { name: 'Mr. Anchit Goel', role: 'Web-Master', chapter: 'MITB ACM SIG-AI', image: '/img/placeholder.png' },
+        { name: 'Mr. Ryan Gupta', role: 'Web-Master', chapter: 'MITB ACM Student Chapter', image: '/img/placeholder.png' },
+        { name: 'Mr. Shouraya Sharma', role: 'Web-Master', chapter: 'MITB ACM Student Chapter', image: '/img/placeholder.png' },
         { name: 'Mr. Samyak Bargale', role: 'Chair', chapter: 'MITB ACM SIG-Soft', image: '/img/placeholder.png' },
         { name: 'Mr. Nandan S B', role: 'Souvenir Coordinator', chapter: 'MIT Bengaluru', image: '/img/placeholder.png' },
         { name: 'Mr. Lakshya Banga', role: 'Creative Lead', chapter: 'MITB ACM SIG-SOFT', image: '/img/placeholder.png' },
