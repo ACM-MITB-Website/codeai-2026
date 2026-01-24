@@ -5,6 +5,7 @@ import AcademicPartners from '../components/AcademicPartners'
 import Highlights from '../components/Highlights'
 import Sponsors from '../components/Sponsors'
 import EventLocation from '../components/EventLocation'
+import CountdownTimer from '../components/CountdownTimer'
 
 function Home() {
     const collaborators = [
@@ -34,6 +35,8 @@ function Home() {
                                 <span>|</span>
                                 <span>7th & 8th April 2026</span>
                             </div>
+
+                            <CountdownTimer />
 
                             <div className="space-y-2 pt-4 border-t border-white/10">
                                 <p className="text-lg md:text-xl text-gray-300 font-medium">
