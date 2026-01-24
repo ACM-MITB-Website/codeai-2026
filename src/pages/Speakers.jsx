@@ -17,7 +17,7 @@ function Speakers() {
     ]
 
     return (
-        <main className="pt-24 pb-16 bg-gradient-soft min-h-screen">
+        <main className="pt-24 pb-16 bg-black min-h-screen">
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h1 className="section-title gradient-text">Keynote Speakers</h1>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

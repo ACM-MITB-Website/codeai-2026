@@ -15,7 +15,7 @@ function Home() {
     return (
         <main>
             {/* Hero Section */}
-            <section className="min-h-screen hero-bg bg-gradient-soft pt-24 pb-16 flex items-center">
+            <section className="min-h-screen bg-black pt-24 pb-16 flex items-center">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
                     <div className="flex flex-col items-center justify-center text-center space-y-8 min-h-[calc(100vh-12rem)]">
 
@@ -93,7 +93,7 @@ function Home() {
             </section>
 
             {/* Organizers Section */}
-            <section className="py-20 bg-gradient-soft">
+            <section className="py-20 bg-black">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title gradient-text">Organizers</h2>
                     <div className="max-w-2xl mx-auto">
