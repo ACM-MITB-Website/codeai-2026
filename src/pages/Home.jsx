@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom'
 import HeroTitle from '../components/HeroTitle'
 import LogoCarousel from '../components/LogoCarousel'
 import AcademicPartners from '../components/AcademicPartners'
-
 import Sponsors from '../components/Sponsors'
 import EventLocation from '../components/EventLocation'
 import CountdownTimer from '../components/CountdownTimer'
+import AuroraHologram from '../components/AuroraHologram'
 
 function Home() {
     const collaborators = [
@@ -20,59 +20,73 @@ function Home() {
     return (
         <main className="w-full">
             {/* Hero Section */}
-            <section className="min-h-screen w-full snap-center flex flex-col justify-center relative bg-black pt-24 pb-16">
+            <section className="min-h-screen w-full snap-center flex flex-col justify-center relative bg-black pt-24 pb-16 overflow-hidden">
+                {/* Floating Code Snippets */}
+                <div className="code-float">const ai = new NeuralNetwork()</div>
+                <div className="code-float">function learn() { }</div>
+                <div className="code-float">model.train(data)</div>
+                <div className="code-float">predict(future)</div>
+
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-                    <div className="flex flex-col items-center justify-center text-center space-y-8">
-                        <div className="space-y-6 max-w-4xl mx-auto">
-                            <HeroTitle />
+                    <div className="grid lg:grid-cols-2 gap-8 items-center">
+                        {/* Left Column - Text Content */}
+                        <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
+                            <div className="space-y-6 max-w-2xl">
+                                <HeroTitle />
 
-                            <h2 className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400">
-                                3rd International Conference on Data Science & Exploration in Artificial Intelligence
-                            </h2>
+                                <h2 className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400">
+                                    3rd International Conference on Data Science & Exploration in Artificial Intelligence
+                                </h2>
 
-                            <div className="flex items-center justify-center gap-3 text-xl md:text-2xl text-yellow-500 font-semibold">
-                                <span>MAHE, Dubai</span>
-                                <span>|</span>
-                                <span>7th & 8th April 2026</span>
+                                <div className="flex items-center justify-center lg:justify-start gap-3 text-lg md:text-xl text-yellow-500 font-semibold">
+                                    <span>MAHE, Dubai</span>
+                                    <span>|</span>
+                                    <span>7th & 8th April 2026</span>
+                                </div>
+
+                                <CountdownTimer />
+
+                                <div className="space-y-2 pt-4 border-t border-white/10">
+                                    <p className="text-base md:text-lg text-gray-300 font-medium">
+                                        School of Computer Engineering, Manipal Institute of Technology
+                                    </p>
+                                    <p className="text-sm md:text-base text-gray-400">
+                                        Manipal Academy of Higher Education (MAHE), Bengaluru
+                                    </p>
+                                </div>
+
+                                <div className="space-y-2">
+                                    <p className="text-sm text-yellow-500 font-bold uppercase tracking-widest">In Collaboration with</p>
+                                    <p className="text-base md:text-lg text-gray-300 font-medium">
+                                        School of Engineering & IT (SoEIT)
+                                    </p>
+                                    <p className="text-sm md:text-base text-gray-400">
+                                        Manipal Academy of Higher Education (MAHE), Dubai, UAE
+                                    </p>
+                                </div>
                             </div>
 
-                            <CountdownTimer />
-
-                            <div className="space-y-2 pt-4 border-t border-white/10">
-                                <p className="text-lg md:text-xl text-gray-300 font-medium">
-                                    School of Computer Engineering, Manipal Institute of Technology
-                                </p>
-                                <p className="text-base md:text-lg text-gray-400">
-                                    Manipal Academy of Higher Education (MAHE), Bengaluru
-                                </p>
-                            </div>
-
-
-                            <div className="space-y-2">
-                                <p className="text-sm text-yellow-500 font-bold uppercase tracking-widest">In Collaboration with</p>
-                                <p className="text-lg md:text-xl text-gray-300 font-medium">
-                                    School of Engineering & IT (SoEIT)
-                                </p>
-                                <p className="text-base md:text-lg text-gray-400">
-                                    Manipal Academy of Higher Education (MAHE), Dubai, UAE
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-wrap gap-4 justify-center pt-4">
-                            <Link to="/registration" className="btn-primary text-lg">Register Now</Link>
-                            <Link to="/call-for-papers" className="btn-outline text-lg">Submit Paper</Link>
-                        </div>
-
-                        <div className="pt-8 border-t border-yellow-500/20 w-full max-w-3xl">
-                            <p className="text-sm text-gray-400 mb-4">Published by</p>
-                            <div className="flex items-center gap-12 justify-center">
-                                <img src="/img/springerccis.png" alt="Springer CCIS" className="h-24 md:h-32 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
-                                <img src="/img/sponsors/scopus.png" alt="Scopus Indexed" className="h-24 md:h-32 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity" />
+                            <div className="flex flex-wrap gap-4 justify-center lg:justify-start pt-2">
+                                <Link to="/registration" className="btn-primary text-lg">Register Now</Link>
+                                <Link to="/call-for-papers" className="btn-outline text-lg">Submit Paper</Link>
                             </div>
                         </div>
 
+                        {/* Right Column - Aurora Hologram Animation */}
+                        <div className="hidden lg:flex items-center justify-center">
+                            <div className="w-full max-w-lg xl:max-w-xl h-[480px]">
+                                <AuroraHologram />
+                            </div>
+                        </div>
+                    </div>
 
+                    {/* Publisher Logos */}
+                    <div className="pt-12 border-t border-yellow-500/20 w-full max-w-3xl mx-auto lg:mx-0 mt-8">
+                        <p className="text-sm text-gray-400 mb-4 text-center lg:text-left">Published by</p>
+                        <div className="flex items-center gap-12 justify-center lg:justify-start">
+                            <img src="/img/springerccis.png" alt="Springer CCIS" className="h-20 md:h-28 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                            <img src="/img/sponsors/scopus.png" alt="Scopus Indexed" className="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -131,7 +145,7 @@ function Home() {
                             <h3 className="text-xl font-semibold text-white mb-2">MIT Bengaluru</h3>
                             <div className="text-gray-300 space-y-4 flex-1">
                                 <p>
-                                    The Garden City of India, Bengaluru, is now home to a new engineering institution, “MIT Bengaluru”, the latest constituent unit of Manipal Academy of Higher Education (MAHE).
+                                    The Garden City of India, Bengaluru, is now home to a new engineering institution, "MIT Bengaluru", the latest constituent unit of Manipal Academy of Higher Education (MAHE).
                                 </p>
                                 <p>
                                     MAHE is recognized as a deemed-to-be university since 1993 and has been accorded the status of Institute of Eminence (IoE) by MHRD, Government of India. Over the years, MAHE has transformed itself into a centre of excellence that offers knowledge to about 33000+ students from 67+ nations, ably supported by 2500 faculty and almost 10000 support and service staff.
@@ -168,14 +182,10 @@ function Home() {
                 <Sponsors />
             </div>
 
-
-
             {/* Event Location Section */}
             <div className="w-full snap-center flex flex-col justify-center relative reveal py-12">
                 <EventLocation />
             </div>
-
-
         </main>
     )
 }

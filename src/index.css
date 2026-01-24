@@ -197,3 +197,396 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Neural Orbit Animation */
+.neural-orbit-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1;
+    margin: 0 auto;
+}
+
+.neural-orbit-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.neural-orbit-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.neural-orbit-label {
+    font-family: 'Inter', 'Courier New', monospace;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: rgba(255, 215, 0, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Floating Code Snippets for Hero */
+.code-float {
+    position: absolute;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.75rem;
+    color: rgba(168, 85, 247, 0.6);
+    animation: code-float 8s ease-in-out infinite;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.code-float:nth-child(1) {
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.code-float:nth-child(2) {
+    top: 20%;
+    right: 8%;
+    animation-delay: 1.5s;
+}
+
+.code-float:nth-child(3) {
+    bottom: 15%;
+    left: 10%;
+    animation-delay: 3s;
+}
+
+.code-float:nth-child(4) {
+    bottom: 25%;
+    right: 5%;
+    animation-delay: 4.5s;
+}
+
+@keyframes code-float {
+
+    0%,
+    100% {
+        opacity: 0.3;
+        transform: translateY(0) translateX(0);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: translateY(-15px) translateX(5px);
+    }
+}
+
+/* Particle Morph Animation - Mind Blowing */
+.particle-morph-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    max-width: 550px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+}
+
+.particle-morph-canvas {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    display: block;
+    cursor: none;
+}
+
+.particle-morph-label {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.particle-morph-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ffd700, #f59e0b, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 0.3em;
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+    animation: text-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes text-glow {
+    from {
+        filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+    }
+
+    to {
+        filter: drop-shadow(0 0 25px rgba(168, 85, 247, 0.8));
+    }
+}
+
+.particle-morph-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.particle-morph-dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.particle-morph-dots .dot.active {
+    background: linear-gradient(135deg, #ffd700, #a855f7);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    transform: scale(1.3);
+}
+
+.particle-morph-hint {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.particle-morph-hint span {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    animation: hint-pulse 3s ease-in-out infinite;
+}
+
+@keyframes hint-pulse {
+
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+/* Custom cursor for particle canvas */
+.particle-morph-container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 215, 0, 0.6);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: cursor-pulse 1.5s ease-in-out infinite;
+}
+
+/* Aurora Hologram Animation */
+.aurora-hologram-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    max-width: 550px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(10, 10, 30, 0.95) 100%);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    box-shadow:
+        0 0 60px rgba(139, 92, 246, 0.2),
+        0 0 100px rgba(59, 130, 246, 0.1),
+        inset 0 0 60px rgba(0, 0, 0, 0.5);
+}
+
+.aurora-hologram-canvas {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    display: block;
+}
+
+.aurora-hologram-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.hologram-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+
+.hologram-label {
+    font-family: 'Inter', monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: rgba(255, 215, 0, 0.6);
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    animation: hologram-flicker 4s ease-in-out infinite;
+}
+
+.hologram-value {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffd700, #a855f7, #3b82f6);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 0.2em;
+    animation: gradient-shift 3s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes hologram-flicker {
+
+    0%,
+    100% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    52% {
+        opacity: 0.4;
+    }
+
+    54% {
+        opacity: 1;
+    }
+}
+
+.hologram-stats {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.hologram-stats .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.hologram-stats .stat-value {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #ffd700;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.hologram-stats .stat-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+/* Glowing corners */
+.aurora-corner {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+}
+
+.aurora-corner.top-left {
+    top: 10px;
+    left: 10px;
+    border-top: 2px solid rgba(255, 215, 0, 0.6);
+    border-left: 2px solid rgba(255, 215, 0, 0.6);
+}
+
+.aurora-corner.top-right {
+    top: 10px;
+    right: 10px;
+    border-top: 2px solid rgba(255, 215, 0, 0.6);
+    border-right: 2px solid rgba(255, 215, 0, 0.6);
+}
+
+.aurora-corner.bottom-left {
+    bottom: 10px;
+    left: 10px;
+    border-bottom: 2px solid rgba(255, 215, 0, 0.6);
+    border-left: 2px solid rgba(255, 215, 0, 0.6);
+}
+
+.aurora-corner.bottom-right {
+    bottom: 10px;
+    right: 10px;
+    border-bottom: 2px solid rgba(255, 215, 0, 0.6);
+    border-right: 2px solid rgba(255, 215, 0, 0.6);
+}
+
+.aurora-corner::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #ffd700;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+.aurora-corner.top-left::after {
+    top: -3px;
+    left: -3px;
+}
+
+.aurora-corner.top-right::after {
+    top: -3px;
+    right: -3px;
+}
+
+.aurora-corner.bottom-left::after {
+    bottom: -3px;
+    left: -3px;
+}
+
+.aurora-corner.bottom-right::after {
+    bottom: -3px;
+    right: -3px;
+}
