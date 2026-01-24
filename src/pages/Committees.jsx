@@ -1,21 +1,21 @@
 function Committees() {
     const chiefPatrons = [
-        { name: 'Lt. Gen. (Dr.) M D Venkatesh', title: 'Vice Chancellor', institution: 'MAHE', image: '/img/committees/vc.jpg' },
+        { name: 'Lt. Gen. (Dr.) M D Venkatesh', title: 'Vice Chancellor', institution: 'MAHE', image: '/img/Organisers/Dr.M.D.Venkatesh.png' },
     ]
 
     const patrons = [
-        { name: 'Dr. Narayana Sabhahit', title: 'Pro Vice Chancellor', institution: 'MAHE Bengaluru', image: '/img/committees/pvc.jpg' },
-        { name: 'Dr. Vinod V Thomas', title: 'Registrar', institution: 'MAHE Bengaluru', image: '/img/committees/registrar.jpg' },
+        { name: 'Dr. Narayana Sabhahit', title: 'Pro Vice Chancellor', institution: 'MAHE Bengaluru', image: '/img/Organisers/Dr.Narayana.png' },
+        { name: 'Dr. H.S. Ballal', title: 'Pro Chancellor', institution: 'MAHE', image: '/img/Organisers/Dr.H.S.Ballal.jpg' },
     ]
 
     const generalChairs = [
-        { name: 'Dr. Sreejith V', title: 'Director', institution: 'MIT Bengaluru', image: '/img/committees/director.jpg' },
-        { name: 'Dr. Balachandra Muniyal', title: 'HOD, Computer Science', institution: 'MIT Bengaluru', image: '/img/committees/hod.jpg' },
+        { name: 'Dr. Sreejith V', title: 'Director', institution: 'MIT Bengaluru', image: '/img/Organisers/drshri.jpg' },
+        { name: 'Dr. Raghavendra Prabhu P', title: 'HOD, Computer Science', institution: 'MIT Bengaluru', image: '/img/Organisers/Dr-Raghavendra-Prabhu-P.jpg' },
     ]
 
     const organizingChairs = [
-        { name: 'Dr. Deepa Shenoy', title: 'Professor', institution: 'MIT Bengaluru' },
-        { name: 'Dr. Anand Kumar M', title: 'Associate Professor', institution: 'MIT Bengaluru' },
+        { name: 'Dr. Deepa Shenoy', title: 'Professor', institution: 'MIT Bengaluru', image: '/img/Organisers/drdeepa.jpg' },
+        { name: 'Dr. Anand Kumar M', title: 'Associate Professor', institution: 'MIT Bengaluru', image: '/img/Organisers/drabdulla.jpg' },
     ]
 
     const technicalCommittee = [
@@ -154,8 +154,12 @@ function Committees() {
                 <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
                     {organizingChairs.map((chair) => (
                         <div key={chair.name} className="bg-gray-900/50 border border-gray-800 hover:border-yellow-500/30 rounded-xl p-5 text-center transition-all group">
-                            <div className="w-16 h-16 bg-gradient-to-br from-yellow-400/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:from-yellow-400/30 group-hover:to-yellow-600/20 transition-all">
-                                <span className="text-2xl font-bold text-yellow-400">{chair.name.charAt(0)}</span>
+                            <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-yellow-500/20 mx-auto mb-4">
+                                <img
+                                    src={chair.image}
+                                    alt={chair.name}
+                                    className="object-cover w-full h-full"
+                                />
                             </div>
                             <h3 className="text-lg font-semibold text-white">{chair.name}</h3>
                             <p className="text-yellow-500 text-sm font-medium">{chair.title}</p>
