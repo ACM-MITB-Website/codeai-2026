@@ -35,7 +35,7 @@ function Committees() {
     // Technical Co-Chairs
     const technicalCoChairs = [
         { name: 'Mr. Aryan Chaudhary', title: 'Chief Scientific Advisor', institution: 'BioTech Sphere Research, India', image: '/img/committee/Mr.Aryan.Chaudhary.png' },
-        { name: 'Prof. Keshav Kaushik', title: 'Assistant Professor', institution: 'AMITY University Punjab', image: '/img/Dr. Shubham.jpg' },
+        { name: 'Prof. Keshav Kaushik', title: 'Assistant Professor', institution: 'AMITY University Punjab', image: '/img/committee/Keshav.Kaushik.png' },
     ]
 
     // Scientific Committee
@@ -91,10 +91,10 @@ function Committees() {
         { name: 'Ms. Vaishnavi Ashopa', role: 'Chair', chapter: 'MITB ACM-W Student Chapter', image: '/img/committee/Vaishnavi.Ashopa.jpg' },
         { name: 'Ms. Ruchitankshi A', role: 'Vice Chair', chapter: 'MITB ACM-W Student Chapter', image: '/img/committee/Ruchitankshi.A.png' },
         { name: 'K L Vaibhav Jyotish', role: 'Chair', chapter: 'MITB ACM SIG-AI', image: '/img/committee/K.L.Vaibhav.Jyotish.png' },
-        { name: 'Mr. Ryan Gupta', role: 'Web-Master', chapter: 'MITB ACM Student Chapter', image: '/img/placeholder.png' },
-        { name: 'Mr. Anchit Goel', role: 'Web-Master', chapter: 'MITB ACM SIG-Soft', image: '/img/committee/Anchit.Goel.jpg' },
+        { name: 'Mr. Ryan Gupta', role: 'Web-Master', chapter: 'MITB ACM Student Chapter', image: '/img/committee/Ryan.Gupta.png' },
+        { name: 'Mr. Anchit Goel', role: 'Web-Master', chapter: 'MITB ACM SIG-SOFT', image: '/img/committee/Anchit.Goel.jpg' },
         { name: 'Mr. Shouraya Sharma', role: 'Web-Master', chapter: 'MITB ACM SIG-AI', image: '/img/committee/Shouraya.Sharma.png' },
-        { name: 'Shane Chellam', role: 'Chair', chapter: 'MITB ACM SIG-Soft', image: '/img/committee/Shane.Chellam.png' },
+        { name: 'Shane Chellam', role: 'Chair', chapter: 'MITB ACM SIG-SOFT', image: '/img/committee/Shane.Chellam.png' },
         { name: 'Mr. Nandan S B', role: 'Souvenir Coordinator', chapter: 'MIT Bengaluru', image: '/img/committee/Nandan.S.B.png' },
 
     ]
