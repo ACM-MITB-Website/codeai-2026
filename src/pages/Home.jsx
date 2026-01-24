@@ -77,8 +77,28 @@ function Home() {
                 </div>
             </section>
 
+            {/* Collaborators Section */}
+            <section className="w-full snap-center flex flex-col justify-center relative bg-black overflow-hidden reveal py-12">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+                    <div className="text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                            In Collaboration With
+                        </h2>
+                        <p className="text-gray-400 max-w-2xl mx-auto">
+                            Partnering with leading institutions and organizations worldwide
+                        </p>
+                    </div>
+                </div>
+
+                {/* Two rows of scrolling logos */}
+                <div className="space-y-8">
+                    <LogoCarousel logos={collaborators} direction="left" speed={25} />
+                    <LogoCarousel logos={collaborators} direction="right" speed={30} />
+                </div>
+            </section>
+
             {/* About Section */}
-            <section id="about" className="min-h-screen w-full snap-center flex flex-col justify-center relative bg-black reveal py-20">
+            <section id="about" className="w-full snap-center flex flex-col justify-center relative bg-black reveal py-12">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title gradient-text">About CODE-AI</h2>
                     <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -101,7 +121,7 @@ function Home() {
             </section>
 
             {/* Organizers Section */}
-            <section className="min-h-screen w-full snap-center flex flex-col justify-center relative bg-black reveal py-20">
+            <section className="w-full snap-center flex flex-col justify-center relative bg-black reveal py-12">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title gradient-text">Organizers</h2>
                     <div className="grid md:grid-cols-2 gap-8">
@@ -139,37 +159,19 @@ function Home() {
             </section>
 
             {/* Academic Partners Section */}
-            <div className="min-h-screen w-full snap-center flex flex-col justify-center relative reveal">
+            <div className="w-full snap-center flex flex-col justify-center relative reveal py-12">
                 <AcademicPartners />
             </div>
 
             {/* Sponsors & Organizers Section */}
-            <div className="min-h-screen w-full snap-center flex flex-col justify-center relative reveal">
+            <div className="w-full snap-center flex flex-col justify-center relative reveal py-12">
                 <Sponsors />
             </div>
 
-            {/* Collaborators Section */}
-            <section className="min-h-screen w-full snap-center flex flex-col justify-center relative bg-black overflow-hidden reveal py-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-                    <div className="text-center">
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                            In Collaboration With
-                        </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
-                            Partnering with leading institutions and organizations worldwide
-                        </p>
-                    </div>
-                </div>
 
-                {/* Two rows of scrolling logos */}
-                <div className="space-y-8">
-                    <LogoCarousel logos={collaborators} direction="left" speed={25} />
-                    <LogoCarousel logos={collaborators} direction="right" speed={30} />
-                </div>
-            </section>
 
             {/* Event Location Section */}
-            <div className="min-h-screen w-full snap-center flex flex-col justify-center relative reveal">
+            <div className="w-full snap-center flex flex-col justify-center relative reveal py-12">
                 <EventLocation />
             </div>
 
