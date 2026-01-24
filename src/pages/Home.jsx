@@ -17,14 +17,11 @@ function Home() {
     ]
 
     return (
-        <main>
+        <main className="w-full">
             {/* Hero Section */}
-            <section className="min-h-screen bg-black pt-24 pb-16 flex items-center">
+            <section className="min-h-screen w-full snap-center flex flex-col justify-center relative bg-black pt-24 pb-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-                    <div className="flex flex-col items-center justify-center text-center space-y-8 min-h-[calc(100vh-12rem)]">
-
-
-
+                    <div className="flex flex-col items-center justify-center text-center space-y-8">
                         <div className="space-y-6 max-w-4xl mx-auto">
                             <HeroTitle />
 
@@ -75,7 +72,7 @@ function Home() {
             </section>
 
             {/* About Section */}
-            <section id="about" className="py-20 bg-black reveal">
+            <section id="about" className="min-h-screen w-full snap-center flex flex-col justify-center relative bg-black reveal py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title gradient-text">About CODE-AI</h2>
                     <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -98,7 +95,7 @@ function Home() {
             </section>
 
             {/* Organizers Section */}
-            <section className="py-20 bg-black reveal">
+            <section className="min-h-screen w-full snap-center flex flex-col justify-center relative bg-black reveal py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title gradient-text">Organizers</h2>
                     <div className="grid md:grid-cols-2 gap-8">
@@ -136,17 +133,17 @@ function Home() {
             </section>
 
             {/* Academic Partners Section */}
-            <div className="reveal">
+            <div className="min-h-screen w-full snap-center flex flex-col justify-center relative reveal">
                 <AcademicPartners />
             </div>
 
             {/* Sponsors & Organizers Section */}
-            <div className="reveal">
+            <div className="min-h-screen w-full snap-center flex flex-col justify-center relative reveal">
                 <Sponsors />
             </div>
 
             {/* Collaborators Section */}
-            <section className="py-20 bg-black overflow-hidden reveal">
+            <section className="min-h-screen w-full snap-center flex flex-col justify-center relative bg-black overflow-hidden reveal py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
                     <div className="text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -166,12 +163,12 @@ function Home() {
             </section>
 
             {/* Event Location Section */}
-            <div className="reveal">
+            <div className="min-h-screen w-full snap-center flex flex-col justify-center relative reveal">
                 <EventLocation />
             </div>
 
             {/* Highlights Section */}
-            <div className="reveal">
+            <div className="min-h-screen w-full snap-center flex flex-col justify-center relative reveal">
                 <Highlights />
             </div>
         </main>
