@@ -81,9 +81,9 @@ function Home() {
                     </div>
 
                     {/* Publisher Logos */}
-                    <div className="pt-12 border-t border-yellow-500/20 w-full max-w-3xl mx-auto lg:mx-0 mt-8">
-                        <p className="text-sm text-gray-400 mb-4 text-center lg:text-left">Published by</p>
-                        <div className="flex items-center gap-12 justify-center lg:justify-start">
+                    <div className="pt-12 border-t border-yellow-500/20 w-full max-w-3xl mx-auto mt-8">
+                        <p className="text-sm text-gray-400 mb-4 text-center">Published by</p>
+                        <div className="flex items-center gap-12 justify-center">
                             <img src="/img/springerccis.png" alt="Springer CCIS" className="h-20 md:h-28 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
                             <img src="/img/sponsors/scopus.png" alt="Scopus Indexed" className="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity" />
                         </div>
