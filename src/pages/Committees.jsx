@@ -13,10 +13,8 @@ function Committees() {
         { name: 'Dr. Narayana Sabhahit', title: 'Pro Vice Chancellor, Technology and Science', institution: 'MAHE', image: '/img/Dr.Narayana.png' },
         { name: 'Dr. Giridar Kini P', title: 'Registrar', institution: 'MAHE Manipal', image: '/img/Dr-Giridhar-Kini.jpg' },
         { name: 'Dr. Raghavendra Prabhu', title: 'Deputy Registrar', institution: 'MAHE Bengaluru', image: '/img/Dr-Raghavendra-Prabhu-P.jpg' },
-        { name: 'Dr. S Sudhindra', title: 'Academic President', institution: 'MAHE Dubai, UAE', image: '/img/committee/Dr.S.Sudhindra.png' },
         { name: 'Dr. Iven Jose', title: 'Director', institution: 'MIT Bengaluru', image: '/img/committee/Dr.Iven.Jose.png' },
-        { name: 'Dr. S K Pandey', title: 'Dean - STEM Programs', institution: 'MAHE, Dubai, UAE', image: '/img/committee/Dr.S.K.Pandey.png' },
-        { name: 'Dr. Prema K V', title: 'Associate Director, Professor and Head', institution: 'Department of CSE - MIT Bengaluru', image: '/img/Dr Prema KV.png' },
+        { name: 'Dr. Prema K V', title: 'Assistant Director', institution: 'MIT Bengaluru', image: '/img/Dr Prema KV.png' },
     ]
 
     // General Chairs
@@ -28,7 +26,7 @@ function Committees() {
     const programChairs = [
         { name: 'Dr. Gururaj H L', title: 'Associate Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/committee/Dr.Gururaj.H.L.jpg' },
         { name: 'Dr. Shreyas J', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Dr.Shreyas.jpg' },
-        { name: 'Dr. Sophia Rahaman', title: 'Program Director - Comp. Sci & IT', institution: 'SoEIT - MAHE, Dubai, UAE', image: '/img/committee/Dr.Sophia.Rahaman.png' },
+
         { name: 'Dr. Gopalakrishnan T', title: 'Associate Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Dr.GopalkrishnanT.jpg' },
     ]
 
@@ -65,16 +63,7 @@ function Committees() {
         { name: 'Dr. Sumanth V', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Sumanth.jpg' },
         { name: 'Dr. Usha M', title: 'Assistant Professor-Senior Scale', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Usha.jpg' },
         { name: 'Dr. Vishnu Srinivasa Murthy Y', title: 'Associate Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.VishnuSMY.jpg' },
-        { name: 'Dr. Abdulla K P', title: 'Assistant Professor-Selection Grade', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/drabdulla.jpg' },
-        { name: 'Dr. Deepa Varghese', title: 'Assistant Professor-Senior Scale', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/drdeepa.jpg' },
-        { name: 'Dr. Ganesan Subramanian', title: 'Assistant Professor-Senior Grade', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/drganesan.jpg' },
-        { name: 'Dr. M I Jawid Nazir', title: 'Assistant Professor-Selection Grade', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/drjawid.jpg' },
-        { name: 'Prof. Ramaprasad Poojary', title: 'Assistant Professor - Selection Scale', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/drramaprasad.jpg' },
-        { name: 'Dr. Ravishankar Dudhe', title: 'Associate Professor', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/drravishankar.jpg' },
-        { name: 'Dr. Roma Raina', title: 'Assistant Professor-Selection Grade', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/Dr Roma Raina.jpg' },
-        { name: 'Sachidananda H K', title: 'Associate Professor', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/Sachidananda HK.jpg', objectPosition: 'top' },
-        { name: 'Sampath Suranjan Salins', title: 'Assistant Professor-Senior Scale', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/Sampath Suranjan Salins.jpg' },
-        { name: 'Suresha R', title: 'Assistant Professor-Senior Scale', institution: 'SOE-IT - MAHE Dubai', image: '/img/Organisers/Suresha R.png' },
+
         { name: 'Mr. Guru Shankar H B', title: 'Research Scholar', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/GuruShankar.jpg' },
         { name: 'Ms. Shreelakshmi Yadav N', title: 'Research Scholar', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Shreelakshmi.jpg' },
         { name: 'Ms. Soundarya B C', title: 'Research Scholar', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Soundarya.jpg' },
