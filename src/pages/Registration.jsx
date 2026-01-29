@@ -15,90 +15,102 @@ function Registration() {
     ]
 
     return (
-        <main className="pt-24 pb-16 bg-black min-h-screen">
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 className="section-title gradient-text">Registration</h1>
+        <main className="min-h-screen bg-white">
+            {/* Hero Section */}
+            <section className="relative pt-32 pb-12 overflow-hidden bg-[#1a2332]">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div className="text-center">
+                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                            <span className="text-[#ffd700]">Registration</span>
+                        </h1>
+                        <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+                            Secure your spot at CODE-AI 2026
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-                <div className="glass-card rounded-2xl p-8 mb-8">
-                    <h2 className="text-2xl font-semibold text-white mb-2">Registration Fees for Papers</h2>
-                    <p className="text-gray-300 mb-6">Regular Paper / Short Paper / Special Issue Track Papers</p>
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                <div className="bg-white border border-gray-200 rounded-2xl p-8 mb-8 shadow-lg">
+                    <h2 className="text-2xl font-semibold text-gray-900 mb-2">Registration Fees for Papers</h2>
+                    <p className="text-gray-600 mb-6">Regular Paper / Short Paper / Special Issue Track Papers</p>
 
-                    <h3 className="text-xl font-semibold text-yellow-400 mb-4">Early Bird Registration</h3>
-                    <p className="text-gray-400 mb-4">Available till 31st December 2025</p>
+                    <h3 className="text-xl font-semibold text-[#ccac00] mb-4">Early Bird Registration</h3>
+                    <p className="text-gray-500 mb-4">Available till 31st December 2025</p>
                     <div className="overflow-x-auto mb-8">
-                        <table className="registration-table">
+                        <table className="w-full border-collapse">
                             <thead>
                                 <tr>
-                                    <th>Registration Fee</th>
-                                    <th>UG / PG / Research Scholars</th>
-                                    <th>Academicians / Faculty</th>
-                                    <th>R&D Organizations / Industry</th>
-                                    <th>Attendees</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Registration Fee</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">UG / PG / Research Scholars</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Academicians / Faculty</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">R&D Organizations / Industry</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Attendees</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {earlyBirdFees.map((row) => (
-                                    <tr key={row.category}>
-                                        <td className="font-medium">{row.category}</td>
-                                        <td>{row.student}</td>
-                                        <td>{row.faculty}</td>
-                                        <td>{row.industry}</td>
-                                        <td>{row.attendee}</td>
+                                    <tr key={row.category} className="border-b border-gray-200 hover:bg-[#ffd700]/5">
+                                        <td className="font-medium p-4 text-gray-900">{row.category}</td>
+                                        <td className="p-4 text-gray-700">{row.student}</td>
+                                        <td className="p-4 text-gray-700">{row.faculty}</td>
+                                        <td className="p-4 text-gray-700">{row.industry}</td>
+                                        <td className="p-4 text-gray-700">{row.attendee}</td>
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
                     </div>
 
-                    <h3 className="text-xl font-semibold text-yellow-400 mb-4">Regular Registration</h3>
+                    <h3 className="text-xl font-semibold text-[#ccac00] mb-4">Regular Registration</h3>
                     <div className="overflow-x-auto">
-                        <table className="registration-table">
+                        <table className="w-full border-collapse">
                             <thead>
                                 <tr>
-                                    <th>Registration Fee</th>
-                                    <th>UG / PG / Research Scholars</th>
-                                    <th>Academicians / Faculty</th>
-                                    <th>R&D Organizations / Industry</th>
-                                    <th>Attendees</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Registration Fee</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">UG / PG / Research Scholars</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Academicians / Faculty</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">R&D Organizations / Industry</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Attendees</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {regularFees.map((row) => (
-                                    <tr key={row.category}>
-                                        <td className="font-medium">{row.category}</td>
-                                        <td>{row.student}</td>
-                                        <td>{row.faculty}</td>
-                                        <td>{row.industry}</td>
-                                        <td>{row.attendee}</td>
+                                    <tr key={row.category} className="border-b border-gray-200 hover:bg-[#ffd700]/5">
+                                        <td className="font-medium p-4 text-gray-900">{row.category}</td>
+                                        <td className="p-4 text-gray-700">{row.student}</td>
+                                        <td className="p-4 text-gray-700">{row.faculty}</td>
+                                        <td className="p-4 text-gray-700">{row.industry}</td>
+                                        <td className="p-4 text-gray-700">{row.attendee}</td>
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
                     </div>
-                    <p className="text-gray-400 text-sm mt-4">*Excluding GST</p>
+                    <p className="text-gray-500 text-sm mt-4">*Excluding GST</p>
                 </div>
 
-                <div className="glass-card rounded-2xl p-8">
-                    <h2 className="text-2xl font-semibold text-white mb-6">PhD Colloquium Registration</h2>
+                <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg">
+                    <h2 className="text-2xl font-semibold text-gray-900 mb-6">PhD Colloquium Registration</h2>
                     <div className="overflow-x-auto">
-                        <table className="registration-table">
+                        <table className="w-full border-collapse">
                             <thead>
                                 <tr>
-                                    <th>Registration Fee</th>
-                                    <th>Research Scholars</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Registration Fee</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Research Scholars</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {phdFees.map((row) => (
-                                    <tr key={row.category}>
-                                        <td className="font-medium">{row.category}</td>
-                                        <td>{row.fee}</td>
+                                    <tr key={row.category} className="border-b border-gray-200 hover:bg-[#ffd700]/5">
+                                        <td className="font-medium p-4 text-gray-900">{row.category}</td>
+                                        <td className="p-4 text-gray-700">{row.fee}</td>
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
                     </div>
-                    <p className="text-gray-400 text-sm mt-4">
+                    <p className="text-gray-500 text-sm mt-4">
                         *Excluding GST. Registration includes kit, certificate, and meals during the conference.
                     </p>
                 </div>

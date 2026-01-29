@@ -28,31 +28,38 @@ function Awards() {
     ]
 
     return (
-        <main className="pt-24 pb-16 bg-black min-h-screen">
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 className="section-title gradient-text mb-12">Awards & Recognition</h1>
+        <main className="min-h-screen bg-white">
+            {/* Hero Section */}
+            <section className="relative pt-32 pb-12 overflow-hidden bg-[#1a2332]">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div className="text-center">
+                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                            Awards & <span className="text-[#ffd700]">Recognition</span>
+                        </h1>
+                        <div className="w-24 h-1 bg-[#ffd700] mx-auto mt-4 rounded-full"></div>
+                    </div>
+                </div>
+            </section>
 
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="grid gap-8">
                     {awards.map((award) => (
                         <div key={award.id} className="relative group">
-                            {/* Card Background */}
-                            <div className="absolute inset-0 bg-yellow-500/5 rounded-2xl transform group-hover:scale-[1.01] transition-transform duration-300"></div>
-
-                            <div className="relative border border-yellow-500/20 rounded-2xl p-8 hover:border-yellow-500/40 transition-colors bg-black/50 backdrop-blur-sm">
+                            <div className="relative border border-gray-200 rounded-2xl p-8 hover:border-[#ffd700] transition-colors bg-white shadow-lg hover:shadow-xl">
                                 <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
                                     {/* Number Badge */}
                                     <div className="flex-shrink-0">
-                                        <div className="w-16 h-16 rounded-xl bg-yellow-500/10 flex items-center justify-center border border-yellow-500/20 group-hover:bg-yellow-500/20 transition-colors">
-                                            <span className="text-2xl font-bold text-yellow-500">{award.id}</span>
+                                        <div className="w-16 h-16 rounded-xl bg-[#ffd700]/10 flex items-center justify-center border border-[#ffd700]/20 group-hover:bg-[#ffd700]/20 transition-colors">
+                                            <span className="text-2xl font-bold text-[#ccac00]">{award.id}</span>
                                         </div>
                                     </div>
 
                                     {/* Content */}
                                     <div className="flex-1">
-                                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors">
+                                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 group-hover:text-[#ccac00] transition-colors">
                                             {award.title}
                                         </h2>
-                                        <p className="text-gray-300 text-lg leading-relaxed">
+                                        <p className="text-gray-600 text-lg leading-relaxed">
                                             {award.description}
                                         </p>
                                     </div>

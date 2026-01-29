@@ -3,36 +3,81 @@
 @tailwind utilities;
 
 :root {
-    --background: #0a0a0a;
-    --foreground: #ffffff;
+    /* New Light Theme Colors */
+    --background-light: #ffffff;
+    --background-cream: #f8f6f2;
+    --background-dark: #1a2332;
+    --foreground-dark: #1a1a1a;
+    --foreground-light: #ffffff;
+
+    /* Primary Colors */
     --primary: #ffd700;
     --primary-dark: #ccac00;
     --secondary: #ffb800;
     --accent: #ffe066;
     --gradient-start: #ffd700;
     --gradient-end: #ffb800;
+
+    /* Navy for header/footer */
+    --navy: #1a2332;
+    --navy-light: #243447;
 }
 
 body {
-    background: var(--background);
-    color: var(--foreground);
+    background: var(--background-light);
+    color: var(--foreground-dark);
     font-family: 'Inter', system-ui, sans-serif;
     overflow-x: hidden;
 }
 
-/* Solid Dark Utilities */
+/* ====================================
+   SECTION BACKGROUNDS
+   ==================================== */
+
+/* Light Section (White Background) */
+.section-light {
+    background: var(--background-light);
+    color: var(--foreground-dark);
+}
+
+/* Cream Section (Off-white Background) */
+.section-cream {
+    background: var(--background-cream);
+    color: var(--foreground-dark);
+}
+
+/* Dark Section (Navy/Black) */
+.section-dark {
+    background: var(--background-dark);
+    color: var(--foreground-light);
+}
+
+/* ====================================
+   GLASS UTILITIES (Updated for Light Theme)
+   ==================================== */
+
 .glass {
-    background: #111111;
-    border: 1px solid rgba(255, 215, 0, 0.15);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
 }
 
 .glass-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.glass-card-dark {
     background: #161616;
     border: 1px solid rgba(255, 215, 0, 0.1);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Gradient Text */
+/* ====================================
+   GRADIENT TEXT
+   ==================================== */
+
 .gradient-text {
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     -webkit-background-clip: text;
@@ -40,51 +85,20 @@ body {
     background-clip: text;
 }
 
-/* Animations */
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0px) rotate(0deg);
-    }
-
-    50% {
-        transform: translateY(-20px) rotate(2deg);
-    }
+.gradient-text-dark {
+    background: linear-gradient(135deg, #1a1a1a, #333333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-@keyframes float-slow {
+/* ====================================
+   BUTTON STYLES
+   ==================================== */
 
-    0%,
-    100% {
-        transform: translateY(0px) translateX(0px);
-    }
-
-    25% {
-        transform: translateY(-10px) translateX(5px);
-    }
-
-    50% {
-        transform: translateY(-5px) translateX(-5px);
-    }
-
-    75% {
-        transform: translateY(-15px) translateX(3px);
-    }
-}
-
-.animate-float {
-    animation: float 6s ease-in-out infinite;
-}
-
-.animate-float-slow {
-    animation: float-slow 8s ease-in-out infinite;
-}
-
-/* Button Styles */
 .btn-primary {
-    background: transparent;
-    color: var(--primary);
+    background: var(--primary);
+    color: #1a1a1a;
     padding: 0.875rem 2rem;
     border-radius: 0;
     font-weight: 600;
@@ -95,9 +109,10 @@ body {
 }
 
 .btn-primary:hover {
-    background: var(--primary);
-    color: #0a0a0a;
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
     transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
 }
 
 .btn-outline {
@@ -114,23 +129,51 @@ body {
 
 .btn-outline:hover {
     background: var(--primary);
-    color: #0a0a0a;
+    color: #1a1a1a;
     transform: translateY(-2px);
 }
 
-/* Background */
-.bg-gradient-soft {
-    background: #000000;
+/* Button variants for light backgrounds */
+.btn-dark {
+    background: #1a1a1a;
+    color: #ffffff;
+    padding: 0.875rem 2rem;
+    border-radius: 0;
+    font-weight: 600;
+    border: 2px solid #1a1a1a;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
 }
 
-/* Hero Background */
-.hero-bg {
-    position: relative;
-    overflow: hidden;
-    background: #000000;
+.btn-dark:hover {
+    background: transparent;
+    color: #1a1a1a;
+    transform: translateY(-2px);
 }
 
-/* Section Styles */
+.btn-outline-dark {
+    background: transparent;
+    color: #1a1a1a;
+    padding: 0.875rem 2rem;
+    border-radius: 0;
+    font-weight: 600;
+    border: 2px solid #1a1a1a;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-outline-dark:hover {
+    background: #1a1a1a;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ====================================
+   SECTION STYLES
+   ==================================== */
+
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -138,9 +181,38 @@ body {
     margin-bottom: 3rem;
 }
 
-/* Card Styles */
+.section-title-light {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1a1a1a;
+}
+
+/* ====================================
+   CARD STYLES (Updated for Light Theme)
+   ==================================== */
+
 .speaker-card,
 .theme-card {
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.speaker-card:hover,
+.theme-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    border-color: var(--primary);
+}
+
+/* Dark variant for dark sections */
+.speaker-card-dark,
+.theme-card-dark {
     background: #1a1a1a;
     border-radius: 1rem;
     padding: 1.5rem;
@@ -149,13 +221,16 @@ body {
     transition: all 0.3s ease;
 }
 
-.speaker-card:hover,
-.theme-card:hover {
+.speaker-card-dark:hover,
+.theme-card-dark:hover {
     transform: translateY(-5px);
     border-color: rgba(255, 215, 0, 0.3);
 }
 
-/* Table Styles */
+/* ====================================
+   TABLE STYLES
+   ==================================== */
+
 .registration-table {
     width: 100%;
     border-collapse: collapse;
@@ -166,31 +241,37 @@ body {
 .registration-table td {
     padding: 1rem;
     text-align: left;
-    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
-    color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #1a1a1a;
 }
 
 .registration-table th {
     background: linear-gradient(135deg, #ffd700, #ffb800);
-    color: #0a0a0a;
+    color: #1a1a1a;
     font-weight: 600;
 }
 
 .registration-table tr:hover {
-    background: rgba(255, 215, 0, 0.05);
+    background: rgba(255, 215, 0, 0.08);
 }
 
-/* Smooth Scrolling & Soft Snap */
+/* ====================================
+   SMOOTH SCROLLING
+   ==================================== */
+
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
 }
 
-/* Scroll Reveal Animations */
+/* ====================================
+   SCROLL REVEAL ANIMATIONS
+   ==================================== */
+
 .reveal {
     opacity: 0;
     transform: translateY(30px);
-    transition: all 1s ease-out;
+    transition: all 0.8s ease-out;
 }
 
 .reveal.active {
@@ -198,423 +279,310 @@ html {
     transform: translateY(0);
 }
 
-/* Neural Orbit Animation */
-.neural-orbit-container {
+/* ====================================
+   HERO SECTION - NEW DESIGN
+   ==================================== */
+
+.hero-image-section {
     position: relative;
     width: 100%;
-    max-width: 500px;
-    aspect-ratio: 1;
-    margin: 0 auto;
-}
-
-.neural-orbit-canvas {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.neural-orbit-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-}
-
-.neural-orbit-label {
-    font-family: 'Inter', 'Courier New', monospace;
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: rgba(255, 215, 0, 0.8);
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-}
-
-/* Floating Code Snippets for Hero */
-.code-float {
-    position: absolute;
-    font-family: 'Fira Code', 'Courier New', monospace;
-    font-size: 0.75rem;
-    color: rgba(168, 85, 247, 0.6);
-    animation: code-float 8s ease-in-out infinite;
-    pointer-events: none;
-    white-space: nowrap;
-}
-
-.code-float:nth-child(1) {
-    top: 10%;
-    left: 5%;
-    animation-delay: 0s;
-}
-
-.code-float:nth-child(2) {
-    top: 20%;
-    right: 8%;
-    animation-delay: 1.5s;
-}
-
-.code-float:nth-child(3) {
-    bottom: 15%;
-    left: 10%;
-    animation-delay: 3s;
-}
-
-.code-float:nth-child(4) {
-    bottom: 25%;
-    right: 5%;
-    animation-delay: 4.5s;
-}
-
-@keyframes code-float {
-
-    0%,
-    100% {
-        opacity: 0.3;
-        transform: translateY(0) translateX(0);
-    }
-
-    50% {
-        opacity: 0.7;
-        transform: translateY(-15px) translateX(5px);
-    }
-}
-
-/* Particle Morph Animation - Mind Blowing */
-.particle-morph-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    height: 60vh;
     min-height: 400px;
-    max-width: 550px;
-    margin: 0 auto;
-    border-radius: 1rem;
+    max-height: 600px;
     overflow: hidden;
-    background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
 }
 
-.particle-morph-canvas {
+.hero-image {
     width: 100%;
     height: 100%;
-    min-height: 400px;
-    display: block;
-    cursor: none;
+    object-fit: cover;
+    object-position: center;
 }
 
-.particle-morph-label {
+.hero-overlay {
     position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(26, 35, 50, 0.3) 0%,
+            rgba(26, 35, 50, 0.5) 50%,
+            rgba(26, 35, 50, 0.9) 100%);
+}
+
+.hero-banner {
+    background: var(--background-dark);
+    padding: 3rem 0;
     text-align: center;
-    pointer-events: none;
-    z-index: 10;
 }
 
-.particle-morph-text {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, #ffd700, #f59e0b, #a855f7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    letter-spacing: 0.3em;
-    text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
-    animation: text-glow 2s ease-in-out infinite alternate;
+/* ====================================
+   DATE BADGE (Like TIFA)
+   ==================================== */
+
+.date-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary);
+    color: #1a1a1a;
+    font-weight: 700;
+    border-radius: 50px;
+    font-size: 1rem;
 }
 
-@keyframes text-glow {
-    from {
-        filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
-    }
+/* ====================================
+   STATS SECTION (Like TIFA)
+   ==================================== */
 
-    to {
-        filter: drop-shadow(0 0 25px rgba(168, 85, 247, 0.8));
-    }
-}
-
-.particle-morph-dots {
+.stat-item {
     display: flex;
-    gap: 8px;
-    justify-content: center;
-    margin-top: 12px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
 }
 
-.particle-morph-dots .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+.stat-number {
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 0.5rem;
 }
 
-.particle-morph-dots .dot.active {
-    background: linear-gradient(135deg, #ffd700, #a855f7);
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
-    transform: scale(1.3);
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
 }
 
-.particle-morph-hint {
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    pointer-events: none;
-    z-index: 10;
-}
-
-.particle-morph-hint span {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.4);
+.stat-label {
+    font-size: 0.875rem;
+    color: #666666;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    animation: hint-pulse 3s ease-in-out infinite;
+    letter-spacing: 0.1em;
 }
 
-@keyframes hint-pulse {
+/* ====================================
+   AI BRAIN ICON STYLES
+   ==================================== */
+
+.ai-brain-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ai-brain-glow {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.2) 0%, transparent 70%);
+    animation: brain-pulse 3s ease-in-out infinite;
+}
+
+@keyframes brain-pulse {
 
     0%,
     100% {
-        opacity: 0.4;
+        transform: scale(1);
+        opacity: 0.5;
     }
 
     50% {
+        transform: scale(1.1);
         opacity: 0.8;
     }
 }
 
-/* Custom cursor for particle canvas */
-.particle-morph-container::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 2px solid rgba(255, 215, 0, 0.6);
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    animation: cursor-pulse 1.5s ease-in-out infinite;
+/* ====================================
+   NAVBAR STYLES (Dark Navy Theme)
+   ==================================== */
+
+.navbar-dark {
+    background: var(--navy);
+    border-bottom: 3px solid var(--primary);
 }
 
-/* Aurora Hologram Animation */
-.aurora-hologram-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    min-height: 280px;
-    max-width: 550px;
-    margin: 0 auto;
+.navbar-link {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.2s ease;
+}
+
+.navbar-link:hover {
+    color: var(--primary);
+}
+
+/* ====================================
+   LOGO CAROUSEL (Light Theme)
+   ==================================== */
+
+.logo-card-light {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo-card-light:hover {
+    border-color: var(--primary);
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15);
+}
+
+/* ====================================
+   PARTNER CARD (Light Theme)
+   ==================================== */
+
+.partner-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 1rem;
     overflow: hidden;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(10, 10, 30, 0.95) 100%);
-    border: 1px solid rgba(255, 215, 0, 0.2);
-    box-shadow:
-        0 0 60px rgba(139, 92, 246, 0.2),
-        0 0 100px rgba(59, 130, 246, 0.1),
-        inset 0 0 60px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-.aurora-hologram-canvas {
-    width: 100%;
-    height: 100%;
-    min-height: 280px;
-    display: block;
+.partner-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary);
 }
 
-/* Responsive adjustments for mobile */
-@media (min-width: 640px) {
-    .aurora-hologram-container {
-        min-height: 350px;
-    }
-
-    .aurora-hologram-canvas {
-        min-height: 350px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .aurora-hologram-container {
-        min-height: 450px;
-    }
-
-    .aurora-hologram-canvas {
-        min-height: 450px;
-    }
-}
-
-.aurora-hologram-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    pointer-events: none;
-    z-index: 10;
-}
-
-.hologram-text {
+.partner-card-header {
+    padding: 2rem;
+    background: var(--background-cream);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
-    flex-direction: column;
-    gap: 2px;
-    margin-bottom: 12px;
-}
-
-@media (min-width: 640px) {
-    .hologram-text {
-        gap: 4px;
-        margin-bottom: 20px;
-    }
-}
-
-.hologram-label {
-    font-family: 'Inter', monospace;
-    font-size: 0.65rem;
-    font-weight: 500;
-    color: rgba(255, 215, 0, 0.6);
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    animation: hologram-flicker 4s ease-in-out infinite;
-}
-
-.hologram-value {
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #ffd700, #a855f7, #3b82f6);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    letter-spacing: 0.2em;
-    animation: gradient-shift 3s ease-in-out infinite;
-}
-
-@keyframes gradient-shift {
-
-    0%,
-    100% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-}
-
-@keyframes hologram-flicker {
-
-    0%,
-    100% {
-        opacity: 0.6;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    52% {
-        opacity: 0.4;
-    }
-
-    54% {
-        opacity: 1;
-    }
-}
-
-.hologram-stats {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-}
-
-.hologram-stats .stat {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 2px;
+    justify-content: center;
+    min-height: 180px;
 }
 
-.hologram-stats .stat-value {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 800;
-    color: #ffd700;
-    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+.partner-card-body {
+    padding: 1.5rem;
 }
 
-.hologram-stats .stat-label {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.6rem;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.5);
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
+/* ====================================
+   ORGANIZER SECTION
+   ==================================== */
+
+.org-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* Glowing corners */
-.aurora-corner {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    pointer-events: none;
+.org-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 8px 30px rgba(255, 215, 0, 0.15);
 }
 
-.aurora-corner.top-left {
-    top: 10px;
-    left: 10px;
-    border-top: 2px solid rgba(255, 215, 0, 0.6);
-    border-left: 2px solid rgba(255, 215, 0, 0.6);
+.org-logo {
+    height: 100px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
 }
 
-.aurora-corner.top-right {
-    top: 10px;
-    right: 10px;
-    border-top: 2px solid rgba(255, 215, 0, 0.6);
-    border-right: 2px solid rgba(255, 215, 0, 0.6);
+/* ====================================
+   FOOTER
+   ==================================== */
+
+.footer {
+    background: var(--navy);
+    color: #ffffff;
+    padding: 3rem 0;
 }
 
-.aurora-corner.bottom-left {
-    bottom: 10px;
-    left: 10px;
-    border-bottom: 2px solid rgba(255, 215, 0, 0.6);
-    border-left: 2px solid rgba(255, 215, 0, 0.6);
+/* ====================================
+   MISC UTILITIES
+   ==================================== */
+
+.text-muted {
+    color: #666666;
 }
 
-.aurora-corner.bottom-right {
-    bottom: 10px;
-    right: 10px;
-    border-bottom: 2px solid rgba(255, 215, 0, 0.6);
-    border-right: 2px solid rgba(255, 215, 0, 0.6);
+.text-muted-dark {
+    color: #9ca3af;
 }
 
-.aurora-corner::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    background: #ffd700;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+.divider {
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
 }
 
-.aurora-corner.top-left::after {
-    top: -3px;
-    left: -3px;
+.divider-gold {
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+    margin: 2rem auto;
+    max-width: 200px;
 }
 
-.aurora-corner.top-right::after {
-    top: -3px;
-    right: -3px;
+/* ====================================
+   ANIMATIONS (Simplified)
+   ==================================== */
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
-.aurora-corner.bottom-left::after {
-    bottom: -3px;
-    left: -3px;
+.animate-float {
+    animation: float 6s ease-in-out infinite;
 }
 
-.aurora-corner.bottom-right::after {
-    bottom: -3px;
-    right: -3px;
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+}
+
+/* ====================================
+   RESPONSIVE ADJUSTMENTS
+   ==================================== */
+
+@media (max-width: 768px) {
+
+    .section-title,
+    .section-title-light {
+        font-size: 1.75rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .hero-image-section {
+        height: 50vh;
+        min-height: 300px;
+    }
 }

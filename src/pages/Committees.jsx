@@ -190,8 +190,8 @@ function Committees() {
 
         if (isPlaceholder) {
             return (
-                <div className="w-full h-full bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
-                    <span className="text-gray-400 text-xs text-center px-2">Image Placeholder</span>
+                <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                    <span className="text-gray-500 text-xs text-center px-2">Image Placeholder</span>
                 </div>
             );
         }
@@ -207,15 +207,15 @@ function Committees() {
     }
 
     return (
-        <main className="min-h-screen bg-gradient-to-b from-black via-gray-950 to-black">
+        <main className="min-h-screen bg-white">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 overflow-hidden">
+            <section className="relative pt-32 pb-20 overflow-hidden bg-[#1a2332]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-8">
                         <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-                            Conference <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Committees</span>
+                            Conference <span className="text-[#ffd700]">Committees</span>
                         </h1>
-                        <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-xl text-gray-300 max-w-2xl mx-auto">
                             Distinguished academicians and industry leaders driving CODE-AI 2026
                         </p>
                     </div>
@@ -223,23 +223,23 @@ function Committees() {
             </section>
 
             {/* Chief Patrons */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-                <h2 className="text-3xl font-bold text-center text-white mb-12">
-                    <span className="text-yellow-400">◆</span> Chief Patrons <span className="text-yellow-400">◆</span>
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-white">
+                <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                    <span className="text-[#ffd700]">◆</span> Chief Patrons <span className="text-[#ffd700]">◆</span>
                 </h2>
                 <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     {chiefPatrons.map((patron) => (
-                        <div key={patron.name} className="relative bg-gray-900 border border-yellow-500/20 rounded-3xl p-8">
+                        <div key={patron.name} className="relative bg-white border border-gray-200 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow">
                             <div className="flex flex-col items-center text-center">
-                                <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-yellow-500/30 mb-4">
+                                <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-[#ffd700]/30 mb-4">
                                     <MemberImage src={patron.image} name={patron.name} />
                                 </div>
-                                <span className="inline-block px-3 py-1 bg-yellow-500/20 text-yellow-400 text-sm font-semibold rounded-full mb-2">
+                                <span className="inline-block px-3 py-1 bg-[#ffd700]/20 text-[#ccac00] text-sm font-semibold rounded-full mb-2">
                                     Chief Patron
                                 </span>
-                                <h3 className="text-2xl font-bold text-white mb-1">{patron.name}</h3>
-                                <p className="text-yellow-400 font-medium">{patron.title}</p>
-                                <p className="text-gray-400">{patron.institution}</p>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-1">{patron.name}</h3>
+                                <p className="text-[#ccac00] font-medium">{patron.title}</p>
+                                <p className="text-gray-500">{patron.institution}</p>
                             </div>
                         </div>
                     ))}
@@ -247,21 +247,21 @@ function Committees() {
             </section>
 
             {/* Patrons */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-                <h2 className="text-3xl font-bold text-center text-white mb-12">
-                    <span className="text-yellow-400">◆</span> Patrons <span className="text-yellow-400">◆</span>
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f6f2]">
+                <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                    <span className="text-[#ffd700]">◆</span> Patrons <span className="text-[#ffd700]">◆</span>
                 </h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {patrons.map((patron) => (
                         <div key={patron.name} className="group relative">
-                            <div className="relative bg-gray-900/80 border border-gray-800 group-hover:border-yellow-500/30 rounded-2xl p-6 transition-all">
+                            <div className="relative bg-white border border-gray-200 group-hover:border-[#ffd700] rounded-2xl p-6 transition-all shadow-sm hover:shadow-lg">
                                 <div className="flex items-center gap-5">
-                                    <div className="w-32 h-32 rounded-xl overflow-hidden border-2 border-yellow-500/20 flex-shrink-0">
+                                    <div className="w-28 h-28 rounded-xl overflow-hidden border-2 border-[#ffd700]/20 flex-shrink-0">
                                         <MemberImage src={patron.image} name={patron.name} />
                                     </div>
                                     <div>
-                                        <h3 className="text-lg font-semibold text-white group-hover:text-yellow-400 transition-colors">{patron.name}</h3>
-                                        <p className="text-yellow-500 font-medium text-sm">{patron.title}</p>
+                                        <h3 className="text-lg font-semibold text-gray-900 group-hover:text-[#ccac00] transition-colors">{patron.name}</h3>
+                                        <p className="text-[#ccac00] font-medium text-sm">{patron.title}</p>
                                         <p className="text-gray-500 text-xs">{patron.institution}</p>
                                     </div>
                                 </div>
@@ -272,20 +272,20 @@ function Committees() {
             </section>
 
             {/* General Chairs */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-                <h2 className="text-3xl font-bold text-center text-white mb-12">
-                    <span className="text-yellow-400">◆</span> General Chairs <span className="text-yellow-400">◆</span>
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-white">
+                <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                    <span className="text-[#ffd700]">◆</span> General Chairs <span className="text-[#ffd700]">◆</span>
                 </h2>
                 <div className="max-w-md mx-auto">
                     {generalChairs.map((chair) => (
-                        <div key={chair.name} className="relative bg-gray-900 border border-yellow-500/20 rounded-3xl p-8">
+                        <div key={chair.name} className="relative bg-white border border-gray-200 rounded-3xl p-8 shadow-lg">
                             <div className="flex flex-col items-center text-center">
-                                <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-yellow-500/30 mb-4">
+                                <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-[#ffd700]/30 mb-4">
                                     <MemberImage src={chair.image} name={chair.name} />
                                 </div>
-                                <h3 className="text-2xl font-bold text-white mb-1">{chair.name}</h3>
-                                <p className="text-yellow-400 font-medium">{chair.title}</p>
-                                <p className="text-gray-400">{chair.institution}</p>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-1">{chair.name}</h3>
+                                <p className="text-[#ccac00] font-medium">{chair.title}</p>
+                                <p className="text-gray-500">{chair.institution}</p>
                             </div>
                         </div>
                     ))}
@@ -293,21 +293,21 @@ function Committees() {
             </section>
 
             {/* Program Chairs */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-                <h2 className="text-3xl font-bold text-center text-white mb-12">
-                    <span className="text-yellow-400">◆</span> Program Chairs <span className="text-yellow-400">◆</span>
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f6f2]">
+                <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                    <span className="text-[#ffd700]">◆</span> Program Chairs <span className="text-[#ffd700]">◆</span>
                 </h2>
                 <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     {programChairs.map((chair) => (
                         <div key={chair.name} className="group relative">
-                            <div className="relative bg-gray-900/80 border border-gray-800 group-hover:border-yellow-500/30 rounded-2xl p-6 transition-all">
+                            <div className="relative bg-white border border-gray-200 group-hover:border-[#ffd700] rounded-2xl p-6 transition-all shadow-sm hover:shadow-lg">
                                 <div className="flex items-center gap-5">
-                                    <div className="w-32 h-32 rounded-xl overflow-hidden border-2 border-yellow-500/20 flex-shrink-0">
+                                    <div className="w-28 h-28 rounded-xl overflow-hidden border-2 border-[#ffd700]/20 flex-shrink-0">
                                         <MemberImage src={chair.image} name={chair.name} />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-semibold text-white group-hover:text-yellow-400 transition-colors">{chair.name}</h3>
-                                        <p className="text-yellow-500 font-medium">{chair.title}</p>
+                                        <h3 className="text-xl font-semibold text-gray-900 group-hover:text-[#ccac00] transition-colors">{chair.name}</h3>
+                                        <p className="text-[#ccac00] font-medium">{chair.title}</p>
                                         <p className="text-gray-500 text-sm">{chair.institution}</p>
                                     </div>
                                 </div>
@@ -318,18 +318,18 @@ function Committees() {
             </section>
 
             {/* Technical Co-Chairs */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-                <h2 className="text-3xl font-bold text-center text-white mb-12">
-                    <span className="text-yellow-400">◆</span> Technical Co-Chairs <span className="text-yellow-400">◆</span>
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-white">
+                <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                    <span className="text-[#ffd700]">◆</span> Technical Co-Chairs <span className="text-[#ffd700]">◆</span>
                 </h2>
                 <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
                     {technicalCoChairs.map((chair) => (
-                        <div key={chair.name} className="bg-gray-900/50 border border-gray-800 hover:border-yellow-500/30 rounded-xl p-5 text-center transition-all group">
-                            <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-yellow-500/20 mx-auto mb-4">
+                        <div key={chair.name} className="bg-white border border-gray-200 hover:border-[#ffd700] rounded-xl p-5 text-center transition-all group shadow-sm hover:shadow-lg">
+                            <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-[#ffd700]/20 mx-auto mb-4">
                                 <MemberImage src={chair.image} name={chair.name} />
                             </div>
-                            <h3 className="text-lg font-semibold text-white">{chair.name}</h3>
-                            <p className="text-yellow-500 text-sm font-medium">{chair.title}</p>
+                            <h3 className="text-lg font-semibold text-gray-900">{chair.name}</h3>
+                            <p className="text-[#ccac00] text-sm font-medium">{chair.title}</p>
                             <p className="text-gray-500 text-xs">{chair.institution}</p>
                         </div>
                     ))}
@@ -337,17 +337,17 @@ function Committees() {
             </section>
 
             {/* Scientific Committee */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-                <h2 className="text-3xl font-bold text-center text-white mb-12">
-                    <span className="text-yellow-400">◆</span> Scientific Committee <span className="text-yellow-400">◆</span>
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f6f2]">
+                <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                    <span className="text-[#ffd700]">◆</span> Scientific Committee <span className="text-[#ffd700]">◆</span>
                 </h2>
                 <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                     {scientificCommittee.map((member, index) => (
-                        <div key={index} className="bg-gray-900/50 border border-gray-800 hover:border-yellow-500/30 rounded-xl p-5 text-center transition-all group">
-                            <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-yellow-500/20 mx-auto mb-4">
+                        <div key={index} className="bg-white border border-gray-200 hover:border-[#ffd700] rounded-xl p-5 text-center transition-all group shadow-sm hover:shadow-lg">
+                            <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-[#ffd700]/20 mx-auto mb-4">
                                 <MemberImage src={member.image} name={member.name} />
                             </div>
-                            <h3 className="text-lg font-semibold text-white">{member.name}</h3>
+                            <h3 className="text-lg font-semibold text-gray-900">{member.name}</h3>
                             <p className="text-gray-500 text-xs mt-2">{member.institution}</p>
                         </div>
                     ))}
@@ -355,18 +355,18 @@ function Committees() {
             </section>
 
             {/* Organising Committee */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-                <h2 className="text-3xl font-bold text-center text-white mb-12">
-                    <span className="text-yellow-400">◆</span> Organising Committee <span className="text-yellow-400">◆</span>
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-white">
+                <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                    <span className="text-[#ffd700]">◆</span> Organising Committee <span className="text-[#ffd700]">◆</span>
                 </h2>
                 <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {organisingCommittee.map((member, index) => (
-                        <div key={index} className="bg-gray-900/50 border border-gray-800 hover:border-yellow-500/30 rounded-xl p-4 text-center transition-all">
-                            <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-yellow-500/20 mx-auto mb-3">
+                        <div key={index} className="bg-white border border-gray-200 hover:border-[#ffd700] rounded-xl p-4 text-center transition-all shadow-sm hover:shadow-lg">
+                            <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-[#ffd700]/20 mx-auto mb-3">
                                 <MemberImage src={member.image} name={member.name} objectPosition={member.objectPosition} />
                             </div>
-                            <h3 className="text-sm font-semibold text-white">{member.name}</h3>
-                            <p className="text-yellow-500 text-xs font-medium">{member.title}</p>
+                            <h3 className="text-sm font-semibold text-gray-900">{member.name}</h3>
+                            <p className="text-[#ccac00] text-xs font-medium">{member.title}</p>
                             <p className="text-gray-500 text-xs">{member.institution}</p>
                         </div>
                     ))}
@@ -374,18 +374,18 @@ function Committees() {
             </section>
 
             {/* Student Organising Committee */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-                <h2 className="text-3xl font-bold text-center text-white mb-12">
-                    <span className="text-yellow-400">◆</span> Student Organising Committee <span className="text-yellow-400">◆</span>
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f6f2]">
+                <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                    <span className="text-[#ffd700]">◆</span> Student Organising Committee <span className="text-[#ffd700]">◆</span>
                 </h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
                     {studentOrganisingCommittee.map((member, index) => (
-                        <div key={index} className="bg-gray-900/50 border border-gray-800 hover:border-yellow-500/30 rounded-xl p-5 text-center transition-all">
-                            <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-yellow-500/20 mx-auto mb-4">
+                        <div key={index} className="bg-white border border-gray-200 hover:border-[#ffd700] rounded-xl p-5 text-center transition-all shadow-sm hover:shadow-lg">
+                            <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-[#ffd700]/20 mx-auto mb-4">
                                 <MemberImage src={member.image} name={member.name} />
                             </div>
-                            <h3 className="text-lg font-semibold text-white">{member.name}</h3>
-                            <p className="text-yellow-500 text-sm font-medium">{member.role}</p>
+                            <h3 className="text-lg font-semibold text-gray-900">{member.name}</h3>
+                            <p className="text-[#ccac00] text-sm font-medium">{member.role}</p>
                             <p className="text-gray-500 text-xs">{member.chapter}</p>
                         </div>
                     ))}
@@ -393,15 +393,15 @@ function Committees() {
             </section>
 
             {/* Advisory Committee */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-                <h2 className="text-3xl font-bold text-center text-white mb-12">
-                    <span className="text-yellow-400">◆</span> Advisory Committee <span className="text-yellow-400">◆</span>
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-white">
+                <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                    <span className="text-[#ffd700]">◆</span> Advisory Committee <span className="text-[#ffd700]">◆</span>
                 </h2>
-                <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8">
+                <div className="bg-[#f8f6f2] border border-gray-200 rounded-2xl p-8">
                     <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                         {advisoryCommittee.map((member, index) => (
-                            <li key={index} className="flex items-start gap-3 text-gray-300 hover:text-yellow-400 transition-colors">
-                                <span className="w-1.5 h-1.5 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <li key={index} className="flex items-start gap-3 text-gray-700 hover:text-[#ccac00] transition-colors">
+                                <span className="w-1.5 h-1.5 bg-[#ffd700] rounded-full mt-2 flex-shrink-0"></span>
                                 <div>
                                     <span className="font-medium">{member.name}</span>
                                     <p className="text-gray-500 text-xs">{member.title}, {member.institution}</p>
@@ -413,15 +413,15 @@ function Committees() {
             </section>
 
             {/* Program Review Committee */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-                <h2 className="text-3xl font-bold text-center text-white mb-12">
-                    <span className="text-yellow-400">◆</span> Program Review Committee <span className="text-yellow-400">◆</span>
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f6f2]">
+                <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                    <span className="text-[#ffd700]">◆</span> Program Review Committee <span className="text-[#ffd700]">◆</span>
                 </h2>
-                <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8">
+                <div className="bg-white border border-gray-200 rounded-2xl p-8">
                     <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                         {programReviewCommittee.map((member, index) => (
-                            <li key={index} className="flex items-start gap-3 text-gray-300 hover:text-yellow-400 transition-colors">
-                                <span className="w-1.5 h-1.5 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <li key={index} className="flex items-start gap-3 text-gray-700 hover:text-[#ccac00] transition-colors">
+                                <span className="w-1.5 h-1.5 bg-[#ffd700] rounded-full mt-2 flex-shrink-0"></span>
                                 <div>
                                     <span className="font-medium">{member.name}</span>
                                     <p className="text-gray-500 text-xs">{member.institution}</p>

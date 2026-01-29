@@ -23,27 +23,27 @@ function AcademicPartners() {
     ]
 
     return (
-        <section className="py-20 bg-black relative overflow-hidden">
+        <section className="py-20 bg-[#f8f6f2] relative overflow-hidden">
             {/* Background Decorations */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl -ml-20 -mb-20"></div>
+            <div className="absolute top-0 right-0 w-96 h-96 bg-[#ffd700]/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#ffd700]/5 rounded-full blur-3xl -ml-20 -mb-20"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="section-title gradient-text inline-block">Academic Partners</h2>
-                    <div className="w-24 h-1 bg-yellow-500 mx-auto mt-4 rounded-full"></div>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 inline-block">Academic Partners</h2>
+                    <div className="w-24 h-1 bg-[#ffd700] mx-auto mt-4 rounded-full"></div>
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-8">
                     {partners.map((partner, idx) => (
                         <div key={idx} className="group w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1.5rem)] max-w-sm">
-                            <div className="h-full bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-500/30 transition-all duration-300 flex flex-col group-hover:-translate-y-2 relative">
+                            <div className="h-full bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-[#ffd700] transition-all duration-300 flex flex-col group-hover:-translate-y-2 relative shadow-sm hover:shadow-xl">
 
                                 {/* Hover Glow */}
-                                <div className="absolute inset-0 bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                                <div className="absolute inset-0 bg-[#ffd700]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
 
-                                {/* Logo Banner - Dark Background & Large Size */}
-                                <div className="p-8 h-56 flex items-center justify-center border-b border-white/10 bg-black/40">
+                                {/* Logo Banner - Dark background for visibility */}
+                                <div className="p-8 h-56 flex items-center justify-center border-b border-gray-100 bg-[#1a2332]">
                                     <img
                                         src={partner.logo}
                                         alt={partner.name}
@@ -53,10 +53,10 @@ function AcademicPartners() {
 
                                 {/* Content */}
                                 <div className="p-8 flex-1 flex flex-col relative z-10">
-                                    <h3 className="text-xl font-bold text-yellow-500 mb-4 group-hover:text-yellow-400 transition-colors">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-[#ccac00] transition-colors">
                                         {partner.name}
                                     </h3>
-                                    <p className="text-gray-400 text-sm leading-relaxed flex-1">
+                                    <p className="text-gray-600 text-sm leading-relaxed flex-1">
                                         {partner.desc}
                                     </p>
                                 </div>

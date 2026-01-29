@@ -1,7 +1,7 @@
 function EventLocation() {
     return (
-        <section className="py-20 bg-gradient-to-b from-black to-gray-900 overflow-hidden relative">
-            <div className="absolute inset-0 bg-[url('/img/grid.svg')] opacity-10"></div>
+        <section className="py-20 bg-[#1a2332] overflow-hidden relative">
+            <div className="absolute inset-0 bg-[url('/img/grid.svg')] opacity-5"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
@@ -12,7 +12,7 @@ function EventLocation() {
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-2">
                                 Taiwan
                             </h2>
-                            <p className="text-xl text-yellow-500 font-medium">The Silicon Island</p>
+                            <p className="text-xl text-[#ffd700] font-medium">The Silicon Island</p>
                         </div>
 
                         <div className="space-y-6 text-gray-300 leading-relaxed text-lg">
@@ -31,7 +31,7 @@ function EventLocation() {
                     {/* Image Area */}
                     <div className="lg:w-1/2 w-full">
                         <div className="relative group">
-                            <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-yellow-300 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                            <div className="absolute -inset-1 bg-gradient-to-r from-[#ffd700] to-[#ffb800] rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
                             <div className="relative rounded-3xl overflow-hidden aspect-[4/3] border border-white/10 shadow-2xl">
                                 <img
                                     src="/img/venue-taiwan.png"
@@ -41,7 +41,7 @@ function EventLocation() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                                 <div className="absolute bottom-6 left-6">
                                     <p className="text-white font-bold text-lg">Taiwan</p>
-                                    <p className="text-yellow-400 text-sm">Venue Partner</p>
+                                    <p className="text-[#ffd700] text-sm">Venue Partner</p>
                                 </div>
                             </div>
                         </div>

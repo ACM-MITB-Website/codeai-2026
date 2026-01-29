@@ -33,18 +33,18 @@ const CountdownTimer = () => {
     }, []);
 
     const TimerBox = ({ value, label }) => (
-        <div className="flex flex-col items-center px-2 sm:px-4 md:px-8 py-2 md:py-3 glass rounded-xl border border-yellow-500/20 min-w-[65px] sm:min-w-[80px] md:min-w-[120px]">
-            <span className="text-2xl sm:text-3xl md:text-5xl font-bold gradient-text tabular-nums">
+        <div className="flex flex-col items-center px-3 sm:px-5 md:px-8 py-3 md:py-4 bg-white/10 backdrop-blur-sm rounded-lg border border-[#ffd700]/30 min-w-[70px] sm:min-w-[90px] md:min-w-[120px]">
+            <span className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#ffd700] tabular-nums">
                 {String(value).padStart(2, '0')}
             </span>
-            <span className="text-[8px] sm:text-[10px] md:text-xs uppercase tracking-widest text-gray-400 font-semibold mt-1">
+            <span className="text-[9px] sm:text-[11px] md:text-xs uppercase tracking-widest text-gray-300 font-medium mt-1">
                 {label}
             </span>
         </div>
     );
 
     return (
-        <div className="flex flex-nowrap justify-center gap-2 md:gap-6 py-8 w-full">
+        <div className="flex flex-nowrap justify-center gap-2 md:gap-4 py-4 w-full">
             <TimerBox value={timeLeft.days} label="Days" />
             <TimerBox value={timeLeft.hours} label="Hours" />
             <TimerBox value={timeLeft.minutes} label="Minutes" />
