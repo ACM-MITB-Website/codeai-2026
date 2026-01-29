@@ -34,13 +34,13 @@ function EventLocation() {
                             <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-yellow-300 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
                             <div className="relative rounded-3xl overflow-hidden aspect-[4/3] border border-white/10 shadow-2xl">
                                 <img
-                                    src="/img/mahedub.jpg"
-                                    alt="MAHE Dubai Campus"
+                                    src="/img/venue-taiwan.png"
+                                    alt="Taiwan Venue"
                                     className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                                 <div className="absolute bottom-6 left-6">
-                                    <p className="text-white font-bold text-lg">MAHE Dubai Logo</p>
+                                    <p className="text-white font-bold text-lg">Taiwan</p>
                                     <p className="text-yellow-400 text-sm">Venue Partner</p>
                                 </div>
                             </div>

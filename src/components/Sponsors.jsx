@@ -1,3 +1,5 @@
+import { ArrowRight } from 'lucide-react'
+
 function Sponsors() {
     const organizations = {
         hosted: [
@@ -49,14 +51,11 @@ function Sponsors() {
                     <div className="w-24 h-1 bg-yellow-500 mx-auto mt-4 rounded-full"></div>
                 </div>
 
-                {/* Call to Action for Sponsorship */}
                 <div className="mb-20 flex justify-center">
-                    <div className="relative group">
-                        <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
-                        <button className="relative px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold rounded-lg hover:from-yellow-400 hover:to-yellow-500 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-yellow-500/50 text-lg">
-                            Apply for Sponsorship
-                        </button>
-                    </div>
+                    <button className="flex items-center gap-2 px-8 py-4 bg-black text-yellow-500 border-2 border-yellow-500 font-bold hover:bg-yellow-500 hover:text-black transform hover:scale-105 transition-all duration-300 text-lg rounded-none">
+                        Apply for Sponsorship
+                        <ArrowRight className="w-5 h-5" />
+                    </button>
                 </div>
 
                 {/* Organizers Grid */}
