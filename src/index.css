@@ -586,3 +586,22 @@ html {
         min-height: 300px;
     }
 }
+
+/* ====================================
+   ANNOUNCEMENT BANNER
+   ==================================== */
+
+.announcement-fast {
+    display: inline-block;
+    animation: scroll-fast 10s linear infinite;
+}
+
+@keyframes scroll-fast {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

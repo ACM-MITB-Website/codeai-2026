@@ -1,6 +1,7 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import Navbar from './components/Navbar'
+import AnnouncementBanner from './components/AnnouncementBanner'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Committees from './pages/Committees'
@@ -65,19 +66,22 @@ function App() {
     }, [location.pathname]) // Re-run when route changes
 
     return (
-        <div className="min-h-screen bg-black text-white">
+        <div className="min-h-screen bg-white text-gray-900">
             <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/committees" element={<Committees />} />
-                <Route path="/speakers" element={<Speakers />} />
-                <Route path="/registration" element={<Registration />} />
-                <Route path="/call-for-papers" element={<CallForPapers />} />
-                <Route path="/awards" element={<Awards />} />
-                <Route path="/publications" element={<Publications />} />
-                <Route path="/schedule" element={<Schedule />} />
+            <AnnouncementBanner />
+            <div className="pt-10"> {/* Offset for fixed banner */}
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/committees" element={<Committees />} />
+                    <Route path="/speakers" element={<Speakers />} />
+                    <Route path="/registration" element={<Registration />} />
+                    <Route path="/call-for-papers" element={<CallForPapers />} />
+                    <Route path="/awards" element={<Awards />} />
+                    <Route path="/publications" element={<Publications />} />
+                    <Route path="/schedule" element={<Schedule />} />
 
-            </Routes>
+                </Routes>
+            </div>
             <Footer />
         </div>
     )
