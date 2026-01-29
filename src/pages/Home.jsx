@@ -39,9 +39,9 @@ function Home() {
                                 </h2>
 
                                 <div className="flex items-center justify-center lg:justify-start gap-3 text-lg md:text-xl text-yellow-500 font-semibold">
-                                    <span>MAHE, Dubai</span>
+                                    <span>Taiwan</span>
                                     <span>|</span>
-                                    <span>7th & 8th April 2026</span>
+                                    <span>16th & 17th July</span>
                                 </div>
 
                                 <CountdownTimer />
@@ -58,10 +58,7 @@ function Home() {
                                 <div className="space-y-2">
                                     <p className="text-sm text-yellow-500 font-bold uppercase tracking-widest">In Collaboration with</p>
                                     <p className="text-base md:text-lg text-gray-300 font-medium">
-                                        School of Engineering & IT (SoEIT)
-                                    </p>
-                                    <p className="text-sm md:text-base text-gray-400">
-                                        Manipal Academy of Higher Education (MAHE), Dubai, UAE
+                                        School of Engineering (Taiwan)
                                     </p>
                                 </div>
                             </div>

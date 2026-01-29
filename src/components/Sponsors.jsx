@@ -1,21 +1,4 @@
 function Sponsors() {
-    const sponsors = {
-        gold: [
-            { name: 'FlutterFlow', logo: '/img/placeholder.png', alt: 'FlutterFlow' }
-        ],
-        bronze: [
-            { name: 'HP', logo: '/img/placeholder.png', alt: 'HP' }
-        ],
-        publicity: [
-            { name: 'Confab360', logo: '/img/sponsors/confab.png', alt: 'Confab360' }
-        ],
-        technical: [
-            { name: 'IBM', logo: '/img/sponsors/ibm.png', alt: 'IBM' },
-            { name: 'ACM Meerut', logo: '/img/sponsors/acm meerut.png', alt: 'ACM Meerut' },
-            { name: 'Nokia', logo: '/img/placeholder.png', alt: 'Nokia' }
-        ]
-    }
-
     const organizations = {
         hosted: [
             {
@@ -46,12 +29,6 @@ function Sponsors() {
         </div>
     )
 
-    const SponsorCard = ({ logo, alt, className = "" }) => (
-        <div className={`glass-card bg-white/5 hover:bg-white/10 p-6 rounded-xl flex items-center justify-center transition-all duration-300 hover:-translate-y-1 ${className}`}>
-            <img src={logo} alt={alt} className="max-w-full max-h-24 w-auto h-auto object-contain transition-transform duration-300 hover:scale-105" />
-        </div>
-    )
-
     const OrgCard = ({ logo, name, sub }) => (
         <div className="flex flex-col items-center text-center space-y-4 max-w-sm mx-auto">
             <div className="glass-card bg-white/5 p-6 rounded-xl w-full h-48 flex items-center justify-center">
@@ -72,46 +49,13 @@ function Sponsors() {
                     <div className="w-24 h-1 bg-yellow-500 mx-auto mt-4 rounded-full"></div>
                 </div>
 
-                {/* Sponsors Grid */}
-                <div className="space-y-12 mb-20">
-                    {/* Gold */}
-                    <div>
-                        <SectionHeader title="Gold Sponsor" />
-                        <div className="flex justify-center">
-                            {sponsors.gold.map((s, i) => (
-                                <SponsorCard key={i} logo={s.logo} alt={s.alt} className="w-64 h-40" />
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Bronze */}
-                    <div>
-                        <SectionHeader title="Bronze Sponsor" />
-                        <div className="flex justify-center">
-                            {sponsors.bronze.map((s, i) => (
-                                <SponsorCard key={i} logo={s.logo} alt={s.alt} className="w-56 h-36" />
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Publicity */}
-                    <div>
-                        <SectionHeader title="Publicity Sponsor" />
-                        <div className="flex justify-center">
-                            {sponsors.publicity.map((s, i) => (
-                                <SponsorCard key={i} logo={s.logo} alt={s.alt} className="w-56 h-36" />
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Technical */}
-                    <div>
-                        <SectionHeader title="Technical Sponsors" />
-                        <div className="flex flex-wrap justify-center gap-8">
-                            {sponsors.technical.map((s, i) => (
-                                <SponsorCard key={i} logo={s.logo} alt={s.alt} className="w-48 h-32" />
-                            ))}
-                        </div>
+                {/* Call to Action for Sponsorship */}
+                <div className="mb-20 flex justify-center">
+                    <div className="relative group">
+                        <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
+                        <button className="relative px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold rounded-lg hover:from-yellow-400 hover:to-yellow-500 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-yellow-500/50 text-lg">
+                            Apply for Sponsorship
+                        </button>
                     </div>
                 </div>
 

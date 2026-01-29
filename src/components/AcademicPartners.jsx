@@ -11,29 +11,14 @@ function AcademicPartners() {
             desc: 'Linnaeus University, situated in Sweden with campuses in Växjö and Kalmar, is a dynamic institution recognized for its high-quality education and commitment to sustainability, innovation, and international collaboration. Named after the renowned scientist Carl Linnaeus.'
         },
         {
-            name: 'Biruni University',
-            logo: '/img/sponsors/biruni.png',
-            desc: 'Biruni University, located in Istanbul, Turkey, is a distinguished institution with a strong focus on health sciences, engineering, and education. Named after the medieval scholar Al-Biruni, who made significant contributions to science and knowledge, the university embodies a spirit of inquiry and discovery.'
-        },
-        {
             name: 'SUPSI',
             logo: '/img/sponsors/supsi.png',
             desc: 'SUPSI, located in the Italian-speaking region of Switzerland, is a leading institution renowned for its applied sciences programs and practical, hands-on approach to education. With a strong emphasis on interdisciplinary research, innovation, and collaboration with industry.'
         },
         {
-            name: 'Mansoura University',
-            logo: '/img/sponsors/Mansoura.png',
-            desc: 'Mansoura University is a respected institution known for its dedication to academic excellence, innovative research, and community development. With a strong emphasis on interdisciplinary learning and real-world application, Mansoura University offers programs across diverse fields.'
-        },
-        {
             name: 'University of Information Technology and Sciences',
             logo: '/img/sponsors/uits.png',
             desc: 'The University of Information Technology and Sciences (UITS) is a beacon of academic excellence, specializing in technology and sciences education. Renowned for its innovative approach, UITS provides a dynamic learning environment that integrates theoretical knowledge with practical skills.'
-        },
-        {
-            name: 'Sejong University',
-            logo: '/img/sponsors/sunway.png', // Placeholder as specific logo wasn't found
-            desc: 'Sejong University is a leading institution dedicated to academic excellence, innovation, and global engagement. Known for its strong focus on technology, sciences, and humanities, the university offers a dynamic learning environment that seamlessly integrates theory with practical application.'
         }
     ]
 
