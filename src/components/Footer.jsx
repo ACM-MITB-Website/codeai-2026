@@ -12,7 +12,7 @@ function Footer() {
                         <div className="space-y-4 text-gray-400">
                             <div>
                                 <p className="font-semibold text-white">Dr. Shreyas J</p>
-                                <p className="text-sm">Organizing Chair</p>
+                                <p className="text-sm">Program Chair</p>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Phone className="w-4 h-4 text-yellow-500" />

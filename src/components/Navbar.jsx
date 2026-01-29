@@ -7,8 +7,8 @@ function Navbar() {
 
     const navLinks = [
         { name: 'Home', href: '/' },
-        { 
-            name: 'Authors', 
+        {
+            name: 'Authors',
             dropdown: [
                 { name: 'Important Dates', href: '/call-for-papers' },
                 { name: 'Call for Papers', href: '/call-for-papers' },
@@ -18,8 +18,8 @@ function Navbar() {
             ]
         },
         { name: 'Committees', href: '/committees' },
-        { 
-            name: 'Program', 
+        {
+            name: 'Program',
             dropdown: [
                 { name: 'Schedule', href: '/schedule' },
                 { name: 'Speakers', href: '/speakers' },
@@ -27,15 +27,15 @@ function Navbar() {
             ]
         },
         { name: 'Registration', href: '/registration' },
-        { 
-            name: 'Sponsor', 
+        {
+            name: 'Sponsor',
             dropdown: [
                 { name: 'About Us', href: '/about' },
                 { name: 'Contact Us', href: '/contact' }
             ]
         },
-        { 
-            name: 'About', 
+        {
+            name: 'About',
             dropdown: [
                 { name: 'About Us', href: '/about' },
                 { name: 'Contact Us', href: '/contact' }
@@ -65,23 +65,22 @@ function Navbar() {
                                                 className="text-black font-semibold text-sm px-3 py-6 hover:text-white transition-colors duration-200 flex items-center gap-1"
                                             >
                                                 {link.name}
-                                                <svg 
-                                                    className={`w-4 h-4 transition-transform duration-300 ${openDropdown === link.name ? 'rotate-180' : ''}`} 
-                                                    fill="none" 
-                                                    stroke="currentColor" 
+                                                <svg
+                                                    className={`w-4 h-4 transition-transform duration-300 ${openDropdown === link.name ? 'rotate-180' : ''}`}
+                                                    fill="none"
+                                                    stroke="currentColor"
                                                     viewBox="0 0 24 24"
                                                 >
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                                 </svg>
                                             </button>
-                                            <div 
+                                            <div
                                                 onMouseEnter={() => setOpenDropdown(link.name)}
                                                 onMouseLeave={() => setOpenDropdown(null)}
-                                                className={`absolute top-full left-0 mt-0 bg-gradient-to-br from-[#1a3a5c] to-[#152d47] shadow-2xl min-w-[300px] rounded-b-lg overflow-hidden border-t-2 border-yellow-500 transition-all duration-300 ease-out ${
-                                                    openDropdown === link.name 
-                                                        ? 'opacity-100 translate-y-0 visible' 
+                                                className={`absolute top-full left-0 mt-0 bg-gradient-to-br from-[#1a3a5c] to-[#152d47] shadow-2xl min-w-[300px] rounded-b-lg overflow-hidden border-t-2 border-yellow-500 transition-all duration-300 ease-out ${openDropdown === link.name
+                                                        ? 'opacity-100 translate-y-0 visible'
                                                         : 'opacity-0 -translate-y-2 invisible'
-                                                }`}
+                                                    }`}
                                                 style={{ zIndex: 100 }}
                                             >
                                                 <div className="py-2">
@@ -120,7 +119,7 @@ function Navbar() {
                                 to="/registration"
                                 className="hidden md:inline-flex items-center justify-center text-sm px-5 py-2 font-bold border-2 border-black text-black hover:bg-black hover:text-yellow-500 transition-all duration-300"
                             >
-                                Register Not Open
+                                Register Now
                             </Link>
 
                             {/* Mobile Menu Button */}
@@ -154,10 +153,10 @@ function Navbar() {
                                         className="w-full text-left text-lg font-medium text-gray-200 hover:text-yellow-400 transition-colors flex items-center justify-between"
                                     >
                                         {link.name}
-                                        <svg 
+                                        <svg
                                             className={`w-5 h-5 transition-transform ${openDropdown === link.name ? 'rotate-180' : ''}`}
-                                            fill="none" 
-                                            stroke="currentColor" 
+                                            fill="none"
+                                            stroke="currentColor"
                                             viewBox="0 0 24 24"
                                         >
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
