@@ -10,20 +10,20 @@ function EventLocation() {
                     <div className="lg:w-1/2 space-y-8">
                         <div>
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-2">
-                                Dubai
+                                Taiwan
                             </h2>
-                            <p className="text-xl text-yellow-500 font-medium">City of the Future</p>
+                            <p className="text-xl text-yellow-500 font-medium">The Silicon Island</p>
                         </div>
 
                         <div className="space-y-6 text-gray-300 leading-relaxed text-lg">
                             <p>
-                                Dubai, often called the "City of the Future," is a global metropolis located in the United Arab Emirates. Known for its cutting-edge architecture, vibrant business environment, and world-class infrastructure, Dubai has rapidly become a hub for innovation and international commerce.
+                                Taiwan, widely revered as the "Silicon Island" or "AI Island," is a technological powerhouse located in East Asia. Acknowledged as the undisputed global leader in semiconductor manufacturing, it serves as the heart of the modern digital economy, producing the advanced chips that power everything from smartphones to global defense systems and artificial intelligence.
                             </p>
                             <p>
-                                With a multicultural population, Dubai offers a diverse blend of cultures, cuisines, and experiences. The city is also home to iconic landmarks such as the <span className="text-white font-semibold">Burj Khalifa</span>, the <span className="text-white font-semibold">Palm Jumeirah</span>, and the <span className="text-white font-semibold">Dubai Marina</span>.
+                                Beyond its industrial dominance, Taiwan offers a rich tapestry of experiences, blending ancient temples and indigenous heritage with a vibrant, progressive democracy. The island is anchored by the bamboo-inspired <span className="text-white font-semibold">Taipei 101</span> and is famed for its culinary innovation being the birthplace of <span className="text-white font-semibold">bubble tea</span> as well as its convenient 24 hour urban lifestyle and breathtaking natural landscapes like <span className="text-white font-semibold">Taroko Gorge</span>.
                             </p>
                             <p>
-                                Its futuristic skyline, dynamic lifestyle, and year-round sunshine make Dubai a major center for business, education, and tourism in the Middle East, while fostering growth in industries like finance, technology, and education.
+                                Its strategic role as a Silicon Shield, highly educated workforce, and robust R&D ecosystem make Taiwan a critical pivot point for the future of technology, driving unparalleled advancements in smart manufacturing, green energy, and the global AI supply chain.
                             </p>
                         </div>
                     </div>
