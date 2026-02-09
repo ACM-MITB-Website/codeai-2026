@@ -66,9 +66,17 @@ function Home() {
                             <p className="text-sm text-gray-400">
                                 Manipal Academy of Higher Education (MAHE), Bengaluru
                             </p>
-                            <p className="text-xs text-yellow-500 font-medium mt-2 uppercase tracking-wider">
-                                In Collaboration with School of Engineering (Taiwan)
-                            </p>
+                            <div className="mt-4">
+                                <p className="text-sm text-yellow-500 font-semibold uppercase tracking-wider mb-1">
+                                    In Collaboration with
+                                </p>
+                                <p className="text-xl text-white font-bold leading-tight">
+                                    National Tsing Hua University
+                                </p>
+                                <p className="text-base text-gray-300 mt-1">
+                                    Hsinchu, Taiwan
+                                </p>
+                            </div>
                         </div>
 
                         {/* Publisher Logos */}
