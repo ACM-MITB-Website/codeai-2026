@@ -3,7 +3,6 @@ import { useEffect, useRef } from 'react'
 import Navbar from './components/Navbar'
 import AnnouncementBanner from './components/AnnouncementBanner'
 import Footer from './components/Footer'
-import Popup from './components/Popup'
 import Home from './pages/Home'
 import Committees from './pages/Committees'
 import Speakers from './pages/Speakers'
@@ -69,7 +68,6 @@ function App() {
     return (
         <div className="min-h-screen bg-white text-gray-900">
             <Navbar />
-            <Popup />
             <AnnouncementBanner />
             <div className="pt-10"> {/* Offset for fixed banner */}
                 <Routes>
