@@ -12,9 +12,6 @@ function Navbar() {
             dropdown: [
                 { name: 'Important Dates', href: '/call-for-papers' },
                 { name: 'Call for Papers', href: '/call-for-papers' },
-                { name: 'Call for Workshop Papers', href: '/call-for-workshop-papers' },
-                { name: 'Submission Guidelines [Main Conference]', href: '/submission-guidelines' },
-                { name: 'Final Paper Submission Guidelines [Main Conference]', href: '/final-submission-guidelines' }
             ]
         },
         { name: 'Committees', href: '/committees' },
@@ -27,20 +24,6 @@ function Navbar() {
             ]
         },
         { name: 'Registration', href: '/registration' },
-        {
-            name: 'Sponsor',
-            dropdown: [
-                { name: 'About Us', href: '/about' },
-                { name: 'Contact Us', href: '/contact' }
-            ]
-        },
-        {
-            name: 'About',
-            dropdown: [
-                { name: 'About Us', href: '/about' },
-                { name: 'Contact Us', href: '/contact' }
-            ]
-        },
     ]
 
     const handleDropdownToggle = (linkName) => {
