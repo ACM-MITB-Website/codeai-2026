@@ -1,22 +1,21 @@
 function CallForPapers() {
     const importantDates = [
-        { date: '10th November 2025', event: 'Submission Start Date' },
-        { date: '15th January 2026', event: 'Submission Deadline' },
-        { date: '1st February 2026', event: 'Acceptance Notification' },
-        { date: '1st March 2026', event: 'Registration Deadline' },
+        { date: '15th February 2026', event: 'Submission Start Date' },
+        { date: '15th March 2026', event: 'Submission Deadline' },
+        { date: '1st April 2026', event: 'Acceptance Notification' },
+        { date: '15th April 2026', event: 'Registration Deadline' },
     ]
 
     const themes = [
-        'Exploration Techniques in AI and Data Science',
-        'Explainability and Interpretability in AI-Driven Data Science',
-        'AI-Powered Data Integration',
-        'Data-Driven Decision Making Using AI',
-        'Deep Learning for Data Analytics',
-        'Data Exploration in IoT and Edge Environments',
-        'Advanced Data Visualization Techniques',
-        'AI for Real-World Challenges in Data Science',
-        'Ethical and Responsible AI in Data Science',
-        'Emerging Trends in Data Exploration',
+        'Artificial Intelligence for Machine Vision',
+        'Neurocomputing',
+        'Face, Gesture, and Action Recognition',
+        'Pattern Recognition',
+        'AI in Cryptography',
+        'Human Computer Engineering',
+        'Human Computer Interaction',
+        'AI and Application',
+        'AI Policy',
     ]
 
     return (
