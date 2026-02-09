@@ -1,7 +1,7 @@
 function LogoGrid() {
     const logos = [
         { name: 'ACM MITB', logo: '/img/sponsors/acm mitb.png' },
-        { name: 'ACM Meerut', logo: '/img/sponsors/acm meerut.png' },
+
         { name: 'Linnaeus University', logo: '/img/sponsors/linnaeus.png' },
         { name: 'Sunway University', logo: '/img/sponsors/sunway.png' },
         { name: 'SUPSI', logo: '/img/sponsors/supsi.png' },
