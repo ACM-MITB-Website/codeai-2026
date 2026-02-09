@@ -1,17 +1,9 @@
 function Registration() {
-    const earlyBirdFees = [
-        { category: 'Participants from India', student: 'INR 11000', faculty: 'INR 13000', industry: 'INR 15000', attendee: 'INR 4000' },
-        { category: 'Participants from Abroad', student: 'USD 150', faculty: 'USD 180', industry: 'USD 200', attendee: 'USD 75' },
-    ]
-
-    const regularFees = [
-        { category: 'Participants from India', student: 'INR 12000', faculty: 'INR 14000', industry: 'INR 16000', attendee: 'INR 5000' },
-        { category: 'Participants from Abroad', student: 'USD 200', faculty: 'USD 250', industry: 'USD 300', attendee: 'USD 85' },
-    ]
-
-    const phdFees = [
-        { category: 'Participants from India', fee: 'INR 10000' },
-        { category: 'Participants from Abroad', fee: 'USD 150' },
+    const registrationFees = [
+        { category: 'Participants From India\n( Offline )', student: 'INR 18,000/-', faculty: 'INR 19,000/-', industry: 'INR 20,000/-', attendee: 'INR 14,000/-' },
+        { category: 'Participants From India\n( Online )', student: 'INR 14,000/-', faculty: 'INR 15,000/-', industry: 'INR 16,000/-', attendee: 'INR 14,000/-' },
+        { category: 'Participants From Abroad\n( Offline )', student: 'USD 200/-', faculty: 'USD 225/-', industry: 'USD 250/-', attendee: 'USD 150/-' },
+        { category: 'Participants From Abroad\n( Online )', student: 'USD 150/-', faculty: 'USD 150/-', industry: 'USD 150/-', attendee: 'USD 150/-' },
     ]
 
     return (
@@ -32,86 +24,44 @@ function Registration() {
 
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="bg-white border border-gray-200 rounded-2xl p-8 mb-8 shadow-lg">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-2">Registration Fees for Papers</h2>
-                    <p className="text-gray-600 mb-6">Regular Paper / Short Paper / Special Issue Track Papers</p>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Registration Fees</h2>
 
-                    <h3 className="text-xl font-semibold text-[#ccac00] mb-4">Early Bird Registration</h3>
-                    <p className="text-gray-500 mb-4">Available till 31st December 2025</p>
-                    <div className="overflow-x-auto mb-8">
+                    <div className="overflow-x-auto mb-6">
                         <table className="w-full border-collapse">
                             <thead>
                                 <tr>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Registration Fee</th>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">UG / PG / Research Scholars</th>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Academicians / Faculty</th>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">R&D Organizations / Industry</th>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Attendees</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-center border border-gray-300">Registration Fee</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-center border border-gray-300">UG / PG / Research Scholars</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-center border border-gray-300">Academicians / Faculty</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-center border border-gray-300">R & D Organizations / Industry</th>
+                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-center border border-gray-300">Attendees</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {earlyBirdFees.map((row) => (
-                                    <tr key={row.category} className="border-b border-gray-200 hover:bg-[#ffd700]/5">
-                                        <td className="font-medium p-4 text-gray-900">{row.category}</td>
-                                        <td className="p-4 text-gray-700">{row.student}</td>
-                                        <td className="p-4 text-gray-700">{row.faculty}</td>
-                                        <td className="p-4 text-gray-700">{row.industry}</td>
-                                        <td className="p-4 text-gray-700">{row.attendee}</td>
+                                {registrationFees.map((row, index) => (
+                                    <tr key={index} className="border-b border-gray-300 hover:bg-[#ffd700]/5">
+                                        <td className="font-medium p-4 text-gray-900 text-center border border-gray-300 whitespace-pre-line">{row.category}</td>
+                                        <td className="p-4 text-gray-700 text-center border border-gray-300">{row.student}</td>
+                                        <td className="p-4 text-gray-700 text-center border border-gray-300">{row.faculty}</td>
+                                        <td className="p-4 text-gray-700 text-center border border-gray-300">{row.industry}</td>
+                                        <td className="p-4 text-gray-700 text-center border border-gray-300">{row.attendee}</td>
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
                     </div>
 
-                    <h3 className="text-xl font-semibold text-[#ccac00] mb-4">Regular Registration</h3>
-                    <div className="overflow-x-auto">
-                        <table className="w-full border-collapse">
-                            <thead>
-                                <tr>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Registration Fee</th>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">UG / PG / Research Scholars</th>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Academicians / Faculty</th>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">R&D Organizations / Industry</th>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Attendees</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {regularFees.map((row) => (
-                                    <tr key={row.category} className="border-b border-gray-200 hover:bg-[#ffd700]/5">
-                                        <td className="font-medium p-4 text-gray-900">{row.category}</td>
-                                        <td className="p-4 text-gray-700">{row.student}</td>
-                                        <td className="p-4 text-gray-700">{row.faculty}</td>
-                                        <td className="p-4 text-gray-700">{row.industry}</td>
-                                        <td className="p-4 text-gray-700">{row.attendee}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
+                    <div className="text-center mb-6">
+                        <p className="text-lg font-semibold text-gray-900 mb-2">
+                            Accepted papers will be published in Scopus-indexed conference proceedings.
+                        </p>
+                        <a href="#" className="text-blue-600 hover:text-blue-800 font-semibold underline text-lg">
+                            Submission Link
+                        </a>
                     </div>
-                    <p className="text-gray-500 text-sm mt-4">*Excluding GST</p>
-                </div>
 
-                <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-6">PhD Colloquium Registration</h2>
-                    <div className="overflow-x-auto">
-                        <table className="w-full border-collapse">
-                            <thead>
-                                <tr>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Registration Fee</th>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-left">Research Scholars</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {phdFees.map((row) => (
-                                    <tr key={row.category} className="border-b border-gray-200 hover:bg-[#ffd700]/5">
-                                        <td className="font-medium p-4 text-gray-900">{row.category}</td>
-                                        <td className="p-4 text-gray-700">{row.fee}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                    <p className="text-gray-500 text-sm mt-4">
-                        *Excluding GST. Registration includes kit, certificate, and meals during the conference.
+                    <p className="text-gray-600 text-sm">
+                        *Excluding GST, registration kit (backpack, notepad, pen, brochure, schedule, etc.), certificate, breakfast, lunch, tea/coffee during the conference.
                     </p>
                 </div>
             </section>
