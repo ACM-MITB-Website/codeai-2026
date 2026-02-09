@@ -245,13 +245,10 @@ function Home() {
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">National Tsing Hua University</h3>
                                 <div className="text-gray-600 space-y-4 flex-1">
                                     <p>
-                                        National Tsing Hua University (NTHU) is a leading public research university located in Hsinchu, Taiwan, known for its strong academic and research excellence. Originally founded in Beijing in 1911 and re-established in Taiwan in 1956, it has a rich historical legacy.
+                                        National Tsing Hua University (NTHU) is a leading public research university located in Hsinchu, Taiwan, known for its strong academic and research excellence. Originally founded in Beijing in 1911 and re-established in Taiwan in 1956, NTHU is especially renowned for its programs in science, engineering, and technology.
                                     </p>
                                     <p>
-                                        The university is especially renowned for its programs in science, engineering, and technology, including computer science and electrical engineering. NTHU maintains close ties with Taiwan's high-tech industry and the Hsinchu Science Park, fostering innovation and applied research.
-                                    </p>
-                                    <p>
-                                        It consistently ranks among the top universities in Taiwan and Asia. The campus promotes interdisciplinary learning and a research-driven culture. With numerous international collaborations, NTHU offers a global academic environment. The university focuses on innovation, sustainability, and meaningful societal impact.
+                                        The university maintains close ties with Taiwan's high-tech industry and the Hsinchu Science Park, fostering innovation and applied research. NTHU consistently ranks among the top universities in Asia, promoting interdisciplinary learning and offering a global academic environment focused on innovation and sustainability.
                                     </p>
                                 </div>
                             </div>
