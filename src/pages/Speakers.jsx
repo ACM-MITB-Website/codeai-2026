@@ -7,10 +7,8 @@ function Speakers() {
         },
         {
             name: 'Prof. (Dr.) Wei-Chang Yeh',
-            title: 'Head',
-            department: 'Department of Computer Science and Engineering',
-            institution: 'Sejong University Seoul, South Korea',
             image: '/img/Speakers/jalil.jpg',
+            bio: 'Chair Professor/ASPEED Chair Professor\nNational Tsing Hua University\nHsinchu, Taiwan',
         },
     ]
 
