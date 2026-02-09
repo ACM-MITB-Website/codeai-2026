@@ -30,17 +30,17 @@ function LogoGrid() {
                     </p>
                 </div>
 
-                {/* Static Logo Grid - Large Logos */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 md:gap-16">
+                {/* Static Logo Grid - Consistent Containers */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
                     {logos.map((logo, index) => (
                         <div
                             key={index}
-                            className="flex items-center justify-center p-6 opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
+                            className="flex items-center justify-center p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-[#ffd700]/50 transition-all duration-300 hover:scale-105 aspect-square"
                         >
                             <img
                                 src={logo.logo}
                                 alt={logo.name}
-                                className="h-24 sm:h-28 md:h-32 lg:h-40 w-auto object-contain"
+                                className="max-h-20 max-w-full w-auto h-auto object-contain"
                                 title={logo.name}
                             />
                         </div>
