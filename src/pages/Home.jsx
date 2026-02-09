@@ -15,14 +15,33 @@ function Home() {
     useEffect(() => {
         const text = '2026'
         let currentIndex = 0
+        let isDeleting = false
+        let pauseCounter = 0
+
         const interval = setInterval(() => {
-            if (currentIndex <= text.length) {
-                setTypingText(text.slice(0, currentIndex))
-                currentIndex++
-            } else {
-                clearInterval(interval)
+            if (pauseCounter > 0) {
+                pauseCounter--
+                return
             }
-        }, 200) // Typing speed
+
+            if (isDeleting) {
+                if (currentIndex > 0) {
+                    currentIndex--
+                    setTypingText(text.slice(0, currentIndex))
+                } else {
+                    isDeleting = false
+                    pauseCounter = 5 // Pause before typing again
+                }
+            } else {
+                if (currentIndex < text.length) {
+                    currentIndex++
+                    setTypingText(text.slice(0, currentIndex))
+                } else {
+                    isDeleting = true
+                    pauseCounter = 10 // Pause when full
+                }
+            }
+        }, 100) // Faster typing speed (100ms)
 
         return () => clearInterval(interval)
     }, [])
@@ -39,7 +58,7 @@ function Home() {
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         {/* Main Title */}
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
-                            CODE-AI <span className="text-[#ffd700]">{typingText}</span><span className="animate-pulse">|</span>
+                            CODE-AI <span className="text-[#ffd700]">{typingText}</span><span className="animate-pulse">_</span>
                         </h1>
 
                         <h2 className="text-lg md:text-2xl text-gray-300 mb-6 max-w-3xl mx-auto">
