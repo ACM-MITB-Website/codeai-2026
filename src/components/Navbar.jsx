@@ -38,7 +38,7 @@ function Navbar() {
                     <div className="flex items-center justify-between h-16">
 
                         {/* Logo / Brand */}
-                        <Link to="/" className="flex items-center gap-2">
+                        <Link to="/" className="flex items-center gap-2" target="_self">
                             <span className="text-white font-bold text-lg tracking-wide">CODE-AI</span>
                             <span className="text-[#ffd700] font-bold text-lg">2026</span>
                         </Link>
@@ -88,6 +88,7 @@ function Navbar() {
                                     ) : (
                                         <Link
                                             to={link.href}
+                                            target="_self"
                                             className="text-white font-medium text-sm px-4 py-6 relative transition-colors duration-200 hover:text-[#ffd700] group"
                                         >
                                             {link.name}

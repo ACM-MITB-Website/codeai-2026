@@ -152,8 +152,12 @@ function Home() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                        <div className="glass-card rounded-2xl p-8 bg-white">
-                            <img src="/img/dark-logo-new.png" alt="CODE AI Logo" className="mx-auto max-w-full h-auto" />
+                        <div className="glass-card rounded-2xl p-8 bg-white flex items-center justify-center">
+                            <img
+                                src="/img/code_ai_taiwan_logo.svg"
+                                alt="CODE AI 2026 Taiwan Logo"
+                                className="mx-auto w-full h-auto max-w-[400px]"
+                            />
                         </div>
                         <div className="space-y-6">
                             <p className="text-gray-700 text-lg leading-relaxed">

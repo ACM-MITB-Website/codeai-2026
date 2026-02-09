@@ -1,33 +1,33 @@
 function Committees() {
     // Honorary Committee - Chief Patrons
     const chiefPatrons = [
-        { name: 'Dr. Ramdas M Pai', title: 'Chancellor', institution: 'MAHE', image: '/img/Dr_Ramdas_M_Pai.png' },
-        { name: 'Dr. Ranjan R Pai', title: 'President', institution: 'MAHE', image: '/img/committee/dr-ranjan-pai.png' },
+        { name: 'Prof. (Dr.) Ramdas M Pai', title: 'Chancellor', institution: 'MAHE', image: '/img/committee/ramdas_pai.png' },
+        { name: 'Prof. (Dr.) Ranjan R Pai', title: 'President', institution: 'MAHE', image: '/img/committee/ranjan_pai.png' },
     ]
 
     // Patrons
     const patrons = [
-        { name: 'Lt. Gen. (Dr.) M D Venkatesh', title: 'Vice Chancellor', institution: 'MAHE', image: '/img/Dr.M.D.Venkatesh.png' },
-        { name: 'Dr. H S Ballal', title: 'Pro Chancellor', institution: 'MAHE', image: '/img/Dr.H.S.Ballal.jpg' },
-        { name: 'Prof. (Dr) Madhu Veeraraghavan', title: 'Pro Vice Chancellor', institution: 'MAHE Bengaluru', image: '/img/Dr_Madhu_Veeraraghavan.png' },
-        { name: 'Dr. Narayana Sabhahit', title: 'Pro Vice Chancellor, Technology and Science', institution: 'MAHE', image: '/img/Dr.Narayana.png' },
-        { name: 'Dr. Giridar Kini P', title: 'Registrar', institution: 'MAHE Manipal', image: '/img/Dr-Giridhar-Kini.jpg' },
-        { name: 'Dr. Raghavendra Prabhu', title: 'Deputy Registrar', institution: 'MAHE Bengaluru', image: '/img/Dr-Raghavendra-Prabhu-P.jpg' },
-        { name: 'Dr. Iven Jose', title: 'Director', institution: 'MIT Bengaluru', image: '/img/committee/Dr.Iven.Jose.png' },
-        { name: 'Dr. Prema K V', title: 'Assistant Director', institution: 'MIT Bengaluru', image: '/img/Dr Prema KV.png' },
+        { name: 'Prof. (Dr.) H. S. Ballal', title: 'Pro Chancellor', institution: 'MAHE', image: '/img/committee/hs_ballal.jpg' },
+        { name: '(Prof.) Lt. Gen. (Dr.) M.D.Venkatesh', title: 'Vice-Chancellor', institution: 'MAHE', image: '/img/committee/md_venkatesh.png' },
+        { name: 'Prof. (Dr.) M. Veeraraghavan', title: 'Pro Vice Chancellor', institution: 'MAHE Bengaluru', image: '/img/committee/m_veeraraghavan.png' },
+        { name: 'Prof. (Dr.) Narayana Sabhahit', title: 'Pro Vice Chancellor Technology and Science', institution: 'MAHE', image: '/img/committee/narayana_sabhahit.png' },
+        { name: 'Prof. (Dr.) Giridhar Kini', title: 'Registrar', institution: 'MAHE Manipal', image: '/img/committee/raghavendra_prabhu.jpg' },
+        { name: 'Prof. (Dr.) Raghavendra Prabhu', title: 'Additional Registrar', institution: 'MAHE Bengaluru', image: '/img/committee/giridhar_kini.jpg' },
+        { name: 'Prof. (Dr.) Iven Jose', title: 'Director', institution: 'MIT Bengaluru', image: '/img/committee/iven_jose_tie.png' },
+        { name: 'Prof. (Dr.) Prema K. V.', title: 'Joint Director', institution: 'MIT Bengaluru', image: '/img/committee/prema_kv.jpg' },
     ]
 
     // General Chairs
     const generalChairs = [
-        { name: 'Dr. Dayananda P', title: 'Professor and Head', institution: 'SoCE - MIT Bengaluru', image: '/img/Organisers/Dr.Dayananda.jpg' },
+        { name: 'Prof. (Dr.) Dayananda P.', title: 'Professor and Dean', institution: 'SoCE - MIT Bengaluru', image: '/img/committee/dayananda_p.jpg' },
     ]
 
     // Program Chairs
     const programChairs = [
-        { name: 'Dr. Gururaj H L', title: 'Associate Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/committee/Dr.Gururaj.H.L.jpg' },
-        { name: 'Dr. Shreyas J', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Dr.Shreyas.jpg' },
-
-        { name: 'Dr. Gopalakrishnan T', title: 'Associate Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/Dr.GopalkrishnanT.jpg' },
+        { name: 'Dr. Gururaj H. L.', title: 'Associate Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/committee/gururaj_hl.jpg', objectPosition: 'top' },
+        { name: 'Dr. Shreyas J.', title: 'Assistant Professor', institution: 'SoCE - MIT Bengaluru', image: '/img/committee/shreyas_j.png' },
+        { name: 'Prof. (Dr.) Wei-Chang Yeh', title: 'Chair Professor/ASPEED Chair Professor', institution: 'National Tsing Hua University, Hsinchu, Taiwan', image: '/img/Speakers/wei_chang_yeh.png' },
+        { name: 'Prof. (Dr.) D. Daniel Sheu', title: 'Professor Emeritus', institution: 'National Tsing Hua University, Hsinchu, Taiwan', image: '/img/committee/daniel_sheu.png', objectPosition: 'top' },
     ]
 
     // Technical Co-Chairs
@@ -232,7 +232,7 @@ function Committees() {
                         <div key={patron.name} className="relative bg-white border border-gray-200 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow">
                             <div className="flex flex-col items-center text-center">
                                 <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-[#ffd700]/30 mb-4">
-                                    <MemberImage src={patron.image} name={patron.name} />
+                                    <MemberImage src={patron.image} name={patron.name} objectPosition={patron.objectPosition} />
                                 </div>
                                 <span className="inline-block px-3 py-1 bg-[#ffd700]/20 text-[#ccac00] text-sm font-semibold rounded-full mb-2">
                                     Chief Patron
@@ -256,8 +256,8 @@ function Committees() {
                         <div key={patron.name} className="group relative">
                             <div className="relative bg-white border border-gray-200 group-hover:border-[#ffd700] rounded-2xl p-6 transition-all shadow-sm hover:shadow-lg">
                                 <div className="flex items-center gap-5">
-                                    <div className="w-28 h-28 rounded-xl overflow-hidden border-2 border-[#ffd700]/20 flex-shrink-0">
-                                        <MemberImage src={patron.image} name={patron.name} />
+                                    <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-[#ffd700]/20 flex-shrink-0">
+                                        <MemberImage src={patron.image} name={patron.name} objectPosition={patron.objectPosition} />
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold text-gray-900 group-hover:text-[#ccac00] transition-colors">{patron.name}</h3>
@@ -281,7 +281,7 @@ function Committees() {
                         <div key={chair.name} className="relative bg-white border border-gray-200 rounded-3xl p-8 shadow-lg">
                             <div className="flex flex-col items-center text-center">
                                 <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-[#ffd700]/30 mb-4">
-                                    <MemberImage src={chair.image} name={chair.name} />
+                                    <MemberImage src={chair.image} name={chair.name} objectPosition={chair.objectPosition} />
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-1">{chair.name}</h3>
                                 <p className="text-[#ccac00] font-medium">{chair.title}</p>
@@ -302,8 +302,8 @@ function Committees() {
                         <div key={chair.name} className="group relative">
                             <div className="relative bg-white border border-gray-200 group-hover:border-[#ffd700] rounded-2xl p-6 transition-all shadow-sm hover:shadow-lg">
                                 <div className="flex items-center gap-5">
-                                    <div className="w-28 h-28 rounded-xl overflow-hidden border-2 border-[#ffd700]/20 flex-shrink-0">
-                                        <MemberImage src={chair.image} name={chair.name} />
+                                    <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-[#ffd700]/20 flex-shrink-0">
+                                        <MemberImage src={chair.image} name={chair.name} objectPosition={chair.objectPosition} />
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-semibold text-gray-900 group-hover:text-[#ccac00] transition-colors">{chair.name}</h3>

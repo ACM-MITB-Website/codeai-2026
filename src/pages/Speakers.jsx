@@ -2,12 +2,12 @@ function Speakers() {
     const speakers = [
         {
             name: 'Prof. (Dr.) W. Eric Wong',
-            image: '/img/Speakers/honglin.jpg',
+            image: '/img/Speakers/eric_wong.png',
             bio: 'Director, International Outreach\nDirector, Advanced Research Center\nUniversity of Texas at Dallas\nRichardson, Texas, USA\nEditor-in-Chief, IEEE Transactions on Reliability',
         },
         {
             name: 'Prof. (Dr.) Wei-Chang Yeh',
-            image: '/img/Speakers/jalil.jpg',
+            image: '/img/Speakers/wei_chang_yeh.png',
             bio: 'Chair Professor/ASPEED Chair Professor\nNational Tsing Hua University\nHsinchu, Taiwan',
         },
     ]
