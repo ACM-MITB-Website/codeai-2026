@@ -50,7 +50,7 @@ function Footer() {
                             <h3 className="text-xl font-bold text-[#ffd700]">Resources</h3>
                             <p className="text-gray-300 text-sm">Get more information about the conference</p>
                             <div className="flex flex-col gap-2 text-sm">
-                                <a href="/file/CODE-AI-2026-Brochure.pdf" className="flex items-center gap-2 text-gray-300 hover:text-[#ffd700] transition-colors" download>
+                                <a href="/file/CODE AI - 3rd Conference (4).pdf" className="flex items-center gap-2 text-gray-300 hover:text-[#ffd700] transition-colors" download>
                                     <FileText className="w-4 h-4" /> Download Brochure
                                 </a>
                                 <a href="/file/PHD COLLOQIUM.pdf" className="flex items-center gap-2 text-gray-300 hover:text-[#ffd700] transition-colors" download>
