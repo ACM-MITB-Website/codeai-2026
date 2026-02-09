@@ -34,7 +34,7 @@ function EventLocation() {
                             <div className="absolute -inset-1 bg-gradient-to-r from-[#ffd700] to-[#ffb800] rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
                             <div className="relative rounded-3xl overflow-hidden aspect-[4/3] border border-white/10 shadow-2xl">
                                 <img
-                                    src="/img/venue-taiwan.png"
+                                    src="/img/venue-taiwan.jpg"
                                     alt="Taiwan Venue"
                                     className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
                                 />
