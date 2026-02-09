@@ -6,8 +6,7 @@ function LogoGrid() {
         { name: 'Sunway University', logo: '/img/sponsors/sunway.png' },
         { name: 'SUPSI', logo: '/img/sponsors/supsi.png' },
         { name: 'IBM', logo: '/img/sponsors/ibm.png' },
-        { name: 'Nokia', logo: '/img/sponsors/nokia.png' },
-        { name: 'HP', logo: '/img/sponsors/hp.png' },
+
         { name: 'UITS', logo: '/img/sponsors/uits.png' },
         { name: 'Compendex', logo: '/img/sponsors/compendex.png' },
         { name: 'Scopus', logo: '/img/sponsors/scopus.png' },
