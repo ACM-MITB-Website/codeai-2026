@@ -157,13 +157,30 @@ function Home() {
                         </div>
                         <div className="space-y-6">
                             <p className="text-gray-700 text-lg leading-relaxed">
-                                CODE-AI 2026 serves as a nexus for global visionaries, uniting to bridge research gaps and foster international collaborations that shape the trajectory of careers.
+                                CODE AI - 2026 serves as a nexus for global visionaries, uniting to bridge
+                                research gaps and foster international collaborations that shape the
+                                trajectory of careers. Participants are not just attendees; they are catalysts
+                                of progress, sharing their scientific knowledge to ignite future
+                                advancements.
                             </p>
                             <p className="text-gray-700 text-lg leading-relaxed">
-                                The heart of the conference lies in Intelligent Computing, where algorithms like Genetic Algorithms, Neural Networks, Machine Learning, and Quantum Computing converge to open doors to uncharted territories.
+                                The heart of the conference lies in Intelligent Computing, where algorithms
+                                like Genetic Algorithms, Simulated Annealing, and Artificial Fish Swarm take
+                                centre stage. Neural Networks, Machine Learning, and DNA Computing
+                                converge, while Quantum Computing and Fuzzy Logic open doors to
+                                uncharted territories. In the realm of AI Applications, CODE AI - 2026
+                                explores Biometrics, Pattern Recognition, Computer Vision, and Machine
+                                Vision, unravelling the secrets of Fingerprint, Face, and Iris Recognition.
+                                Expert Systems, Speech Recognition, and Smart Robotics pave the way
+                                for human-computer synergy.
                             </p>
                             <p className="text-gray-700 text-lg leading-relaxed">
-                                In the realm of AI Applications, CODE-AI explores Biometrics, Pattern Recognition, Computer Vision, Expert Systems, and Smart Robotics.
+                                This conference isn't just about talks it's where minds worldwide come
+                                together to bridge research gaps and build global bonds in the realm of
+                                computing. We're all about sparking that motivation to dive into our
+                                conference theme, and we're not shy to show gratitude for sharing your
+                                scientific know-how. With papers covering smart computing's ins and outs
+                                and even the tough spots – we're here to boost the spotlight on gamechanging tech and how it can crack real-world problems in different fields.
                             </p>
                         </div>
                     </div>
