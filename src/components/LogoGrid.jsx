@@ -35,12 +35,12 @@ function LogoGrid() {
                     {logos.map((logo, index) => (
                         <div
                             key={index}
-                            className="flex items-center justify-center p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-[#ffd700]/50 transition-all duration-300 hover:scale-105 aspect-square"
+                            className="flex items-center justify-center p-4 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-[#ffd700]/50 transition-all duration-300 hover:scale-105 aspect-square"
                         >
                             <img
                                 src={logo.logo}
                                 alt={logo.name}
-                                className="max-h-20 max-w-full w-auto h-auto object-contain"
+                                className="w-full h-full object-contain"
                                 title={logo.name}
                             />
                         </div>
