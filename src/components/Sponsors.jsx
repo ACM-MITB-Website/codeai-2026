@@ -4,9 +4,9 @@ function Sponsors() {
     const organizations = {
         hosted: [
             {
-                name: 'School of Engineering - Information Technology',
-                sub: 'Manipal Academy of Higher Education, Dubai',
-                logo: '/img/mahe-dub.png'
+                name: 'National Tsing Hua University',
+                sub: 'Hsinchu, Taiwan',
+                logo: '/img/nthu-logo.svg'
             }
         ],
         association: [
