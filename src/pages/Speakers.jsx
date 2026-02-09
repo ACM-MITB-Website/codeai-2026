@@ -1,14 +1,15 @@
 function Speakers() {
     const speakers = [
         {
-            name: 'Dr. Hong Lin',
+            name: 'Prof. (Dr.) W. Eric Wong',
             title: 'Professor',
             department: 'Department of Computer Science',
             institution: 'University of Houston Downtown, USA',
             image: '/img/Speakers/honglin.jpg',
+            bio: 'Director, International Outreach\nDirector, Advanced Research Center\nUniversity of Texas at Dallas\nRichardson, Texas, USA\nEditor-in-Chief, IEEE Transactions on Reliability',
         },
         {
-            name: 'Dr. Jalil Piran',
+            name: 'Prof. (Dr.) Wei-Chang Yeh',
             title: 'Head',
             department: 'Department of Computer Science and Engineering',
             institution: 'Sejong University Seoul, South Korea',
@@ -67,6 +68,17 @@ function Speakers() {
                                     <p className="text-gray-700 font-medium">{speaker.department}</p>
                                     <p className="text-gray-500 text-sm">{speaker.institution}</p>
                                 </div>
+
+                                {speaker.bio && (
+                                    <>
+                                        <div className="w-full border-t border-gray-200 my-4"></div>
+                                        <div className="text-left w-full">
+                                            <p className="text-gray-600 text-sm leading-relaxed whitespace-pre-line">
+                                                {speaker.bio}
+                                            </p>
+                                        </div>
+                                    </>
+                                )}
                             </div>
                         </div>
                     ))}
