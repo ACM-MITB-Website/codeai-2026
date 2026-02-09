@@ -195,7 +195,7 @@ function Home() {
                     </h2>
                     <div className="divider-gold"></div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
                         {/* MIT Bengaluru */}
                         <div className="partner-card h-full flex flex-col">
                             <img
@@ -229,6 +229,29 @@ function Home() {
                                     </p>
                                     <p>
                                         Our chapter is affiliated with the Association for Computing Machinery (ACM), the world's largest educational and scientific computing society.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* National Tsing Hua University */}
+                        <div className="partner-card h-full flex flex-col">
+                            <img
+                                src="/img/venue-taiwan.jpg"
+                                alt="National Tsing Hua University"
+                                className="rounded-t-lg w-full object-cover h-56"
+                            />
+                            <div className="p-6 flex-1 flex flex-col">
+                                <h3 className="text-xl font-semibold text-gray-900 mb-3">National Tsing Hua University</h3>
+                                <div className="text-gray-600 space-y-4 flex-1">
+                                    <p>
+                                        National Tsing Hua University (NTHU) is a leading public research university located in Hsinchu, Taiwan, known for its strong academic and research excellence. Originally founded in Beijing in 1911 and re-established in Taiwan in 1956, it has a rich historical legacy.
+                                    </p>
+                                    <p>
+                                        The university is especially renowned for its programs in science, engineering, and technology, including computer science and electrical engineering. NTHU maintains close ties with Taiwan's high-tech industry and the Hsinchu Science Park, fostering innovation and applied research.
+                                    </p>
+                                    <p>
+                                        It consistently ranks among the top universities in Taiwan and Asia. The campus promotes interdisciplinary learning and a research-driven culture. With numerous international collaborations, NTHU offers a global academic environment. The university focuses on innovation, sustainability, and meaningful societal impact.
                                     </p>
                                 </div>
                             </div>
