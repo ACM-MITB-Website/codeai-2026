@@ -23,7 +23,7 @@ function Navbar() {
                 { name: 'Awards', href: '/awards' }
             ]
         },
-        { name: 'Registration', href: '/registration' },
+
     ]
 
     const handleDropdownToggle = (linkName) => {

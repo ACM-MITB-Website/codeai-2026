@@ -62,7 +62,7 @@ function Home() {
                         </h1>
 
                         <h2 className="text-lg md:text-2xl text-gray-300 mb-6 max-w-3xl mx-auto">
-                            3rd International Conference on Data Science & Exploration in Artificial Intelligence
+                            3<sup>rd</sup> International Conference on Data Science & Exploration in Artificial Intelligence
                         </h2>
 
                         {/* Date Badge */}
@@ -144,22 +144,7 @@ function Home() {
                             </div>
                         </div>
 
-                        {/* Publisher Logos */}
-                        <div className="pt-8 mt-6 border-t border-white/10">
-                            <p className="text-sm text-gray-400 mb-4">Published by</p>
-                            <div className="flex items-center gap-12 justify-center">
-                                <img
-                                    src="/img/springerccis.png"
-                                    alt="Springer CCIS"
-                                    className="h-16 md:h-20 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-                                />
-                                <img
-                                    src="/img/sponsors/scopus.png"
-                                    alt="Scopus Indexed"
-                                    className="h-16 md:h-20 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
-                                />
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </section>

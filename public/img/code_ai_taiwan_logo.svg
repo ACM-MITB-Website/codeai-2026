@@ -1,36 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 150">
-  <!-- Stylized Digital Tree / Circuit Network Icon -->
+  <!-- Tech Brain Icon Group -->
   <g transform="translate(20, 10)">
-    <!-- Main Trunk -->
-    <path d="M60 130 V 80" stroke="#1a2332" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <!-- Main Brain Shape - Circuit Style -->
+    <!-- Left Hemisphere -->
+    <path d="M40 30 
+             H 20 A 10 10 0 0 0 10 40 
+             V 90 A 10 10 0 0 0 20 100 
+             H 50 A 10 10 0 0 0 60 90 
+             V 80" 
+          fill="none" stroke="#ffd700" stroke-width="8" stroke-linecap="round"/>
     
-    <!-- Branches -->
-    <path d="M60 80 L 30 50 V 30" stroke="#1a2332" stroke-width="4" fill="none" stroke-linecap="round"/>
-    <path d="M60 80 L 90 50 V 30" stroke="#1a2332" stroke-width="4" fill="none" stroke-linecap="round"/>
-    <path d="M60 100 L 90 100 V 80" stroke="#1a2332" stroke-width="4" fill="none" stroke-linecap="round"/>
-    <path d="M60 60 L 30 60 V 40" stroke="#1a2332" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M30 50 H 50" fill="none" stroke="#ffd700" stroke-width="6" stroke-linecap="round"/>
+    <path d="M30 80 H 45" fill="none" stroke="#ffd700" stroke-width="6" stroke-linecap="round"/>
 
-    <!-- Nodes (Leaves) -->
-    <circle cx="30" cy="30" r="6" fill="#ffd700" />
-    <circle cx="90" cy="30" r="6" fill="#ffd700" />
-    <circle cx="90" cy="80" r="6" fill="#ffd700" />
-    <circle cx="30" cy="40" r="6" fill="#ffd700" />
-    <circle cx="60" cy="20" r="8" fill="#e11d48" /> <!-- Taiwan Red Accent -->
+    <!-- Right Hemisphere -->
+    <path d="M80 30 
+             H 100 A 10 10 0 0 1 110 40 
+             V 90 A 10 10 0 0 1 100 100 
+             H 70 A 10 10 0 0 1 60 90 
+             V 80" 
+          fill="none" stroke="#ffd700" stroke-width="8" stroke-linecap="round"/>
+          
+    <path d="M70 50 H 90" fill="none" stroke="#ffd700" stroke-width="6" stroke-linecap="round"/>
+    <path d="M75 80 H 90" fill="none" stroke="#ffd700" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Connections/Central Nodes -->
+    <circle cx="60" cy="40" r="6" fill="#ffd700" />
+    <path d="M60 40 V 70" fill="none" stroke="#ffd700" stroke-width="4" />
+    <circle cx="60" cy="70" r="4" fill="#ffd700" />
     
-    <!-- Base -->
-    <path d="M40 130 H 80" stroke="#1a2332" stroke-width="6" stroke-linecap="round"/>
+    <!-- Bottom Circuit Lines -->
+    <path d="M20 110 V 120 H 100 V 110" fill="none" stroke="#ffd700" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="60" cy="120" r="4" fill="#ffd700" />
   </g>
 
   <!-- Text Content -->
-  <g transform="translate(130, 0)">
-    <!-- "Taiwan" Label with stylish font -->
-    <text x="0" y="55" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#e11d48">
-      Taiwan
+  <g transform="translate(140, 15)">
+    <!-- "CODE AI - 2026" Main Title -->
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="52" font-weight="900" fill="#1a2332" letter-spacing="1">
+      CODE AI - 2026
     </text>
     
-    <!-- "CODE AI - 2026" Main Title -->
-    <text x="0" y="100" font-family="Arial, sans-serif" font-size="48" font-weight="900" fill="#1a2332" letter-spacing="1">
-      CODE AI - 2026
+    <!-- "Taiwan" Label below -->
+    <text x="0" y="105" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#1a2332" letter-spacing="2">
+      TAIWAN
     </text>
   </g>
 </svg>
