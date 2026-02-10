@@ -75,6 +75,24 @@ function Home() {
                             </span>
                         </div>
 
+                        {/* Hosted By & Collaboration */}
+                        <div className="mt-8 mb-12 grid md:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
+                            <div className="flex flex-col items-center text-center">
+                                <p className="text-[#ffd700] font-semibold uppercase tracking-wider mb-4 text-sm md:text-base">Organized by</p>
+                                <img src="/img/mahe-blru-logo2.jpeg" alt="MAHE Bengaluru" className="h-32 md:h-48 w-auto object-contain mb-4 rounded-lg" />
+                                <p className="text-white font-medium text-lg leading-tight">School of Computer Engineering,</p>
+                                <p className="text-white font-medium text-lg leading-tight">Manipal Institute of Technology,Bengaluru</p>
+                                <p className="text-gray-300 text-base mt-1">Manipal Academy of Higher Education (MAHE), Bengaluru</p>
+                            </div>
+
+                            <div className="flex flex-col items-center text-center">
+                                <p className="text-[#ffd700] font-semibold uppercase tracking-wider mb-4 text-sm md:text-base">In Collaboration with</p>
+                                <img src="/img/nthu-logo.svg" alt="National Tsing Hua University" className="h-24 md:h-32 w-auto object-contain mb-4" />
+                                <p className="text-white font-medium text-lg leading-tight">National Tsing Hua University</p>
+                                <p className="text-gray-300 text-base mt-1">Hsinchu, Taiwan</p>
+                            </div>
+                        </div>
+
                         {/* Countdown Timer */}
                         <div className="mb-8">
                             <CountdownTimer />
@@ -90,59 +108,7 @@ function Home() {
                             </Link>
                         </div>
 
-                        {/* Hosted By Info */}
-                        <div className="border-t border-white/10 pt-6 mt-6">
-                            <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
-                                {/* MAHE Logo (Left) */}
-                                <div className="bg-white p-3 rounded-lg flex-shrink-0 hidden md:block">
-                                    <img
-                                        src="/img/mahe-blru-logo.png"
-                                        alt="MAHE Bengaluru"
-                                        className="h-20 w-auto object-contain"
-                                    />
-                                </div>
 
-                                <div className="text-center">
-                                    <p className="text-sm text-gray-400 mb-2">Hosted by</p>
-                                    <p className="text-base text-white font-medium">
-                                        School of Computer Engineering, Manipal Institute of Technology
-                                    </p>
-                                    <p className="text-sm text-gray-400">
-                                        Manipal Academy of Higher Education (MAHE), Bengaluru
-                                    </p>
-                                    <div className="mt-4">
-                                        <p className="text-sm text-yellow-500 font-semibold uppercase tracking-wider mb-1">
-                                            In Collaboration with
-                                        </p>
-                                        <p className="text-xl text-white font-bold leading-tight">
-                                            National Tsing Hua University
-                                        </p>
-                                        <p className="text-base text-gray-300 mt-1">
-                                            Hsinchu, Taiwan
-                                        </p>
-                                    </div>
-                                </div>
-
-                                {/* NTHU Logo (Right) */}
-                                <div className="bg-white p-3 rounded-full flex-shrink-0 hidden md:block">
-                                    <img
-                                        src="/img/nthu-logo.svg"
-                                        alt="National Tsing Hua University"
-                                        className="h-20 w-20 object-contain"
-                                    />
-                                </div>
-
-                                {/* Mobile Logos */}
-                                <div className="flex items-center gap-6 md:hidden mt-4">
-                                    <div className="bg-white p-2 rounded-lg">
-                                        <img src="/img/mahe-blru-logo.png" alt="MAHE" className="h-12 w-auto" />
-                                    </div>
-                                    <div className="bg-white p-2 rounded-full">
-                                        <img src="/img/nthu-logo.svg" alt="NTHU" className="h-12 w-12" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         {/* Publisher Logos */}
                         <div className="pt-8 mt-6 border-t border-white/10">
