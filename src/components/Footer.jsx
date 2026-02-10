@@ -37,15 +37,13 @@ function Footer() {
                             <h4 className="text-base font-semibold text-white">Developers</h4>
                             <div className="space-y-2 text-sm text-gray-300">
                                 <div className="flex items-center justify-between gap-3">
-                                    <span className="font-semibold text-white">
-                                        Shouraya Sharma
-                                    </span>
+                                    <span className="font-semibold text-white">Anchit Goel</span>
                                     <a
-                                        href="https://www.linkedin.com/in/shouraya-sharma/"
+                                        href="https://www.linkedin.com/in/anchitgoel5/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-gray-300 hover:text-[#ffd700] transition-colors"
-                                        aria-label="Shouraya Sharma LinkedIn"
+                                        aria-label="Anchit Goel LinkedIn"
                                     >
                                         <svg
                                             className="w-4 h-4"
@@ -75,13 +73,15 @@ function Footer() {
                                     </a>
                                 </div>
                                 <div className="flex items-center justify-between gap-3">
-                                    <span className="font-semibold text-white">Anchit Goel</span>
+                                    <span className="font-semibold text-white">
+                                        Shouraya Sharma
+                                    </span>
                                     <a
-                                        href="https://www.linkedin.com/in/anchitgoel5/"
+                                        href="https://www.linkedin.com/in/shouraya-sharma/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-gray-300 hover:text-[#ffd700] transition-colors"
-                                        aria-label="Anchit Goel LinkedIn"
+                                        aria-label="Shouraya Sharma LinkedIn"
                                     >
                                         <svg
                                             className="w-4 h-4"
