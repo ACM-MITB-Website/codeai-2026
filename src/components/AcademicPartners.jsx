@@ -71,7 +71,7 @@ function AcademicPartners() {
                                     <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-[#ccac00] transition-colors">
                                         {partner.name}
                                     </h3>
-                                    <p className="text-gray-600 text-sm leading-relaxed flex-1">
+                                    <p className="text-gray-600 text-sm leading-relaxed flex-1 text-justify">
                                         {partner.desc}
                                     </p>
                                 </div>
