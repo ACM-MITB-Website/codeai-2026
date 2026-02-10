@@ -37,7 +37,6 @@ function Footer() {
                             <Link to="/awards" className="hover:text-[#ffd700] transition-colors">Awards</Link>
                             <Link to="/schedule" className="hover:text-[#ffd700] transition-colors">Schedule</Link>
                             <Link to="/call-for-papers" className="hover:text-[#ffd700] transition-colors">Call for Paper</Link>
-                            <Link to="#" className="hover:text-[#ffd700] transition-colors">PhD Colloquium</Link>
                             <Link to="#" className="hover:text-[#ffd700] transition-colors">Call for Posters</Link>
                             <a href="#" className="col-span-2 mt-2 px-4 py-2 bg-[#ffd700] text-gray-900 text-center font-semibold hover:bg-[#ffb800] transition-all">Submit Paper</a>
                         </div>

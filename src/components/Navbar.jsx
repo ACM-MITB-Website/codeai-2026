@@ -46,11 +46,15 @@ function Navbar() {
                         {/* Desktop Navigation - Right Aligned */}
                         <div className="hidden md:flex items-center gap-1">
                             {navLinks.map((link) => (
-                                <div key={link.name} className="relative group">
+                                <div
+                                    key={link.name}
+                                    className="relative group"
+                                    onMouseEnter={link.dropdown ? () => setOpenDropdown(link.name) : undefined}
+                                    onMouseLeave={link.dropdown ? () => setOpenDropdown(null) : undefined}
+                                >
                                     {link.dropdown ? (
                                         <>
                                             <button
-                                                onMouseEnter={() => setOpenDropdown(link.name)}
                                                 className="text-white font-medium text-sm px-4 py-6 hover:text-[#ffd700] transition-colors duration-200 flex items-center gap-1"
                                             >
                                                 {link.name}
@@ -64,11 +68,9 @@ function Navbar() {
                                                 </svg>
                                             </button>
                                             <div
-                                                onMouseEnter={() => setOpenDropdown(link.name)}
-                                                onMouseLeave={() => setOpenDropdown(null)}
-                                                className={`absolute top-full left-0 mt-0 bg-white shadow-2xl min-w-[300px] rounded-b-lg overflow-hidden border-t-[3px] border-[#ffd700] transition-all duration-300 ease-out ${openDropdown === link.name
-                                                    ? 'opacity-100 translate-y-0 visible'
-                                                    : 'opacity-0 -translate-y-2 invisible'
+                                                className={`absolute top-full left-0 mt-0 bg-white shadow-2xl min-w-[300px] rounded-b-lg overflow-hidden border-t-[3px] border-[#ffd700] origin-top transition-[opacity,transform] duration-200 ease-out ${openDropdown === link.name
+                                                    ? 'opacity-100 translate-y-0 scale-100 visible'
+                                                    : 'opacity-0 -translate-y-2 scale-95 invisible'
                                                     }`}
                                                 style={{ zIndex: 100 }}
                                             >
