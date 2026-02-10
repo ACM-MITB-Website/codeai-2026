@@ -19,6 +19,21 @@ function AcademicPartners() {
             name: 'University of Information Technology and Sciences',
             logo: '/img/sponsors/uits.png',
             desc: 'The University of Information Technology and Sciences (UITS) is a beacon of academic excellence, specializing in technology and sciences education. Renowned for its innovative approach, UITS provides a dynamic learning environment that integrates theoretical knowledge with practical skills.'
+        },
+        {
+            name: 'ACM MITB',
+            logo: '/img/sponsors/acm mitb.png',
+            desc: 'The Association for Computing Machinery (ACM) Student Chapter at MIT Bengaluru is a dynamic community dedicated to advancing computing as a science and profession. It fosters a collaborative environment for students to explore emerging technologies, engage in research, and build professional networks.'
+        },
+        {
+            name: 'IBM',
+            logo: '/img/sponsors/ibm.png',
+            desc: 'IBM is a global technology and innovation leader, pioneering advancements in artificial intelligence, cloud computing, and quantum computing. With a legacy of research and development, IBM continues to shape the future of technology and empower industries worldwide.'
+        },
+        {
+            name: 'Compendex',
+            logo: '/img/sponsors/compendex.png',
+            desc: 'Ei Compendex is the broadest and most complete engineering literature database in the world. It provides a comprehensive and trustworthy view of engineering research, ensuring that scholars and professionals access high-quality, peer-reviewed content across various engineering disciplines.'
         }
     ]
 

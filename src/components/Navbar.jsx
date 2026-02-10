@@ -38,13 +38,21 @@ function Navbar() {
                     <div className="flex items-center justify-between h-16">
 
                         {/* Logo / Brand */}
-                        <Link to="/" className="flex items-center gap-2" target="_self">
-                            <span className="text-white font-bold text-lg tracking-wide">CODE-AI</span>
-                            <span className="text-[#ffd700] font-bold text-lg">2026</span>
-                        </Link>
+                        <div className="flex items-center gap-4">
+                            <Link to="/" className="flex items-center gap-2" target="_self">
+                                <span className="text-white font-bold text-xl tracking-wide">CODE-AI</span>
+                                <span className="text-[#ffd700] font-bold text-xl">2026</span>
+                            </Link>
+
+                            {/* Logos Addition */}
+                            <div className="hidden sm:flex items-center gap-4 border-l-2 border-gray-600 pl-4">
+                                <img src="/img/springerccis.png" alt="Springer CCIS" className="h-14 object-contain" />
+                                <img src="/img/sponsors/scopus.png" alt="Scopus" className="h-14 object-contain" />
+                            </div>
+                        </div>
 
                         {/* Desktop Navigation - Right Aligned */}
-                        <div className="hidden md:flex items-center gap-1">
+                        <div className="hidden md:flex items-center gap-2">
                             {navLinks.map((link) => (
                                 <div
                                     key={link.name}
@@ -55,7 +63,8 @@ function Navbar() {
                                     {link.dropdown ? (
                                         <>
                                             <button
-                                                className="text-white font-medium text-sm px-4 py-6 hover:text-[#ffd700] transition-colors duration-200 flex items-center gap-1"
+                                                onMouseEnter={() => setOpenDropdown(link.name)}
+                                                className="text-white font-medium text-lg px-4 py-6 hover:text-[#ffd700] transition-colors duration-200 flex items-center gap-1"
                                             >
                                                 {link.name}
                                                 <svg
@@ -79,7 +88,7 @@ function Navbar() {
                                                         <Link
                                                             key={item.name}
                                                             to={item.href}
-                                                            className="block px-6 py-3 text-gray-800 text-sm hover:bg-[#ffd700]/20 hover:pl-8 transition-all duration-200 border-l-4 border-transparent hover:border-[#ffd700]"
+                                                            className="block px-6 py-3 text-gray-800 text-base hover:bg-[#ffd700]/20 hover:pl-8 transition-all duration-200 border-l-4 border-transparent hover:border-[#ffd700]"
                                                         >
                                                             {item.name}
                                                         </Link>
@@ -91,7 +100,7 @@ function Navbar() {
                                         <Link
                                             to={link.href}
                                             target="_self"
-                                            className="text-white font-medium text-sm px-4 py-6 relative transition-colors duration-200 hover:text-[#ffd700] group"
+                                            className="text-white font-medium text-lg px-4 py-6 relative transition-colors duration-200 hover:text-[#ffd700] group"
                                         >
                                             {link.name}
                                             <span className="absolute bottom-4 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#ffd700] group-hover:w-3/4 transition-all duration-300"></span>
@@ -106,11 +115,10 @@ function Navbar() {
                             {/* Register Button */}
                             <Link
                                 to="/registration"
-                                className="hidden md:inline-flex items-center justify-center text-sm px-5 py-2 font-bold bg-[#ffd700] text-[#1a2332] hover:bg-[#ffb800] transition-all duration-300"
+                                className="hidden md:inline-flex items-center justify-center text-lg px-5 py-2 font-bold bg-[#ffd700] text-[#1a2332] hover:bg-[#ffb800] transition-all duration-300"
                             >
                                 REGISTER NOW
                             </Link>
-
                             {/* Mobile Menu Button */}
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
@@ -180,7 +188,7 @@ function Navbar() {
                     <Link
                         to="/registration"
                         onClick={() => setIsOpen(false)}
-                        className="bg-[#ffd700] text-[#1a2332] font-bold px-6 py-3 mt-4 w-full text-center"
+                        className="bg-[#ffd700] text-[#1a2332] font-bold text-lg px-6 py-3 mt-4 w-full text-center"
                     >
                         REGISTER NOW
                     </Link>

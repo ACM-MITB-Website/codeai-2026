@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import HeroSlideshow from '../components/HeroSlideshow'
-import LogoGrid from '../components/LogoGrid'
+
 import AcademicPartners from '../components/AcademicPartners'
 import Sponsors from '../components/Sponsors'
 import EventLocation from '../components/EventLocation'
@@ -92,23 +92,55 @@ function Home() {
 
                         {/* Hosted By Info */}
                         <div className="border-t border-white/10 pt-6 mt-6">
-                            <p className="text-sm text-gray-400 mb-2">Hosted by</p>
-                            <p className="text-base text-white font-medium">
-                                School of Computer Engineering, Manipal Institute of Technology
-                            </p>
-                            <p className="text-sm text-gray-400">
-                                Manipal Academy of Higher Education (MAHE), Bengaluru
-                            </p>
-                            <div className="mt-4">
-                                <p className="text-sm text-yellow-500 font-semibold uppercase tracking-wider mb-1">
-                                    In Collaboration with
-                                </p>
-                                <p className="text-xl text-white font-bold leading-tight">
-                                    National Tsing Hua University
-                                </p>
-                                <p className="text-base text-gray-300 mt-1">
-                                    Hsinchu, Taiwan
-                                </p>
+                            <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+                                {/* MAHE Logo (Left) */}
+                                <div className="bg-white p-3 rounded-lg flex-shrink-0 hidden md:block">
+                                    <img
+                                        src="/img/mahe-blru-logo.png"
+                                        alt="MAHE Bengaluru"
+                                        className="h-20 w-auto object-contain"
+                                    />
+                                </div>
+
+                                <div className="text-center">
+                                    <p className="text-sm text-gray-400 mb-2">Hosted by</p>
+                                    <p className="text-base text-white font-medium">
+                                        School of Computer Engineering, Manipal Institute of Technology
+                                    </p>
+                                    <p className="text-sm text-gray-400">
+                                        Manipal Academy of Higher Education (MAHE), Bengaluru
+                                    </p>
+                                    <div className="mt-4">
+                                        <p className="text-sm text-yellow-500 font-semibold uppercase tracking-wider mb-1">
+                                            In Collaboration with
+                                        </p>
+                                        <p className="text-xl text-white font-bold leading-tight">
+                                            National Tsing Hua University
+                                        </p>
+                                        <p className="text-base text-gray-300 mt-1">
+                                            Hsinchu, Taiwan
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* NTHU Logo (Right) */}
+                                <div className="bg-white p-3 rounded-full flex-shrink-0 hidden md:block">
+                                    <img
+                                        src="/img/nthu-logo.svg"
+                                        alt="National Tsing Hua University"
+                                        className="h-20 w-20 object-contain"
+                                    />
+                                </div>
+
+                                {/* Mobile Logos */}
+                                <div className="flex items-center gap-6 md:hidden mt-4">
+                                    <div className="bg-white p-2 rounded-lg">
+                                        <img src="/img/mahe-blru-logo.png" alt="MAHE" className="h-12 w-auto" />
+                                    </div>
+                                    <div className="bg-white p-2 rounded-full">
+                                        <img src="/img/nthu-logo.svg" alt="NTHU" className="h-12 w-12" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -135,8 +167,7 @@ function Home() {
             {/* Statistics Section */}
             <ConferenceStats />
 
-            {/* Collaborators Section - Dark Theme with Static Logos */}
-            <LogoGrid />
+
 
             {/* About Section - Cream Background */}
             <section id="about" className="w-full py-20 bg-[#f8f6f2] reveal">
