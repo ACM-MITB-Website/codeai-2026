@@ -19,6 +19,7 @@ function Sponsors() {
         organized: [
             {
                 name: 'ACM MITB Student Chapter',
+                sub: 'Manipal Institute of Technology, Bengaluru',
                 logo: '/img/acm-mitb-logo.png'
             }
         ]
@@ -71,7 +72,7 @@ function Sponsors() {
 
                         {/* In Association With */}
                         <div>
-                            <SectionHeader title="In Association With" />
+                            <SectionHeader title="Organized By" />
                             {organizations.association.map((o, i) => (
                                 <OrgCard key={i} {...o} />
                             ))}
@@ -79,7 +80,7 @@ function Sponsors() {
 
                         {/* Organized By */}
                         <div>
-                            <SectionHeader title="Organized By" />
+                            <SectionHeader title="Managed By" />
                             {organizations.organized.map((o, i) => (
                                 <OrgCard key={i} {...o} />
                             ))}

@@ -8,7 +8,7 @@ function ConferenceStats() {
             icon: Calendar
         },
         {
-            number: "50+",
+            number: "500+",
             label: "Papers",
             icon: FileText
         },
@@ -23,7 +23,7 @@ function ConferenceStats() {
             icon: Users
         },
         {
-            number: "20+",
+            number: "60+",
             label: "Institutions",
             icon: Building2
         },

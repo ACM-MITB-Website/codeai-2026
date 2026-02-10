@@ -160,14 +160,14 @@ function Home() {
                             />
                         </div>
                         <div className="space-y-6">
-                            <p className="text-gray-700 text-lg leading-relaxed">
+                            <p className="text-gray-700 text-lg leading-relaxed text-justify">
                                 CODE AI - 2026 serves as a nexus for global visionaries, uniting to bridge
                                 research gaps and foster international collaborations that shape the
                                 trajectory of careers. Participants are not just attendees; they are catalysts
                                 of progress, sharing their scientific knowledge to ignite future
                                 advancements.
                             </p>
-                            <p className="text-gray-700 text-lg leading-relaxed">
+                            <p className="text-gray-700 text-lg leading-relaxed text-justify">
                                 The heart of the conference lies in Intelligent Computing, where algorithms
                                 like Genetic Algorithms, Simulated Annealing, and Artificial Fish Swarm take
                                 centre stage. Neural Networks, Machine Learning, and DNA Computing
@@ -178,7 +178,7 @@ function Home() {
                                 Expert Systems, Speech Recognition, and Smart Robotics pave the way
                                 for human-computer synergy.
                             </p>
-                            <p className="text-gray-700 text-lg leading-relaxed">
+                            <p className="text-gray-700 text-lg leading-relaxed text-justify">
                                 This conference isn't just about talks it's where minds worldwide come
                                 together to bridge research gaps and build global bonds in the realm of
                                 computing. We're all about sparking that motivation to dive into our
@@ -210,10 +210,10 @@ function Home() {
                             <div className="p-6 flex-1 flex flex-col">
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">MIT Bengaluru</h3>
                                 <div className="text-gray-600 space-y-4 flex-1">
-                                    <p>
+                                    <p className="text-justify">
                                         The Garden City of India, Bengaluru, is now home to a new engineering institution, "MIT Bengaluru", the latest constituent unit of Manipal Academy of Higher Education (MAHE).
                                     </p>
-                                    <p>
+                                    <p className="text-justify">
                                         MAHE is recognized as a deemed-to-be university since 1993 and has been accorded the status of Institute of Eminence (IoE) by MHRD, Government of India.
                                     </p>
                                 </div>
@@ -228,10 +228,10 @@ function Home() {
                             <div className="p-6 flex-1 flex flex-col">
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">About ACM MITB</h3>
                                 <div className="text-gray-600 space-y-4 flex-1">
-                                    <p>
+                                    <p className="text-justify">
                                         The MITB ACM student chapter is a community of students passionate about computer science and technology. We strive to create a collaborative and inclusive environment for students to learn, grow, and make a difference in the world.
                                     </p>
-                                    <p>
+                                    <p className="text-justify">
                                         Our chapter is affiliated with the Association for Computing Machinery (ACM), the world's largest educational and scientific computing society.
                                     </p>
                                 </div>
@@ -248,10 +248,10 @@ function Home() {
                             <div className="p-6 flex-1 flex flex-col">
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">National Tsing Hua University</h3>
                                 <div className="text-gray-600 space-y-4 flex-1">
-                                    <p>
+                                    <p className="text-justify">
                                         National Tsing Hua University (NTHU) is a leading public research university located in Hsinchu, Taiwan, known for its strong academic and research excellence. Originally founded in Beijing in 1911 and re-established in Taiwan in 1956, NTHU is especially renowned for its programs in science, engineering, and technology.
                                     </p>
-                                    <p>
+                                    <p className="text-justify">
                                         The university maintains close ties with Taiwan's high-tech industry and the Hsinchu Science Park, fostering innovation and applied research. NTHU consistently ranks among the top universities in Asia, promoting interdisciplinary learning and offering a global academic environment focused on innovation and sustainability.
                                     </p>
                                 </div>
