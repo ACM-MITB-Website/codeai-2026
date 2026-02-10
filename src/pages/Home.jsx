@@ -99,13 +99,18 @@ function Home() {
                         </div>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-wrap gap-4 justify-center mb-8">
-                            <Link to="/registration" className="btn-primary text-lg">
-                                Register Now
-                            </Link>
-                            <Link to="/call-for-papers" className="btn-outline text-lg">
-                                Submit Paper
-                            </Link>
+                        <div className="flex flex-col items-center mb-8">
+                            <div className="flex flex-wrap gap-4 justify-center relative">
+                                <Link to="/registration" className="btn-primary text-lg">
+                                    Register Now
+                                </Link>
+                                <Link to="/call-for-papers" className="btn-outline text-lg">
+                                    Submit Paper
+                                </Link>
+                                <div className="absolute -bottom-6 right-0 w-full text-right">
+                                    <span className="text-[#ffd700] text-xs font-semibold italic">*Approval Pending</span>
+                                </div>
+                            </div>
                         </div>
 
 

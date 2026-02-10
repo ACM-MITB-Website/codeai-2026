@@ -10,8 +10,8 @@ function Navbar() {
         {
             name: 'Authors',
             dropdown: [
-                { name: 'Important Dates', href: '/call-for-papers' },
-                { name: 'Call for Papers', href: '/file/CODE AI - 3rd Conference (4).pdf', target: '_blank' },
+                { name: 'Call for Papers', href: '/call-for-papers' },
+                { name: 'Download Brochure', href: '/file/CODE AI - 3rd Conference (4).pdf', target: '_blank' },
             ]
         },
         { name: 'Committees', href: '/committees' },
