@@ -62,7 +62,7 @@ function Home() {
                         </h1>
 
                         <h2 className="text-lg md:text-2xl text-gray-300 mb-6 max-w-3xl mx-auto">
-                            3rd International Conference on Data Science & Exploration in Artificial Intelligence
+                            3<sup>rd</sup> International Conference on Data Science & Exploration in Artificial Intelligence
                         </h2>
 
                         {/* Date Badge */}
