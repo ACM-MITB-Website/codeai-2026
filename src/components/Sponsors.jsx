@@ -13,13 +13,13 @@ function Sponsors() {
             {
                 name: 'SoCE',
                 sub: 'Manipal Institute of Technology, Bengaluru',
-                logo: '/img/mitb-logo.png'
+                logo: '/img/mahe-blru-logo.png'
             }
         ],
         organized: [
             {
                 name: 'ACM MITB Student Chapter',
-                logo: '/img/sponsors/acm mitb.png'
+                logo: '/img/acm-mitb-logo.png'
             }
         ]
     }
@@ -33,7 +33,7 @@ function Sponsors() {
 
     const OrgCard = ({ logo, name, sub }) => (
         <div className="flex flex-col items-center text-center space-y-4 max-w-sm mx-auto">
-            <div className="bg-[#1a2332] p-6 rounded-xl w-full h-48 flex items-center justify-center border border-gray-700 hover:border-[#ffd700] transition-colors">
+            <div className="p-6 rounded-xl w-full h-48 flex items-center justify-center transition-colors">
                 <img src={logo} alt={name} className="max-w-full max-h-32 w-auto h-auto object-contain" />
             </div>
             <div>
