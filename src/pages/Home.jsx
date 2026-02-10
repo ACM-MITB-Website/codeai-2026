@@ -210,7 +210,7 @@ function Home() {
                         {/* ACM MITB */}
                         <div className="partner-card h-full flex flex-col">
                             <div className="h-56 bg-[#1a2332] rounded-t-lg flex items-center justify-center p-6">
-                                <img src="/img/sponsors/acm mitb.png" alt="ACM MITB" className="max-h-full max-w-full object-contain" />
+                                <img src="/img/acm-mitb-logo.png" alt="ACM MITB" className="max-h-full max-w-full object-contain" />
                             </div>
                             <div className="p-6 flex-1 flex flex-col">
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">About ACM MITB</h3>
