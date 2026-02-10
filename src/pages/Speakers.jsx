@@ -3,13 +3,13 @@ function Speakers() {
         {
             name: 'Prof. (Dr.) W. Eric Wong',
             image: '/img/Speakers/eric_wong.png',
-            bio: 'Director, International Outreach\nDirector, Advanced Research Center\nUniversity of Texas at Dallas\nRichardson, Texas, USA\nEditor-in-Chief, IEEE Transactions on Reliability',
+            bio: 'Director, International Outreach\nDirector, Advanced Research Center\nUniversity of Texas at Dallas\nRichardson, Texas, USA\nEditor-in-Chief, IEEE Transactions on Reliability'
         },
         {
             name: 'Prof. (Dr.) Wei-Chang Yeh',
             image: '/img/Speakers/wei_chang_yeh.png',
-            bio: 'Chair Professor/ASPEED Chair Professor\nNational Tsing Hua University\nHsinchu, Taiwan',
-        },
+            bio: 'Chair Professor/ASPEED Chair Professor\nNational Tsing Hua University\nHsinchu, Taiwan'
+        }
     ]
 
     return (
@@ -44,8 +44,18 @@ function Speakers() {
                                         />
                                     </div>
                                     <div className="absolute bottom-2 right-2 w-8 h-8 bg-[#ffd700] rounded-full flex items-center justify-center text-gray-900 font-bold shadow-md">
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                                        <svg
+                                            className="w-4 h-4"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth={2}
+                                                d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+                                            />
                                         </svg>
                                     </div>
                                 </div>
@@ -60,7 +70,9 @@ function Speakers() {
                                 <div className="w-full border-t border-gray-200 my-4"></div>
 
                                 <div className="space-y-1">
-                                    <p className="text-gray-700 font-medium">{speaker.department}</p>
+                                    <p className="text-gray-700 font-medium">
+                                        {speaker.department}
+                                    </p>
                                     <p className="text-gray-500 text-sm">{speaker.institution}</p>
                                 </div>
 

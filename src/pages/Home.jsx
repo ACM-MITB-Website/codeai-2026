@@ -58,18 +58,30 @@ function Home() {
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         {/* Main Title */}
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
-                            CODE-AI <span className="text-[#ffd700]">{typingText}</span><span className="animate-pulse">_</span>
+                            CODE-AI <span className="text-[#ffd700]">{typingText}</span>
+                            <span className="animate-pulse">_</span>
                         </h1>
 
                         <h2 className="text-lg md:text-2xl text-gray-300 mb-6 max-w-3xl mx-auto">
-                            3<sup>rd</sup> International Conference on Data Science & Exploration in Artificial Intelligence
+                            3<sup>rd</sup> International Conference on Data Science & Exploration in
+                            Artificial Intelligence
                         </h2>
 
                         {/* Date Badge */}
                         <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
                             <span className="date-badge">
-                                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                <svg
+                                    className="w-5 h-5 mr-2"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                    />
                                 </svg>
                                 17th - 19th July 2026
                             </span>
@@ -78,17 +90,37 @@ function Home() {
                         {/* Hosted By & Collaboration */}
                         <div className="mt-8 mb-12 grid md:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
                             <div className="flex flex-col items-center text-center">
-                                <p className="text-[#ffd700] font-semibold uppercase tracking-wider mb-4 text-sm md:text-base">Organized by</p>
-                                <img src="/img/mahe-blru-logo2.jpeg" alt="MAHE Bengaluru" className="h-32 md:h-48 w-auto object-contain mb-4 rounded-lg" />
-                                <p className="text-white font-medium text-lg leading-tight">School of Computer Engineering,</p>
-                                <p className="text-white font-medium text-lg leading-tight">Manipal Institute of Technology,Bengaluru</p>
-                                <p className="text-gray-300 text-base mt-1">Manipal Academy of Higher Education (MAHE), Bengaluru</p>
+                                <p className="text-[#ffd700] font-semibold uppercase tracking-wider mb-4 text-sm md:text-base">
+                                    Organized by
+                                </p>
+                                <img
+                                    src="/img/mahe-blru-logo2.jpeg"
+                                    alt="MAHE Bengaluru"
+                                    className="h-32 md:h-48 w-auto object-contain mb-4 rounded-lg"
+                                />
+                                <p className="text-white font-medium text-lg leading-tight">
+                                    School of Computer Engineering,
+                                </p>
+                                <p className="text-white font-medium text-lg leading-tight">
+                                    Manipal Institute of Technology,Bengaluru
+                                </p>
+                                <p className="text-gray-300 text-base mt-1">
+                                    Manipal Academy of Higher Education (MAHE), Bengaluru
+                                </p>
                             </div>
 
                             <div className="flex flex-col items-center text-center">
-                                <p className="text-[#ffd700] font-semibold uppercase tracking-wider mb-4 text-sm md:text-base">In Collaboration with</p>
-                                <img src="/img/nthu-logo.svg" alt="National Tsing Hua University" className="h-24 md:h-32 w-auto object-contain mb-4" />
-                                <p className="text-white font-medium text-lg leading-tight">National Tsing Hua University</p>
+                                <p className="text-[#ffd700] font-semibold uppercase tracking-wider mb-4 text-sm md:text-base">
+                                    In Collaboration with
+                                </p>
+                                <img
+                                    src="/img/nthu-logo.svg"
+                                    alt="National Tsing Hua University"
+                                    className="h-24 md:h-32 w-auto object-contain mb-4"
+                                />
+                                <p className="text-white font-medium text-lg leading-tight">
+                                    National Tsing Hua University
+                                </p>
                                 <p className="text-gray-300 text-base mt-1">Hsinchu, Taiwan</p>
                             </div>
                         </div>
@@ -108,22 +140,18 @@ function Home() {
                                     Submit Paper
                                 </Link>
                                 <div className="absolute -bottom-6 right-0 w-full text-right">
-                                    <span className="text-[#ffd700] text-xs font-semibold italic">*Approval Pending</span>
+                                    <span className="text-[#ffd700] text-xs font-semibold italic">
+                                        *Approval Pending
+                                    </span>
                                 </div>
                             </div>
                         </div>
-
-
-
-
                     </div>
                 </div>
             </section>
 
             {/* Statistics Section */}
             <ConferenceStats />
-
-
 
             {/* About Section - Cream Background */}
             <section id="about" className="w-full py-20 bg-[#f8f6f2] reveal">
@@ -148,30 +176,33 @@ function Home() {
                         </div>
                         <div className="space-y-6">
                             <p className="text-gray-700 text-lg leading-relaxed text-justify">
-                                CODE AI - 2026 serves as a nexus for global visionaries, uniting to bridge
-                                research gaps and foster international collaborations that shape the
-                                trajectory of careers. Participants are not just attendees; they are catalysts
-                                of progress, sharing their scientific knowledge to ignite future
-                                advancements.
+                                CODE AI - 2026 serves as a nexus for global visionaries, uniting to
+                                bridge research gaps and foster international collaborations that
+                                shape the trajectory of careers. Participants are not just
+                                attendees; they are catalysts of progress, sharing their scientific
+                                knowledge to ignite future advancements.
                             </p>
                             <p className="text-gray-700 text-lg leading-relaxed text-justify">
-                                The heart of the conference lies in Intelligent Computing, where algorithms
-                                like Genetic Algorithms, Simulated Annealing, and Artificial Fish Swarm take
-                                centre stage. Neural Networks, Machine Learning, and DNA Computing
-                                converge, while Quantum Computing and Fuzzy Logic open doors to
-                                uncharted territories. In the realm of AI Applications, CODE AI - 2026
-                                explores Biometrics, Pattern Recognition, Computer Vision, and Machine
-                                Vision, unravelling the secrets of Fingerprint, Face, and Iris Recognition.
-                                Expert Systems, Speech Recognition, and Smart Robotics pave the way
-                                for human-computer synergy.
+                                The heart of the conference lies in Intelligent Computing, where
+                                algorithms like Genetic Algorithms, Simulated Annealing, and
+                                Artificial Fish Swarm take centre stage. Neural Networks, Machine
+                                Learning, and DNA Computing converge, while Quantum Computing and
+                                Fuzzy Logic open doors to uncharted territories. In the realm of AI
+                                Applications, CODE AI - 2026 explores Biometrics, Pattern
+                                Recognition, Computer Vision, and Machine Vision, unravelling the
+                                secrets of Fingerprint, Face, and Iris Recognition. Expert Systems,
+                                Speech Recognition, and Smart Robotics pave the way for
+                                human-computer synergy.
                             </p>
                             <p className="text-gray-700 text-lg leading-relaxed text-justify">
-                                This conference isn't just about talks it's where minds worldwide come
-                                together to bridge research gaps and build global bonds in the realm of
-                                computing. We're all about sparking that motivation to dive into our
-                                conference theme, and we're not shy to show gratitude for sharing your
-                                scientific know-how. With papers covering smart computing's ins and outs
-                                and even the tough spots – we're here to boost the spotlight on gamechanging tech and how it can crack real-world problems in different fields.
+                                This conference isn&apos;t just about talks it&apos;s where minds
+                                worldwide come together to bridge research gaps and build global
+                                bonds in the realm of computing. We&apos;re all about sparking that
+                                motivation to dive into our conference theme, and we&apos;re not shy
+                                to show gratitude for sharing your scientific know-how. With papers
+                                covering smart computing&apos;s ins and outs and even the tough
+                                spots – we&apos;re here to boost the spotlight on gamechanging tech
+                                and how it can crack real-world problems in different fields.
                             </p>
                         </div>
                     </div>
@@ -195,13 +226,20 @@ function Home() {
                                 className="rounded-t-lg w-full object-cover h-56"
                             />
                             <div className="p-6 flex-1 flex flex-col">
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">MIT Bengaluru</h3>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                                    MIT Bengaluru
+                                </h3>
                                 <div className="text-gray-600 space-y-4 flex-1">
                                     <p className="text-justify">
-                                        The Garden City of India, Bengaluru, is now home to a new engineering institution, "MIT Bengaluru", the latest constituent unit of Manipal Academy of Higher Education (MAHE).
+                                        The Garden City of India, Bengaluru, is now home to a new
+                                        engineering institution, &quot;MIT Bengaluru&quot;, the
+                                        latest constituent unit of Manipal Academy of Higher
+                                        Education (MAHE).
                                     </p>
                                     <p className="text-justify">
-                                        MAHE is recognized as a deemed-to-be university since 1993 and has been accorded the status of Institute of Eminence (IoE) by MHRD, Government of India.
+                                        MAHE is recognized as a deemed-to-be university since 1993
+                                        and has been accorded the status of Institute of Eminence
+                                        (IoE) by MHRD, Government of India.
                                     </p>
                                 </div>
                             </div>
@@ -210,16 +248,27 @@ function Home() {
                         {/* ACM MITB */}
                         <div className="partner-card h-full flex flex-col">
                             <div className="h-56 bg-[#1a2332] rounded-t-lg flex items-center justify-center p-6">
-                                <img src="/img/acm-mitb-logo.png" alt="ACM MITB" className="max-h-full max-w-full object-contain" />
+                                <img
+                                    src="/img/acm-mitb-logo.png"
+                                    alt="ACM MITB"
+                                    className="max-h-full max-w-full object-contain"
+                                />
                             </div>
                             <div className="p-6 flex-1 flex flex-col">
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">About ACM MITB</h3>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                                    About ACM MITB
+                                </h3>
                                 <div className="text-gray-600 space-y-4 flex-1">
                                     <p className="text-justify">
-                                        The MITB ACM student chapter is a community of students passionate about computer science and technology. We strive to create a collaborative and inclusive environment for students to learn, grow, and make a difference in the world.
+                                        The MITB ACM student chapter is a community of students
+                                        passionate about computer science and technology. We strive
+                                        to create a collaborative and inclusive environment for
+                                        students to learn, grow, and make a difference in the world.
                                     </p>
                                     <p className="text-justify">
-                                        Our chapter is affiliated with the Association for Computing Machinery (ACM), the world's largest educational and scientific computing society.
+                                        Our chapter is affiliated with the Association for Computing
+                                        Machinery (ACM), the world&apos;s largest educational and
+                                        scientific computing society.
                                     </p>
                                 </div>
                             </div>
@@ -233,13 +282,25 @@ function Home() {
                                 className="rounded-t-lg w-full object-cover h-56"
                             />
                             <div className="p-6 flex-1 flex flex-col">
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">National Tsing Hua University</h3>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                                    National Tsing Hua University
+                                </h3>
                                 <div className="text-gray-600 space-y-4 flex-1">
                                     <p className="text-justify">
-                                        National Tsing Hua University (NTHU) is a leading public research university located in Hsinchu, Taiwan, known for its strong academic and research excellence. Originally founded in Beijing in 1911 and re-established in Taiwan in 1956, NTHU is especially renowned for its programs in science, engineering, and technology.
+                                        National Tsing Hua University (NTHU) is a leading public
+                                        research university located in Hsinchu, Taiwan, known for
+                                        its strong academic and research excellence. Originally
+                                        founded in Beijing in 1911 and re-established in Taiwan in
+                                        1956, NTHU is especially renowned for its programs in
+                                        science, engineering, and technology.
                                     </p>
                                     <p className="text-justify">
-                                        The university maintains close ties with Taiwan's high-tech industry and the Hsinchu Science Park, fostering innovation and applied research. NTHU consistently ranks among the top universities in Asia, promoting interdisciplinary learning and offering a global academic environment focused on innovation and sustainability.
+                                        The university maintains close ties with Taiwan&apos;s
+                                        high-tech industry and the Hsinchu Science Park, fostering
+                                        innovation and applied research. NTHU consistently ranks
+                                        among the top universities in Asia, promoting
+                                        interdisciplinary learning and offering a global academic
+                                        environment focused on innovation and sustainability.
                                     </p>
                                 </div>
                             </div>

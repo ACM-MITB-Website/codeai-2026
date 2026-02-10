@@ -25,30 +25,13 @@ function Sponsors() {
         ]
     }
 
-    const SectionHeader = ({ title }) => (
-        <div className="text-center mb-8 mt-12">
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 uppercase tracking-widest">{title}</h3>
-            <div className="w-16 h-0.5 bg-[#ffd700] mx-auto mt-2"></div>
-        </div>
-    )
-
-    const OrgCard = ({ logo, name, sub }) => (
-        <div className="flex flex-col items-center text-center space-y-4 max-w-sm mx-auto">
-            <div className="p-6 rounded-xl w-full h-48 flex items-center justify-center transition-colors">
-                <img src={logo} alt={name} className="max-w-full max-h-32 w-auto h-auto object-contain" />
-            </div>
-            <div>
-                <h4 className="text-gray-900 font-semibold text-lg">{name}</h4>
-                {sub && <p className="text-gray-500 text-sm mt-1">{sub}</p>}
-            </div>
-        </div>
-    )
-
     return (
         <section className="py-20 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 inline-block">Sponsors & Organizers</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 inline-block">
+                        Sponsors & Organizers
+                    </h2>
                     <div className="w-24 h-1 bg-[#ffd700] mx-auto mt-4 rounded-full"></div>
                 </div>
 
@@ -65,24 +48,24 @@ function Sponsors() {
                         {/* Hosted By */}
                         <div>
                             <SectionHeader title="Hosted By" />
-                            {organizations.hosted.map((o, i) => (
-                                <OrgCard key={i} {...o} />
+                            {organizations.hosted.map((o) => (
+                                <OrgCard key={o.name} {...o} />
                             ))}
                         </div>
 
                         {/* In Association With */}
                         <div>
                             <SectionHeader title="Organized By" />
-                            {organizations.association.map((o, i) => (
-                                <OrgCard key={i} {...o} />
+                            {organizations.association.map((o) => (
+                                <OrgCard key={o.name} {...o} />
                             ))}
                         </div>
 
                         {/* Organized By */}
                         <div>
                             <SectionHeader title="Managed By" />
-                            {organizations.organized.map((o, i) => (
-                                <OrgCard key={i} {...o} />
+                            {organizations.organized.map((o) => (
+                                <OrgCard key={o.name} {...o} />
                             ))}
                         </div>
                     </div>
@@ -91,5 +74,30 @@ function Sponsors() {
         </section>
     )
 }
+
+const SectionHeader = ({ title }) => (
+    <div className="text-center mb-8 mt-12">
+        <h3 className="text-xl md:text-2xl font-bold text-gray-900 uppercase tracking-widest">
+            {title}
+        </h3>
+        <div className="w-16 h-0.5 bg-[#ffd700] mx-auto mt-2"></div>
+    </div>
+)
+
+const OrgCard = ({ logo, name, sub }) => (
+    <div className="flex flex-col items-center text-center space-y-4 max-w-sm mx-auto">
+        <div className="p-6 rounded-xl w-full h-48 flex items-center justify-center transition-colors">
+            <img
+                src={logo}
+                alt={name}
+                className="max-w-full max-h-32 w-auto h-auto object-contain"
+            />
+        </div>
+        <div>
+            <h4 className="text-gray-900 font-semibold text-lg">{name}</h4>
+            {sub && <p className="text-gray-500 text-sm mt-1">{sub}</p>}
+        </div>
+    </div>
+)
 
 export default Sponsors

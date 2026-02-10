@@ -3,7 +3,7 @@ function CallForPapers() {
         { date: '15th February 2026', event: 'Submission Start Date' },
         { date: '15th March 2026', event: 'Submission Deadline' },
         { date: '1st April 2026', event: 'Acceptance Notification' },
-        { date: '15th April 2026', event: 'Registration Deadline' },
+        { date: '15th April 2026', event: 'Registration Deadline' }
     ]
 
     const themes = [
@@ -15,7 +15,7 @@ function CallForPapers() {
         'Human Computer Engineering',
         'Human Computer Interaction',
         'AI and Application',
-        'AI Policy',
+        'AI Policy'
     ]
 
     return (
@@ -49,7 +49,9 @@ function CallForPapers() {
                         </li>
                         <li className="flex items-center gap-3">
                             <span className="w-2 h-2 rounded-full bg-[#ccac00]"></span>
-                            <span className="font-medium text-gray-700">Special Issue Track Papers</span>
+                            <span className="font-medium text-gray-700">
+                                Special Issue Track Papers
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -59,9 +61,14 @@ function CallForPapers() {
                     <h2 className="text-2xl font-semibold text-gray-900 mb-6">Important Dates</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                         {importantDates.map((item, idx) => (
-                            <div key={idx} className="bg-gradient-to-br from-[#ffd700] to-[#ffb800] rounded-xl p-4 text-gray-900 text-center shadow-md">
+                            <div
+                                key={idx}
+                                className="bg-gradient-to-br from-[#ffd700] to-[#ffb800] rounded-xl p-4 text-gray-900 text-center shadow-md"
+                            >
                                 <p className="text-2xl font-bold">{item.date.split(' ')[0]}</p>
-                                <p className="text-sm opacity-80">{item.date.split(' ').slice(1).join(' ')}</p>
+                                <p className="text-sm opacity-80">
+                                    {item.date.split(' ').slice(1).join(' ')}
+                                </p>
                                 <p className="mt-2 font-medium">{item.event}</p>
                             </div>
                         ))}
@@ -70,10 +77,15 @@ function CallForPapers() {
 
                 {/* Themes */}
                 <div className="bg-white border border-gray-200 rounded-2xl p-8 mb-8 shadow-lg">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-6">Themes for CODE-AI 2026</h2>
+                    <h2 className="text-2xl font-semibold text-gray-900 mb-6">
+                        Themes for CODE-AI 2026
+                    </h2>
                     <div className="grid md:grid-cols-2 gap-4">
                         {themes.map((theme, idx) => (
-                            <div key={idx} className="bg-[#f8f6f2] border border-gray-200 rounded-xl p-4 flex items-center gap-4 hover:border-[#ffd700] transition-colors">
+                            <div
+                                key={idx}
+                                className="bg-[#f8f6f2] border border-gray-200 rounded-xl p-4 flex items-center gap-4 hover:border-[#ffd700] transition-colors"
+                            >
                                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#ffd700] to-[#ffb800] flex items-center justify-center text-gray-900 font-bold flex-shrink-0">
                                     {idx + 1}
                                 </div>
@@ -86,16 +98,46 @@ function CallForPapers() {
                 {/* Paper Format */}
                 <div className="bg-white border border-gray-200 rounded-2xl p-8 text-center shadow-lg">
                     <h2 className="text-2xl font-semibold text-gray-900 mb-4">Paper Format</h2>
-                    <p className="text-gray-600 mb-6">Download the conference template for paper submission</p>
-                    <a href="/file/Microsoft+Word+Proceedings+Templates.zip" className="inline-flex items-center gap-2 bg-[#ffd700] text-gray-900 font-semibold px-6 py-3 hover:bg-[#ffb800] transition-colors" download>
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    <p className="text-gray-600 mb-6">
+                        Download the conference template for paper submission
+                    </p>
+                    <a
+                        href="/file/Microsoft+Word+Proceedings+Templates.zip"
+                        className="inline-flex items-center gap-2 bg-[#ffd700] text-gray-900 font-semibold px-6 py-3 hover:bg-[#ffb800] transition-colors"
+                        download
+                    >
+                        <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                            />
                         </svg>
                         Download Template
                     </a>
-                    <a href="/file/CODE AI - 3rd Conference (4).pdf" className="inline-flex items-center gap-2 bg-[#ffd700] text-gray-900 font-semibold px-6 py-3 hover:bg-[#ffb800] transition-colors ml-4" target="_blank">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    <a
+                        href="/file/CODE AI - 3rd Conference (4).pdf"
+                        className="inline-flex items-center gap-2 bg-[#ffd700] text-gray-900 font-semibold px-6 py-3 hover:bg-[#ffb800] transition-colors ml-4"
+                        target="_blank"
+                    >
+                        <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                            />
                         </svg>
                         Download Brochure
                     </a>

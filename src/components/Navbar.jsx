@@ -11,7 +11,11 @@ function Navbar() {
             name: 'Authors',
             dropdown: [
                 { name: 'Call for Papers', href: '/call-for-papers' },
-                { name: 'Download Brochure', href: '/file/CODE AI - 3rd Conference (4).pdf', target: '_blank' },
+                {
+                    name: 'Download Brochure',
+                    href: '/file/CODE AI - 3rd Conference (4).pdf',
+                    target: '_blank'
+                }
             ]
         },
         { name: 'Committees', href: '/committees' },
@@ -22,8 +26,7 @@ function Navbar() {
                 { name: 'Speakers', href: '/speakers' },
                 { name: 'Awards', href: '/awards' }
             ]
-        },
-
+        }
     ]
 
     const handleDropdownToggle = (linkName) => {
@@ -36,18 +39,27 @@ function Navbar() {
             <nav className="fixed top-0 left-0 w-full z-50 bg-[#1a2332] border-b-[3px] border-[#ffd700]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
-
                         {/* Logo / Brand */}
                         <div className="flex items-center gap-4">
                             <Link to="/" className="flex items-center gap-2" target="_self">
-                                <span className="text-white font-bold text-xl tracking-wide">CODE-AI</span>
+                                <span className="text-white font-bold text-xl tracking-wide">
+                                    CODE-AI
+                                </span>
                                 <span className="text-[#ffd700] font-bold text-xl">2026</span>
                             </Link>
 
                             {/* Logos Addition */}
                             <div className="hidden sm:flex items-center gap-4 border-l-2 border-gray-600 pl-4">
-                                <img src="/img/springerccis.png" alt="Springer CCIS" className="h-14 object-contain" />
-                                <img src="/img/sponsors/scopus.png" alt="Scopus" className="h-14 object-contain" />
+                                <img
+                                    src="/img/springerccis.png"
+                                    alt="Springer CCIS"
+                                    className="h-14 object-contain"
+                                />
+                                <img
+                                    src="/img/sponsors/scopus.png"
+                                    alt="Scopus"
+                                    className="h-14 object-contain"
+                                />
                             </div>
                         </div>
 
@@ -57,8 +69,12 @@ function Navbar() {
                                 <div
                                     key={link.name}
                                     className="relative group"
-                                    onMouseEnter={link.dropdown ? () => setOpenDropdown(link.name) : undefined}
-                                    onMouseLeave={link.dropdown ? () => setOpenDropdown(null) : undefined}
+                                    onMouseEnter={
+                                        link.dropdown ? () => setOpenDropdown(link.name) : undefined
+                                    }
+                                    onMouseLeave={
+                                        link.dropdown ? () => setOpenDropdown(null) : undefined
+                                    }
                                 >
                                     {link.dropdown ? (
                                         <>
@@ -73,18 +89,24 @@ function Navbar() {
                                                     stroke="currentColor"
                                                     viewBox="0 0 24 24"
                                                 >
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                                    <path
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        strokeWidth={2}
+                                                        d="M19 9l-7 7-7-7"
+                                                    />
                                                 </svg>
                                             </button>
                                             <div
-                                                className={`absolute top-full left-0 mt-0 bg-white shadow-2xl min-w-[300px] rounded-b-lg overflow-hidden border-t-[3px] border-[#ffd700] origin-top transition-[opacity,transform] duration-200 ease-out ${openDropdown === link.name
-                                                    ? 'opacity-100 translate-y-0 scale-100 visible'
-                                                    : 'opacity-0 -translate-y-2 scale-95 invisible'
-                                                    }`}
+                                                className={`absolute top-full left-0 mt-0 bg-white shadow-2xl min-w-[300px] rounded-b-lg overflow-hidden border-t-[3px] border-[#ffd700] origin-top transition-[opacity,transform] duration-200 ease-out ${
+                                                    openDropdown === link.name
+                                                        ? 'opacity-100 translate-y-0 scale-100 visible'
+                                                        : 'opacity-0 -translate-y-2 scale-95 invisible'
+                                                }`}
                                                 style={{ zIndex: 100 }}
                                             >
                                                 <div className="py-2">
-                                                    {link.dropdown.map((item, index) => (
+                                                    {link.dropdown.map((item) =>
                                                         item.href.startsWith('/file') ? (
                                                             <a
                                                                 key={item.name}
@@ -104,7 +126,7 @@ function Navbar() {
                                                                 {item.name}
                                                             </Link>
                                                         )
-                                                    ))}
+                                                    )}
                                                 </div>
                                             </div>
                                         </>
@@ -137,11 +159,26 @@ function Navbar() {
                                 className="md:hidden p-2 text-white hover:text-[#ffd700] transition-colors"
                                 aria-label="Toggle menu"
                             >
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg
+                                    className="w-6 h-6"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
                                     {isOpen ? (
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M6 18L18 6M6 6l12 12"
+                                        />
                                     ) : (
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M4 6h16M4 12h16M4 18h16"
+                                        />
                                     )}
                                 </svg>
                             </button>
@@ -151,7 +188,9 @@ function Navbar() {
             </nav>
 
             {/* Mobile Menu */}
-            <div className={`md:hidden fixed inset-0 top-16 z-40 bg-[#1a2332] transition-all duration-300 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+            <div
+                className={`md:hidden fixed inset-0 top-16 z-40 bg-[#1a2332] transition-all duration-300 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+            >
                 <div className="flex flex-col items-start px-6 pt-8 gap-4 overflow-y-auto max-h-[calc(100vh-4rem)]">
                     {navLinks.map((link) => (
                         <div key={link.name} className="w-full">
@@ -168,12 +207,17 @@ function Navbar() {
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
                                         >
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth={2}
+                                                d="M19 9l-7 7-7-7"
+                                            />
                                         </svg>
                                     </button>
                                     {openDropdown === link.name && (
                                         <div className="mt-2 ml-4 space-y-2">
-                                            {link.dropdown.map((item) => (
+                                            {link.dropdown.map((item) =>
                                                 item.href.startsWith('/file') ? (
                                                     <a
                                                         key={item.name}
@@ -195,7 +239,7 @@ function Navbar() {
                                                         {item.name}
                                                     </Link>
                                                 )
-                                            ))}
+                                            )}
                                         </div>
                                     )}
                                 </>

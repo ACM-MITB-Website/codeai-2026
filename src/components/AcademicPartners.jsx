@@ -45,15 +45,19 @@ function AcademicPartners() {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 inline-block">Academic Partners</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 inline-block">
+                        Academic Partners
+                    </h2>
                     <div className="w-24 h-1 bg-[#ffd700] mx-auto mt-4 rounded-full"></div>
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-8">
                     {partners.map((partner, idx) => (
-                        <div key={idx} className="group w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1.5rem)] max-w-sm">
+                        <div
+                            key={idx}
+                            className="group w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1.5rem)] max-w-sm"
+                        >
                             <div className="h-full bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-[#ffd700] transition-all duration-300 flex flex-col group-hover:-translate-y-2 relative shadow-sm hover:shadow-xl">
-
                                 {/* Hover Glow */}
                                 <div className="absolute inset-0 bg-[#ffd700]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
 

@@ -3,33 +3,33 @@ import { Users, FileText, Globe, Award, Calendar, Building2 } from 'lucide-react
 function ConferenceStats() {
     const stats = [
         {
-            number: "3rd",
-            label: "Edition",
+            number: '3rd',
+            label: 'Edition',
             icon: Calendar
         },
         {
-            number: "500+",
-            label: "Papers",
+            number: '500+',
+            label: 'Papers',
             icon: FileText
         },
         {
-            number: "15+",
-            label: "Countries",
+            number: '15+',
+            label: 'Countries',
             icon: Globe
         },
         {
-            number: "100+",
-            label: "Authors",
+            number: '100+',
+            label: 'Authors',
             icon: Users
         },
         {
-            number: "60+",
-            label: "Institutions",
+            number: '60+',
+            label: 'Institutions',
             icon: Building2
         },
         {
-            number: "5+",
-            label: "Awards",
+            number: '5+',
+            label: 'Awards',
             icon: Award
         }
     ]

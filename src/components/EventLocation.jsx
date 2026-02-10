@@ -5,7 +5,6 @@ function EventLocation() {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-
                     {/* Text Content */}
                     <div className="lg:w-1/2 space-y-8">
                         <div>
@@ -17,13 +16,30 @@ function EventLocation() {
 
                         <div className="space-y-6 text-gray-300 leading-relaxed text-lg">
                             <p>
-                                Taiwan, widely revered as the "Silicon Island" or "AI Island," is a technological powerhouse located in East Asia. Acknowledged as the undisputed global leader in semiconductor manufacturing, it serves as the heart of the modern digital economy, producing the advanced chips that power everything from smartphones to global defense systems and artificial intelligence.
+                                Taiwan, widely revered as the &quot;Silicon Island&quot; or &quot;AI
+                                Island,&quot; is a technological powerhouse located in East Asia.
+                                Acknowledged as the undisputed global leader in semiconductor
+                                manufacturing, it serves as the heart of the modern digital economy,
+                                producing the advanced chips that power everything from smartphones
+                                to global defense systems and artificial intelligence.
                             </p>
                             <p>
-                                Beyond its industrial dominance, Taiwan offers a rich tapestry of experiences, blending ancient temples and indigenous heritage with a vibrant, progressive democracy. The island is anchored by the bamboo-inspired <span className="text-white font-semibold">Taipei 101</span> and is famed for its culinary innovation being the birthplace of <span className="text-white font-semibold">bubble tea</span> as well as its convenient 24 hour urban lifestyle and breathtaking natural landscapes like <span className="text-white font-semibold">Taroko Gorge</span>.
+                                Beyond its industrial dominance, Taiwan offers a rich tapestry of
+                                experiences, blending ancient temples and indigenous heritage with a
+                                vibrant, progressive democracy. The island is anchored by the
+                                bamboo-inspired{' '}
+                                <span className="text-white font-semibold">Taipei 101</span> and is
+                                famed for its culinary innovation being the birthplace of{' '}
+                                <span className="text-white font-semibold">bubble tea</span> as well
+                                as its convenient 24 hour urban lifestyle and breathtaking natural
+                                landscapes like{' '}
+                                <span className="text-white font-semibold">Taroko Gorge</span>.
                             </p>
                             <p>
-                                Its strategic role as a Silicon Shield, highly educated workforce, and robust R&D ecosystem make Taiwan a critical pivot point for the future of technology, driving unparalleled advancements in smart manufacturing, green energy, and the global AI supply chain.
+                                Its strategic role as a Silicon Shield, highly educated workforce,
+                                and robust R&D ecosystem make Taiwan a critical pivot point for the
+                                future of technology, driving unparalleled advancements in smart
+                                manufacturing, green energy, and the global AI supply chain.
                             </p>
                         </div>
                     </div>

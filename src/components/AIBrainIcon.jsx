@@ -1,4 +1,4 @@
-function AIBrainIcon({ size = 64, className = "" }) {
+function AIBrainIcon({ size = 64, className = '' }) {
     return (
         <div className={`ai-brain-container ${className}`} style={{ width: size, height: size }}>
             {/* Subtle glow effect */}

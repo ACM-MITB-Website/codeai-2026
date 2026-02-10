@@ -13,10 +13,7 @@ import Awards from './pages/Awards'
 
 import Publications from './pages/Publications'
 
-
 import Schedule from './pages/Schedule'
-
-
 
 function App() {
     const location = useLocation()
@@ -37,15 +34,18 @@ function App() {
 
         // Small timeout to ensure DOM is ready
         const timeoutId = setTimeout(() => {
-            observerRef.current = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active')
-                    }
-                })
-            }, {
-                threshold: 0.1
-            })
+            observerRef.current = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active')
+                        }
+                    })
+                },
+                {
+                    threshold: 0.1
+                }
+            )
 
             const elements = document.querySelectorAll('.reveal')
             elements.forEach((el) => observerRef.current.observe(el))
@@ -53,7 +53,7 @@ function App() {
 
         // Fallback: Ensure elements are revealed if observer fails (safety net for blank screen)
         const fallbackTimeout = setTimeout(() => {
-            document.querySelectorAll('.reveal').forEach(el => el.classList.add('active'))
+            document.querySelectorAll('.reveal').forEach((el) => el.classList.add('active'))
         }, 500)
 
         return () => {
@@ -69,7 +69,9 @@ function App() {
         <div className="min-h-screen bg-white text-gray-900">
             <Navbar />
             <AnnouncementBanner />
-            <div className="pt-10"> {/* Offset for fixed banner */}
+            <div className="pt-10">
+                {' '}
+                {/* Offset for fixed banner */}
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/committees" element={<Committees />} />
@@ -79,7 +81,6 @@ function App() {
                     <Route path="/awards" element={<Awards />} />
                     <Route path="/publications" element={<Publications />} />
                     <Route path="/schedule" element={<Schedule />} />
-
                 </Routes>
             </div>
             <Footer />
