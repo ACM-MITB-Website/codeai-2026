@@ -22,7 +22,7 @@ function AcademicPartners() {
         },
         {
             name: 'ACM MITB',
-            logo: '/img/sponsors/acm mitb.png',
+            logo: '/img/acm-mitb-logo.png',
             desc: 'The Association for Computing Machinery (ACM) Student Chapter at MIT Bengaluru is a dynamic community dedicated to advancing computing as a science and profession. It fosters a collaborative environment for students to explore emerging technologies, engage in research, and build professional networks.'
         },
         {
