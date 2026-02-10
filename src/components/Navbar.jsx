@@ -11,7 +11,7 @@ function Navbar() {
             name: 'Authors',
             dropdown: [
                 { name: 'Important Dates', href: '/call-for-papers' },
-                { name: 'Call for Papers', href: '/call-for-papers' },
+                { name: 'Call for Papers', href: '/file/CODE AI - 3rd Conference (4).pdf', target: '_blank' },
             ]
         },
         { name: 'Committees', href: '/committees' },
@@ -85,13 +85,25 @@ function Navbar() {
                                             >
                                                 <div className="py-2">
                                                     {link.dropdown.map((item, index) => (
-                                                        <Link
-                                                            key={item.name}
-                                                            to={item.href}
-                                                            className="block px-6 py-3 text-gray-800 text-base hover:bg-[#ffd700]/20 hover:pl-8 transition-all duration-200 border-l-4 border-transparent hover:border-[#ffd700]"
-                                                        >
-                                                            {item.name}
-                                                        </Link>
+                                                        item.href.startsWith('/file') ? (
+                                                            <a
+                                                                key={item.name}
+                                                                href={item.href}
+                                                                className="block px-6 py-3 text-gray-800 text-base hover:bg-[#ffd700]/20 hover:pl-8 transition-all duration-200 border-l-4 border-transparent hover:border-[#ffd700]"
+                                                                target="_blank"
+                                                                download
+                                                            >
+                                                                {item.name}
+                                                            </a>
+                                                        ) : (
+                                                            <Link
+                                                                key={item.name}
+                                                                to={item.href}
+                                                                className="block px-6 py-3 text-gray-800 text-base hover:bg-[#ffd700]/20 hover:pl-8 transition-all duration-200 border-l-4 border-transparent hover:border-[#ffd700]"
+                                                            >
+                                                                {item.name}
+                                                            </Link>
+                                                        )
                                                     ))}
                                                 </div>
                                             </div>
@@ -162,14 +174,27 @@ function Navbar() {
                                     {openDropdown === link.name && (
                                         <div className="mt-2 ml-4 space-y-2">
                                             {link.dropdown.map((item) => (
-                                                <Link
-                                                    key={item.name}
-                                                    to={item.href}
-                                                    onClick={() => setIsOpen(false)}
-                                                    className="block text-base text-gray-400 hover:text-[#ffd700] transition-colors py-2"
-                                                >
-                                                    {item.name}
-                                                </Link>
+                                                item.href.startsWith('/file') ? (
+                                                    <a
+                                                        key={item.name}
+                                                        href={item.href}
+                                                        onClick={() => setIsOpen(false)}
+                                                        className="block text-base text-gray-400 hover:text-[#ffd700] transition-colors py-2"
+                                                        target="_blank"
+                                                        download
+                                                    >
+                                                        {item.name}
+                                                    </a>
+                                                ) : (
+                                                    <Link
+                                                        key={item.name}
+                                                        to={item.href}
+                                                        onClick={() => setIsOpen(false)}
+                                                        className="block text-base text-gray-400 hover:text-[#ffd700] transition-colors py-2"
+                                                    >
+                                                        {item.name}
+                                                    </Link>
+                                                )
                                             ))}
                                         </div>
                                     )}
