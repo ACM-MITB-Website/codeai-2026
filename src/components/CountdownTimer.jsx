@@ -44,7 +44,7 @@ const CountdownTimer = () => {
 
 const TimerBox = ({ value, label }) => (
     <div className="flex flex-col items-center px-3 sm:px-5 md:px-8 py-3 md:py-4 bg-white/10 backdrop-blur-sm rounded-lg border border-[#ffd700]/30 min-w-[70px] sm:min-w-[90px] md:min-w-[120px]">
-        <span className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#ffd700] tabular-nums">
+        <span className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#ffd700] tabular-nums font-heading">
             {String(value).padStart(2, '0')}
         </span>
         <span className="text-[9px] sm:text-[11px] md:text-xs uppercase tracking-widest text-gray-300 font-medium mt-1">

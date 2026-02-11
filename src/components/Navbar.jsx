@@ -42,10 +42,10 @@ function Navbar() {
                         {/* Logo / Brand */}
                         <div className="flex items-center gap-4">
                             <Link to="/" className="flex items-center gap-2" target="_self">
-                                <span className="text-white font-bold text-xl tracking-wide">
+                                <span className="text-white font-bold text-xl tracking-wide font-heading">
                                     CODE-AI
                                 </span>
-                                <span className="text-[#ffd700] font-bold text-xl">2026</span>
+                                <span className="text-[#ffd700] font-bold text-xl font-heading">2026</span>
                             </Link>
 
                             {/* Logos Addition */}
@@ -98,11 +98,10 @@ function Navbar() {
                                                 </svg>
                                             </button>
                                             <div
-                                                className={`absolute top-full left-0 mt-0 bg-white shadow-2xl min-w-[300px] rounded-b-lg overflow-hidden border-t-[3px] border-[#ffd700] origin-top transition-[opacity,transform] duration-200 ease-out ${
-                                                    openDropdown === link.name
+                                                className={`absolute top-full left-0 mt-0 bg-white shadow-2xl min-w-[300px] rounded-b-lg overflow-hidden border-t-[3px] border-[#ffd700] origin-top transition-[opacity,transform] duration-200 ease-out ${openDropdown === link.name
                                                         ? 'opacity-100 translate-y-0 scale-100 visible'
                                                         : 'opacity-0 -translate-y-2 scale-95 invisible'
-                                                }`}
+                                                    }`}
                                                 style={{ zIndex: 100 }}
                                             >
                                                 <div className="py-2">
