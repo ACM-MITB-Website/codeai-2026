@@ -35,7 +35,6 @@ function Navbar() {
 
     return (
         <>
-            {/* Dark Navy Navbar - IEEE INFOCOM Style */}
             <nav className="fixed top-0 left-0 w-full z-50 bg-[#1a2332] border-b-[3px] border-[#ffd700]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
@@ -143,16 +142,13 @@ function Navbar() {
                             ))}
                         </div>
 
-                        {/* Right Side Actions */}
                         <div className="flex items-center gap-4">
-                            {/* Register Button */}
                             <Link
                                 to="/registration"
                                 className="hidden md:inline-flex items-center justify-center text-lg px-5 py-2 font-bold bg-[#ffd700] text-[#1a2332] hover:bg-[#ffb800] transition-all duration-300"
                             >
                                 REGISTER NOW
                             </Link>
-                            {/* Mobile Menu Button */}
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
                                 className="md:hidden p-2 text-white hover:text-[#ffd700] transition-colors"

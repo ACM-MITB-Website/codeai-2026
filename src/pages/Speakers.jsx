@@ -14,7 +14,6 @@ function Speakers() {
 
     return (
         <main className="min-h-screen bg-white">
-            {/* Hero Section */}
             <section className="relative pt-20 sm:pt-32 pb-12 overflow-hidden bg-[#1a2332]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center">
@@ -31,6 +30,7 @@ function Speakers() {
                     {speakers.map((speaker) => (
                         <div key={speaker.name} className="group relative w-full sm:w-[350px]">
                             {/* Hover Glow Effect */}
+                                {/* Hover Glow Effect */}
                             <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ffd700] to-[#ffb800] rounded-2xl opacity-0 group-hover:opacity-50 blur transition duration-500"></div>
 
                             <div className="relative bg-white border border-gray-200 rounded-2xl p-8 flex flex-col items-center text-center h-full hover:border-[#ffd700] transition-colors duration-300 shadow-lg">

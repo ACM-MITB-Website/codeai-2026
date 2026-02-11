@@ -1,5 +1,4 @@
 function Committees() {
-    // Honorary Committee - Chief Patrons
     const chiefPatrons = [
         {
             name: 'Prof. (Dr.) Ramdas M Pai',
@@ -722,7 +721,6 @@ function Committees() {
 
     return (
         <main className="min-h-screen bg-white">
-            {/* Hero Section */}
             <section className="relative pt-20 sm:pt-32 pb-20 overflow-hidden bg-[#1a2332]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center mb-8">
@@ -736,7 +734,6 @@ function Committees() {
                 </div>
             </section>
 
-            {/* Chief Patrons */}
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-white">
                 <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
                     <span className="text-[#ffd700]">◆</span> Chief Patrons{' '}

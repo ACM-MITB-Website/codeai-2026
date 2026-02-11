@@ -48,15 +48,10 @@ function Home() {
 
     return (
         <main className="w-full">
-            {/* Hero Section - Full Width Taiwan Image Slideshow */}
             <section className="relative w-full">
-                {/* Hero Slideshow */}
                 <HeroSlideshow />
-
-                {/* Hero Banner - Conference Info */}
                 <div className="hero-banner py-12 md:py-20">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        {/* Main Title */}
                         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
                             CODE-AI <span className="text-[#ffd700]">{typingText}</span>
                             <span className="animate-pulse">_</span>
@@ -67,7 +62,6 @@ function Home() {
                             Artificial Intelligence
                         </h2>
 
-                        {/* Date Badge */}
                         <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-8">
                             <span className="date-badge text-sm sm:text-base px-4 py-2 sm:px-6 sm:py-3">
                                 <svg
@@ -87,7 +81,6 @@ function Home() {
                             </span>
                         </div>
 
-                        {/* Hosted By & Collaboration */}
                         <div className="mt-8 mb-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-start max-w-5xl mx-auto">
                             <div className="flex flex-col items-center text-center">
                                 <p className="text-[#ffd700] font-semibold uppercase tracking-wider mb-3 text-xs sm:text-sm md:text-base">
@@ -127,12 +120,9 @@ function Home() {
                             </div>
                         </div>
 
-                        {/* Countdown Timer */}
                         <div className="mb-10 scale-90 sm:scale-100">
                             <CountdownTimer />
                         </div>
-
-                        {/* CTA Buttons */}
                         <div className="flex flex-col items-center mb-4">
                             <div className="flex flex-col sm:flex-row gap-4 justify-center relative w-full sm:w-auto px-4">
                                 <Link to="/registration" className="btn-primary text-base sm:text-lg w-full sm:w-auto">
@@ -152,10 +142,7 @@ function Home() {
                 </div>
             </section>
 
-            {/* Statistics Section */}
             <ConferenceStats />
-
-            {/* About Section - Cream Background */}
             <section id="about" className="w-full py-20 bg-[#f8f6f2] reveal">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
@@ -211,7 +198,6 @@ function Home() {
                 </div>
             </section>
 
-            {/* Organizers Section - White Background */}
             <section className="w-full py-20 bg-white reveal">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
@@ -220,7 +206,6 @@ function Home() {
                     <div className="divider-gold"></div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-                        {/* National Tsing Hua University */}
                         <div className="partner-card h-full flex flex-col">
                             <img
                                 src="/img/venue-taiwan.jpg"
@@ -252,7 +237,6 @@ function Home() {
                             </div>
                         </div>
 
-                        {/* MIT Bengaluru */}
                         <div className="partner-card h-full flex flex-col">
                             <img
                                 src="/img/mitb.jpg"
@@ -279,7 +263,6 @@ function Home() {
                             </div>
                         </div>
 
-                        {/* ACM MITB */}
                         <div className="partner-card h-full flex flex-col">
                             <div className="h-56 bg-[#1a2332] rounded-t-lg flex items-center justify-center p-6">
                                 <img
@@ -311,17 +294,12 @@ function Home() {
                 </div>
             </section>
 
-            {/* Academic Partners Section */}
             <div className="w-full reveal">
                 <AcademicPartners />
             </div>
-
-            {/* Sponsors & Organizers Section */}
             <div className="w-full reveal">
                 <Sponsors />
             </div>
-
-            {/* Event Location Section */}
             <div className="w-full reveal">
                 <EventLocation />
             </div>

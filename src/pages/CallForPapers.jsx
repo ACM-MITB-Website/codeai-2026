@@ -20,7 +20,6 @@ function CallForPapers() {
 
     return (
         <main className="min-h-screen bg-white">
-            {/* Hero Section */}
             <section className="relative pt-20 sm:pt-32 pb-12 overflow-hidden bg-[#1a2332]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center">
@@ -35,7 +34,6 @@ function CallForPapers() {
             </section>
 
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                {/* Submission Types */}
                 <div className="bg-white border border-gray-200 rounded-2xl p-8 mb-8 shadow-lg">
                     <h2 className="text-2xl font-semibold text-gray-900 mb-4">Submission Types</h2>
                     <ul className="space-y-2">
@@ -56,7 +54,6 @@ function CallForPapers() {
                     </ul>
                 </div>
 
-                {/* Important Dates */}
                 <div className="bg-white border border-gray-200 rounded-2xl p-8 mb-8 shadow-lg">
                     <h2 className="text-2xl font-semibold text-gray-900 mb-6">Important Dates</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">

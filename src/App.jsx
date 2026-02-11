@@ -20,19 +20,14 @@ function App() {
     const observerRef = useRef(null)
 
     useEffect(() => {
-        // Force cleanup of any scroll locks that might have gotten stuck
         document.body.style.overflow = ''
-        document.body.classList.remove('antigravity-scroll-lock') // Remove the problematic class
-
-        // Reset scroll position on route change
+        document.body.classList.remove('antigravity-scroll-lock')
         window.scrollTo(0, 0)
 
-        // Cleanup previous observer
         if (observerRef.current) {
             observerRef.current.disconnect()
         }
 
-        // Small timeout to ensure DOM is ready
         const timeoutId = setTimeout(() => {
             observerRef.current = new IntersectionObserver(
                 (entries) => {
@@ -51,7 +46,6 @@ function App() {
             elements.forEach((el) => observerRef.current.observe(el))
         }, 100)
 
-        // Fallback: Ensure elements are revealed if observer fails (safety net for blank screen)
         const fallbackTimeout = setTimeout(() => {
             document.querySelectorAll('.reveal').forEach((el) => el.classList.add('active'))
         }, 500)
@@ -63,15 +57,13 @@ function App() {
                 observerRef.current.disconnect()
             }
         }
-    }, [location.pathname]) // Re-run when route changes
+    }, [location.pathname])
 
     return (
         <div className="min-h-screen bg-white text-gray-900">
             <Navbar />
             <AnnouncementBanner />
             <div className="pt-[100px]">
-                {' '}
-                {/* Offset for fixed banner */}
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/committees" element={<Committees />} />

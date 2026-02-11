@@ -33,7 +33,6 @@ function LogoGrid() {
                     </p>
                 </div>
 
-                {/* Static Logo Grid - Consistent Containers */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
                     {logos.map((logo, index) => (
                         <div

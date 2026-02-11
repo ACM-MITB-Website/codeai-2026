@@ -44,7 +44,6 @@ function Publications() {
 
     return (
         <main className="min-h-screen bg-white">
-            {/* Hero Section */}
             <section className="relative pt-20 sm:pt-32 pb-12 overflow-hidden bg-[#1a2332]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center">
@@ -57,7 +56,6 @@ function Publications() {
             </section>
 
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                {/* Proceedings Section */}
                 <div className="mb-20">
                     <div className="bg-[#f8f6f2] rounded-2xl p-8 md:p-12 mb-12 border border-[#ffd700]/30 text-center shadow-lg">
                         <p className="text-xl md:text-2xl text-gray-700 font-medium italic max-w-4xl mx-auto leading-relaxed">
@@ -108,7 +106,6 @@ function Publications() {
                     </div>
                 </div>
 
-                {/* Journals Section */}
                 <div className="mb-20">
                     <div className="flex items-center gap-3 mb-8">
                         <span className="text-[#ffd700] text-2xl">★</span>
@@ -152,7 +149,6 @@ function Publications() {
                     </div>
                 </div>
 
-                {/* Ethics Section */}
                 <div>
                     <div className="flex items-center gap-3 mb-8">
                         <span className="text-[#ffd700] text-2xl">★</span>
