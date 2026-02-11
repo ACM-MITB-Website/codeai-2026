@@ -170,6 +170,7 @@ function loadFooter() {
                         </div>
                     </div>
                     <a href="call-for-papers.html" class="btn btn-warning text-navy fw-semibold w-100 mt-3">Submit Paper</a>
+                    <p class="text-white-50 small text-center mt-2 mb-0">*Approval Pending</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-warning fw-bold mb-3">Resources</h5>

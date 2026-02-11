@@ -598,42 +598,343 @@
                 <h2 class="text-center fw-bold mb-5"><span class="text-warning">◆</span> Advisory Committee <span
                         class="text-warning">◆</span></h2>
                 <div class="row g-3">
-                    <!-- Since this list is huge, I will abbreviate it in this logical step for brevity in the tool call 
-                     but in a real scenario I would output the full list. 
-                     Here is a representative subset to demonstrate structure. 
-                     Typically I would use a loop in a template engine. -->
-                    <ul class="list-group list-group-flush shadow-sm rounded-4 overflow-hidden">
+                        <ul class="list-group list-group-flush shadow-sm rounded-4 overflow-hidden">
                         <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                             <div><span class="fw-bold">Dr. Manohara M Pai</span> <span
-                                    class="text-secondary small ms-2">Senior Professor</span></div>
-                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Dept. of
-                                ICT</span>
+                                class="text-secondary small ms-2">Senior Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Department of Information &amp; Communication Technology</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                             <div><span class="fw-bold">Dr. Hareesha K S</span> <span
-                                    class="text-secondary small ms-2">Director</span></div>
-                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">ICAS -
-                                MAHE</span>
+                                class="text-secondary small ms-2">Director</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">International Centre for Applied Sciences - MAHE</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                             <div><span class="fw-bold">Dr. Antoine Bossard</span> <span
-                                    class="text-secondary small ms-2">Professor</span></div>
-                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Kanagawa
-                                University (Japan)</span>
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Kanagawa University (Japan)</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                             <div><span class="fw-bold">Dr. Chenren Xu</span> <span
-                                    class="text-secondary small ms-2">Associate Professor</span></div>
-                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Peking
-                                University (China)</span>
+                                class="text-secondary small ms-2">Associate Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Peking University (China)</span>
                         </li>
-                        <!-- ... (Truncated for tool output limit, essentially repeating pattern for all members) ... -->
-                        <li class="list-group-item p-3 text-center text-muted fst-italic">... and many more
-                            distinguished members.</li>
-                    </ul>
-                    <!-- NOTE: For the sake of the user's specific request "maintaining exact UI/UX", 
-                     I should normally include ALL members. 
-                     I will generate the full list in the actual file writing to ensure completeness. -->
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. S. K. Lakshmanaprabhu</span> <span
+                                class="text-secondary small ms-2">Asst. Manager</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Renault Nissan Technology &amp; Business Centre India (RNTBCI)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Ankur Gupta</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Model Institute of Engineering and Technology, Jammu</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Dilip Kumar S M</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University Visvesvaraya College of Engineering (UVCE), Bengaluru</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Prasant Misra</span> <span
+                                class="text-secondary small ms-2">Senior Scientist</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Tata Consultancy Services India</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Vijay Arya</span> <span
+                                class="text-secondary small ms-2">Senior Researcher</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">IBM Research</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Adrian Florea</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Lucian Blaga University of Sibiu (Romania)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Alex S Taylor</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University of London (United Kingdom)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. David Coyle</span> <span
+                                class="text-secondary small ms-2">Associate Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University College Dublin (Ireland)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Demetrios Zeinalipour-Yazti</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University of Cyprus (Cyprus)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Alessio Malizia</span> <span
+                                class="text-secondary small ms-2">Associate Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University of Pisa</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Andre Inacio Reis</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Federal University of Rio Grande do Sul</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Joel J P C Rodrigues</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Federal University of Piaui</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. John Atkinson</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Universidad Adolfo Ibanez (Chile)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Cristiano A Costa</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University of the Rio dos Sinos Valley</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Tshilidzi Marwala</span> <span
+                                class="text-secondary small ms-2">Vice Chancellor &amp; Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University of Johannesburg (South Africa)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Martin Stephanus Olivier</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University of Pretoria (South Africa)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Kester Quist-Aphetsi</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Ghana Communication Technology University</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Sameerchand Pudaruth</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University of Mauritius (Mauritius)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Jan Hendrik Kroeze</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University of South Africa (South Africa)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Ashraf Saad Hussein</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Arab Open University Kuwait (Kuwait)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Ferda Ofli</span> <span
+                                class="text-secondary small ms-2">Senior Scientist</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Qatar Computing Research Institute (Qatar)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Haitham S Hamza</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Cairo University Egypt</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Suhaib A Fahmy</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">King Abdullah University of Science and Technology</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Mourad Ouzzani</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Qatar Computing Research Institute</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Adam R Talcott</span> <span
+                                class="text-secondary small ms-2">Consulting Professional</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University of California, Santa Barbara</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Adam A Porter</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University of Maryland, College Park (UMD)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Aaron Daniel Adler</span> <span
+                                class="text-secondary small ms-2">Scientist</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">BBN Technologies</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Adam Chlipala</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Massachusetts Institute of Technology</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Jorge Armin Mazariegos</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Universidad de San Carlos de Guatemala</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Ajay K Gupta</span> <span
+                                class="text-secondary small ms-2">Director of Computer Resources</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Old Dominion University</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Jerry Miller</span> <span
+                                class="text-secondary small ms-2">Research Coordinator</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Florida International University, USA</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Harish Karthikeyan</span> <span
+                                class="text-secondary small ms-2">Research Scientist</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">New York University, USA</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Heggere Ranganath</span> <span
+                                class="text-secondary small ms-2">Professor Emeritus</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">The University of Alabama, Huntsville</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Matt Green</span> <span
+                                class="text-secondary small ms-2">Managing Director</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">KB Walker, USA</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Ramkumar Krishnamoorthy</span> <span
+                                class="text-secondary small ms-2">Department of ICT</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Villa College, Maldives</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Milind Gandhe</span> <span
+                                class="text-secondary small ms-2">Chief Program Officer</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">MINRO, IIIT Bangalore</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. P. Nagabhushan</span> <span
+                                class="text-secondary small ms-2">Vice-chancellor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Vignan University, Andhra Pradesh</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. V Susheela Devi</span> <span
+                                class="text-secondary small ms-2">Principal Research Scientist</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">IISc, Bangalore</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Aloknath De</span> <span
+                                class="text-secondary small ms-2">CTO</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Samsung India, Bangalore</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Prof. L M Patnaik</span> <span
+                                class="text-secondary small ms-2">Retired Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">IISc, Bangalore</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Y Narahari</span> <span
+                                class="text-secondary small ms-2">Dean Computer Science and Automation</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">IISc, Bangalore</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Channappa B Akki</span> <span
+                                class="text-secondary small ms-2">Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">IIIT, Dharwad</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Prof. Poornima Ajayan</span> <span
+                                class="text-secondary small ms-2">Professor Finance And Budget Analyst</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Rice University, Houston, Texas</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Keshava Munegowda</span> <span
+                                class="text-secondary small ms-2">Vice President</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Securities database engineering division of Goldman Sachs, Bangalore</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Chidananda Gowda</span> <span
+                                class="text-secondary small ms-2">Former Vice Chancellor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Kuvempu University, Mysore</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Sundaram Suresh</span> <span
+                                class="text-secondary small ms-2">Associate Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">School of Computer Science and Engineering NTU, Singapore</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Heena Rathore</span> <span
+                                class="text-secondary small ms-2">ACM Distinguished Speaker, Assistant Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University of Texas, USA</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Paolo Trunfio</span> <span
+                                class="text-secondary small ms-2">Associate Professor, Computer Engineering</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University of Calabria, Italy</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Fernando Koch</span> <span
+                                class="text-secondary small ms-2">IBM GTS Innovation Senior Technical Solutions Manager</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Eisenhower Fellow, ACM Distinguished Speaker</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Prof. Amlan Chakrabarti</span> <span
+                                class="text-secondary small ms-2">Dean Engg. and Tech. &amp; Director, School of IT</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University of Calcutta</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Varun Menon</span> <span
+                                class="text-secondary small ms-2">Distinguished Speaker at ACM, Associate Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">SCMS Group</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Ullas Nambiar</span> <span
+                                class="text-secondary small ms-2">Principal Director AI at Accenture, Innovation Strategist</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Bengaluru</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Ramasuri Narayanam</span> <span
+                                class="text-secondary small ms-2">Senior Research Scientist</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">IBM Research, India</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Anand Nayyar</span> <span
+                                class="text-secondary small ms-2">Professor, Researcher, Scientist, Author</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">ACM Distinguished Speaker</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Pradeep Kumar TS</span> <span
+                                class="text-secondary small ms-2">Associate Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Vellore Institute of Technology (VIT) Chennai campus</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Prasanna Ranjith Christodoss</span> <span
+                                class="text-secondary small ms-2">Faculty of Information Technology</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Shinas College of Technology, Sultanate of Oman</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Neha Sharma</span> <span
+                                class="text-secondary small ms-2">Founder Secretary</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Society for Data Science, IEEE Pune Section</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Houbing Song</span> <span
+                                class="text-secondary small ms-2">Director, Security &amp; Optimization for Networked Globe Laboratory (SONG Lab)</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Embry-Riddle Aeronautical University</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Nawab Muhammad Faseeh Qureshi</span> <span
+                                class="text-secondary small ms-2">Assistant Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Sungkyunkwan University, Korea</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Mahmoud Hassaballah</span> <span
+                                class="text-secondary small ms-2">Associate Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">South Valley University, Qena, Egypt</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Celestine Iwendi</span> <span
+                                class="text-secondary small ms-2">ACM Distinguished Speaker &amp; Associate Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">University of Bolton, UK</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Lili Arabuli</span> <span
+                                class="text-secondary small ms-2">Associate Professor</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">The University of Georgia, USA</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><span class="fw-bold">Dr. Susan M Zvacek</span> <span
+                                class="text-secondary small ms-2">ACM Distinguished Speaker, Consultant &amp; Teacher</span></div>
+                            <span class="badge bg-light text-dark text-wrap text-end" style="max-width: 50%;">Colorado, USA</span>
+                        </li>
+                        </ul>
                 </div>
             </div>
         </section>
