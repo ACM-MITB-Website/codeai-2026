@@ -34,7 +34,7 @@ function Footer() {
                             </div>
                         </div>
                         <div className="space-y-3 pt-4 border-t border-white/10">
-                            <h4 className="text-base font-semibold text-white">Developers</h4>
+                            <h4 className="text-base font-bold text-[#ffd700] pb-2 border-b border-[#ffd700]/50">Developers</h4>
                             <div className="space-y-2 text-sm text-gray-300">
                                 <div className="flex items-center justify-between gap-3">
                                     <span className="font-semibold text-white">Anchit Goel</span>
