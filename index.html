@@ -171,7 +171,7 @@
                     </h2>
 
                     <div class="d-flex justify-content-center gap-3 mb-5">
-                        <span class="date-badge">
+                        <span class="date-badge home-date-pill">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="bi bi-calendar me-2" viewBox="0 0 16 16">
                                 <path
@@ -182,22 +182,23 @@
                     </div>
 
                     <!-- Organizers Logos -->
-                    <div class="row justify-content-center align-items-start gap-5 mb-5 mx-auto"
-                        style="max-width: 1000px;">
-                        <div class="col-md-5 d-flex flex-col align-items-center text-center">
-                            <p class="text-warning fw-semibold text-uppercase small mb-3">Organized by</p>
-                            <img loading="lazy" decoding="async" src="assets/img/mahe-blru-logo2.jpeg" alt="MAHE Bengaluru"
-                                class="img-fluid mb-3 rounded" style="max-height: 150px;">
-                            <p class="text-white fw-medium h5 mb-1">School of Computer Engineering,</p>
-                            <p class="text-white fw-medium h5 mb-2">Manipal Institute of Technology Bengaluru</p>
-                            <p class="text-secondary small">Manipal Academy of Higher Education (MAHE) Bengaluru</p>
+                    <div class="row justify-content-center align-items-start gap-5 mb-5 mx-auto home-organizers">
+                        <div class="col-md-5 d-flex flex-column align-items-center text-center organizer-card">
+                            <p class="organizer-label">Organized by</p>
+                            <div class="organizer-logo-box">
+                                <img loading="lazy" decoding="async" src="assets/img/mahe-blru-logo2.jpeg" alt="MAHE Bengaluru"
+                                    class="img-fluid organizer-logo" style="max-height: 140px;">
+                            </div>
+                            <p class="organizer-title">School of Computer Engineering,</p>
+                            <p class="organizer-title">Manipal Institute of Technology Bengaluru</p>
+                            <p class="organizer-subtitle">Manipal Academy of Higher Education (MAHE) Bengaluru</p>
                         </div>
-                        <div class="col-md-5 d-flex flex-col align-items-center text-center">
-                            <p class="text-warning fw-semibold text-uppercase small mb-3">In Collaboration with</p>
+                        <div class="col-md-5 d-flex flex-column align-items-center text-center organizer-card">
+                            <p class="organizer-label">In Collaboration with</p>
                             <img loading="lazy" decoding="async" src="assets/img/nthu-logo.svg" alt="National Tsing Hua University"
-                                class="img-fluid mb-3" style="max-height: 100px;">
-                            <p class="text-white fw-medium h5 mb-2">National Tsing Hua University</p>
-                            <p class="text-secondary small">Hsinchu, Taiwan</p>
+                                class="img-fluid organizer-logo-seal" style="max-height: 110px;">
+                            <p class="organizer-title">National Tsing Hua University</p>
+                            <p class="organizer-subtitle">Hsinchu, Taiwan</p>
                         </div>
                     </div>
 
@@ -205,42 +206,42 @@
                     <div class="mb-5 d-flex justify-content-center scale-90 sm-scale-100">
                         <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-4 py-4 w-100"
                             id="countdown-timer">
-                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 bg-white bg-opacity-10 backdrop-blur rounded border border-warning border-opacity-25"
+                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 countdown-tile"
                                 style="min-width: 90px;">
-                                <span class="display-5 fw-bold text-warning font-heading tabular-nums"
+                                <span class="display-5 fw-bold text-warning font-heading tabular-nums countdown-number"
                                     id="timer-days">00</span>
-                                <span class="small text-uppercase text-secondary fw-medium mt-1">Days</span>
+                                <span class="small text-uppercase text-secondary fw-medium mt-1 countdown-label">Days</span>
                             </div>
-                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 bg-white bg-opacity-10 backdrop-blur rounded border border-warning border-opacity-25"
+                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 countdown-tile"
                                 style="min-width: 90px;">
-                                <span class="display-5 fw-bold text-warning font-heading tabular-nums"
+                                <span class="display-5 fw-bold text-warning font-heading tabular-nums countdown-number"
                                     id="timer-hours">00</span>
-                                <span class="small text-uppercase text-secondary fw-medium mt-1">Hours</span>
+                                <span class="small text-uppercase text-secondary fw-medium mt-1 countdown-label">Hours</span>
                             </div>
-                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 bg-white bg-opacity-10 backdrop-blur rounded border border-warning border-opacity-25"
+                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 countdown-tile"
                                 style="min-width: 90px;">
-                                <span class="display-5 fw-bold text-warning font-heading tabular-nums"
+                                <span class="display-5 fw-bold text-warning font-heading tabular-nums countdown-number"
                                     id="timer-minutes">00</span>
-                                <span class="small text-uppercase text-secondary fw-medium mt-1">Minutes</span>
+                                <span class="small text-uppercase text-secondary fw-medium mt-1 countdown-label">Minutes</span>
                             </div>
-                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 bg-white bg-opacity-10 backdrop-blur rounded border border-warning border-opacity-25"
+                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 countdown-tile"
                                 style="min-width: 90px;">
-                                <span class="display-5 fw-bold text-warning font-heading tabular-nums"
+                                <span class="display-5 fw-bold text-warning font-heading tabular-nums countdown-number"
                                     id="timer-seconds">00</span>
-                                <span class="small text-uppercase text-secondary fw-medium mt-1">Seconds</span>
+                                <span class="small text-uppercase text-secondary fw-medium mt-1 countdown-label">Seconds</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Buttons -->
                     <div class="d-flex flex-column align-items-center mb-4">
-                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center position-relative">
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center align-items-center">
                             <a href="registration.html" class="btn btn-primary btn-lg">Register Now</a>
-                            <a href="call-for-papers.html"
-                                class="btn btn-outline btn-outline-warning btn-lg text-white border-warning">Submit
-                                Paper</a>
-                            <div class="position-absolute w-100 text-center" style="bottom: -2rem;">
-                                <span class="text-warning small fst-italic">*Approval Pending</span>
+                            <div class="d-flex flex-column align-items-center">
+                                <a href="call-for-papers.html"
+                                    class="btn btn-outline btn-outline-warning btn-lg text-white border-warning">Submit
+                                    Paper</a>
+                                <span class="text-warning small fst-italic mt-2">*Approval Pending</span>
                             </div>
                         </div>
                     </div>
