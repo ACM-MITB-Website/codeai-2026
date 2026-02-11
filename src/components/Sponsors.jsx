@@ -45,26 +45,26 @@ function Sponsors() {
                 {/* Organizers Grid */}
                 <div className="border-t border-gray-200 pt-16">
                     <div className="grid md:grid-cols-3 gap-12">
-                        {/* Hosted By */}
+                        {/* Organized By */}
                         <div>
-                            <SectionHeader title="Hosted By" />
-                            {organizations.hosted.map((o) => (
+                            <SectionHeader title="Organized By" />
+                            {organizations.organized.map((o) => (
                                 <OrgCard key={o.name} {...o} />
                             ))}
                         </div>
 
-                        {/* In Association With */}
+                        {/* Managed By */}
                         <div>
-                            <SectionHeader title="Organized By" />
+                            <SectionHeader title="Managed By" />
                             {organizations.association.map((o) => (
                                 <OrgCard key={o.name} {...o} />
                             ))}
                         </div>
 
-                        {/* Organized By */}
+                        {/* Hosted By */}
                         <div>
-                            <SectionHeader title="Managed By" />
-                            {organizations.organized.map((o) => (
+                            <SectionHeader title="Hosted By" />
+                            {organizations.hosted.map((o) => (
                                 <OrgCard key={o.name} {...o} />
                             ))}
                         </div>

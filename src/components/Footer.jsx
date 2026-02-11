@@ -134,7 +134,7 @@ function Footer() {
                                 to="/call-for-papers"
                                 className="hover:text-[#ffd700] transition-colors"
                             >
-                                Call for Paper
+                                Call for Papers
                             </Link>
                             <Link to="#" className="hover:text-[#ffd700] transition-colors">
                                 Call for Posters
