@@ -596,6 +596,71 @@ html {
 }
 
 /* ====================================
+   AWARDS
+   ==================================== */
+
+.award-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.award-card {
+    background: #ffffff;
+    border: 1px solid rgba(31, 41, 55, 0.12);
+    border-radius: 18px;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+    display: flex;
+    gap: 1.75rem;
+    align-items: flex-start;
+    padding: 2rem 2.5rem;
+}
+
+.award-card--featured {
+    border-color: var(--primary);
+    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
+}
+
+.award-badge {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: #fff4bf;
+    color: #b98900;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.award-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.75rem;
+}
+
+.award-card--featured .award-title {
+    color: var(--primary);
+}
+
+.award-text {
+    color: #5b6472;
+    line-height: 1.7;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .award-card {
+        flex-direction: column;
+        padding: 1.75rem 1.75rem;
+    }
+}
+
+/* ====================================
    MISC UTILITIES
    ==================================== */
 
