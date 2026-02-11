@@ -11,16 +11,16 @@ function Sponsors() {
         ],
         association: [
             {
-                name: 'SoCE',
+                name: 'ACM MITB Student Chapter',
                 sub: 'Manipal Institute of Technology Bengaluru',
-                logo: '/img/mahe-blru-logo.png'
+                logo: '/img/acm-mitb-logo.png'
             }
         ],
         organized: [
             {
-                name: 'ACM MITB Student Chapter',
+                name: 'SoCE',
                 sub: 'Manipal Institute of Technology Bengaluru',
-                logo: '/img/acm-mitb-logo.png'
+                logo: '/img/mahe-blru-logo.png'
             }
         ]
     }
