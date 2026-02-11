@@ -694,7 +694,7 @@ html {
 
 .announcement-fast {
     display: inline-block;
-    animation: scroll-fast 10s linear infinite;
+    animation: scroll-fast 18s linear infinite;
 }
 
 @keyframes scroll-fast {
