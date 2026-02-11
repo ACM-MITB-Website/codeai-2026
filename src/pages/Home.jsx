@@ -220,6 +220,38 @@ function Home() {
                     <div className="divider-gold"></div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                        {/* National Tsing Hua University */}
+                        <div className="partner-card h-full flex flex-col">
+                            <img
+                                src="/img/venue-taiwan.jpg"
+                                alt="National Tsing Hua University"
+                                className="rounded-t-lg w-full object-cover h-56"
+                            />
+                            <div className="p-6 flex-1 flex flex-col">
+                                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                                    National Tsing Hua University
+                                </h3>
+                                <div className="text-gray-600 space-y-4 flex-1">
+                                    <p className="text-justify">
+                                        National Tsing Hua University (NTHU) is a leading public
+                                        research university located in Hsinchu, Taiwan, known for
+                                        its strong academic and research excellence. Originally
+                                        founded in Beijing in 1911 and re-established in Taiwan in
+                                        1956, NTHU is especially renowned for its programs in
+                                        science, engineering, and technology.
+                                    </p>
+                                    <p className="text-justify">
+                                        The university maintains close ties with Taiwan&apos;s
+                                        high-tech industry and the Hsinchu Science Park, fostering
+                                        innovation and applied research. NTHU consistently ranks
+                                        among the top universities in Asia, promoting
+                                        interdisciplinary learning and offering a global academic
+                                        environment focused on innovation and sustainability.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                         {/* MIT Bengaluru */}
                         <div className="partner-card h-full flex flex-col">
                             <img
@@ -271,38 +303,6 @@ function Home() {
                                         Our chapter is affiliated with the Association for Computing
                                         Machinery (ACM), the world&apos;s largest educational and
                                         scientific computing society.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* National Tsing Hua University */}
-                        <div className="partner-card h-full flex flex-col">
-                            <img
-                                src="/img/venue-taiwan.jpg"
-                                alt="National Tsing Hua University"
-                                className="rounded-t-lg w-full object-cover h-56"
-                            />
-                            <div className="p-6 flex-1 flex flex-col">
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                    National Tsing Hua University
-                                </h3>
-                                <div className="text-gray-600 space-y-4 flex-1">
-                                    <p className="text-justify">
-                                        National Tsing Hua University (NTHU) is a leading public
-                                        research university located in Hsinchu, Taiwan, known for
-                                        its strong academic and research excellence. Originally
-                                        founded in Beijing in 1911 and re-established in Taiwan in
-                                        1956, NTHU is especially renowned for its programs in
-                                        science, engineering, and technology.
-                                    </p>
-                                    <p className="text-justify">
-                                        The university maintains close ties with Taiwan&apos;s
-                                        high-tech industry and the Hsinchu Science Park, fostering
-                                        innovation and applied research. NTHU consistently ranks
-                                        among the top universities in Asia, promoting
-                                        interdisciplinary learning and offering a global academic
-                                        environment focused on innovation and sustainability.
                                     </p>
                                 </div>
                             </div>
