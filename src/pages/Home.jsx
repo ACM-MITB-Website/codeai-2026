@@ -54,24 +54,24 @@ function Home() {
                 <HeroSlideshow />
 
                 {/* Hero Banner - Conference Info */}
-                <div className="hero-banner">
+                <div className="hero-banner py-12 md:py-20">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         {/* Main Title */}
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
+                        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
                             CODE-AI <span className="text-[#ffd700]">{typingText}</span>
                             <span className="animate-pulse">_</span>
                         </h1>
 
-                        <h2 className="text-lg md:text-2xl text-gray-300 mb-6 max-w-3xl mx-auto">
+                        <h2 className="text-base md:text-2xl text-gray-300 mb-6 max-w-3xl mx-auto px-4">
                             3<sup>rd</sup> International Conference on Data Science & Exploration in
                             Artificial Intelligence
                         </h2>
 
                         {/* Date Badge */}
-                        <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-                            <span className="date-badge">
+                        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-8">
+                            <span className="date-badge text-sm sm:text-base px-4 py-2 sm:px-6 sm:py-3">
                                 <svg
-                                    className="w-5 h-5 mr-2"
+                                    className="w-4 h-4 sm:w-5 sm:h-5 mr-2"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -88,59 +88,61 @@ function Home() {
                         </div>
 
                         {/* Hosted By & Collaboration */}
-                        <div className="mt-8 mb-12 grid md:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
+                        <div className="mt-8 mb-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-start max-w-5xl mx-auto">
                             <div className="flex flex-col items-center text-center">
-                                <p className="text-[#ffd700] font-semibold uppercase tracking-wider mb-4 text-sm md:text-base">
+                                <p className="text-[#ffd700] font-semibold uppercase tracking-wider mb-3 text-xs sm:text-sm md:text-base">
                                     Organized by
                                 </p>
                                 <img
                                     src="/img/mahe-blru-logo2.jpeg"
                                     alt="MAHE Bengaluru"
-                                    className="h-32 md:h-48 w-auto object-contain mb-4 rounded-lg"
+                                    className="h-24 sm:h-32 md:h-48 w-auto object-contain mb-4 rounded-lg"
                                 />
-                                <p className="text-white font-medium text-lg leading-tight">
+                                <p className="text-white font-medium text-base sm:text-lg leading-tight">
                                     School of Computer Engineering,
                                 </p>
-                                <p className="text-white font-medium text-lg leading-tight">
-                                    Manipal Institute of Technology,Bengaluru
+                                <p className="text-white font-medium text-base sm:text-lg leading-tight">
+                                    Manipal Institute of Technology, Bengaluru
                                 </p>
-                                <p className="text-gray-300 text-base mt-1">
+                                <p className="text-gray-400 text-sm sm:text-base mt-2">
                                     Manipal Academy of Higher Education (MAHE), Bengaluru
                                 </p>
                             </div>
 
                             <div className="flex flex-col items-center text-center">
-                                <p className="text-[#ffd700] font-semibold uppercase tracking-wider mb-4 text-sm md:text-base">
+                                <p className="text-[#ffd700] font-semibold uppercase tracking-wider mb-3 text-xs sm:text-sm md:text-base">
                                     In Collaboration with
                                 </p>
                                 <img
                                     src="/img/nthu-logo.svg"
                                     alt="National Tsing Hua University"
-                                    className="h-24 md:h-32 w-auto object-contain mb-4"
+                                    className="h-16 sm:h-24 md:h-32 w-auto object-contain mb-4"
                                 />
-                                <p className="text-white font-medium text-lg leading-tight">
+                                <p className="text-white font-medium text-base sm:text-lg leading-tight">
                                     National Tsing Hua University
                                 </p>
-                                <p className="text-gray-300 text-base mt-1">Hsinchu, Taiwan</p>
+                                <p className="text-gray-400 text-sm sm:text-base mt-2">
+                                    Hsinchu, Taiwan
+                                </p>
                             </div>
                         </div>
 
                         {/* Countdown Timer */}
-                        <div className="mb-8">
+                        <div className="mb-10 scale-90 sm:scale-100">
                             <CountdownTimer />
                         </div>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-col items-center mb-8">
-                            <div className="flex flex-wrap gap-4 justify-center relative">
-                                <Link to="/registration" className="btn-primary text-lg">
+                        <div className="flex flex-col items-center mb-4">
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center relative w-full sm:w-auto px-4">
+                                <Link to="/registration" className="btn-primary text-base sm:text-lg w-full sm:w-auto">
                                     Register Now
                                 </Link>
-                                <Link to="/call-for-papers" className="btn-outline text-lg">
+                                <Link to="/call-for-papers" className="btn-outline text-base sm:text-lg w-full sm:w-auto">
                                     Submit Paper
                                 </Link>
-                                <div className="absolute -bottom-6 right-0 w-full text-right">
-                                    <span className="text-[#ffd700] text-xs font-semibold italic">
+                                <div className="absolute -bottom-8 right-0 left-0 sm:left-auto sm:text-right text-center">
+                                    <span className="text-[#ffd700] text-[10px] sm:text-xs font-semibold italic">
                                         *Approval Pending
                                     </span>
                                 </div>
@@ -323,7 +325,7 @@ function Home() {
             <div className="w-full reveal">
                 <EventLocation />
             </div>
-        </main>
+        </main >
     )
 }
 

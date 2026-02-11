@@ -15,7 +15,7 @@ function Speakers() {
     return (
         <main className="min-h-screen bg-white">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-12 overflow-hidden bg-[#1a2332]">
+            <section className="relative pt-20 sm:pt-32 pb-12 overflow-hidden bg-[#1a2332]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center">
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">

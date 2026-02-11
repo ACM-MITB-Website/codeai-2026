@@ -69,7 +69,7 @@ function App() {
         <div className="min-h-screen bg-white text-gray-900">
             <Navbar />
             <AnnouncementBanner />
-            <div className="pt-10">
+            <div className="pt-[100px]">
                 {' '}
                 {/* Offset for fixed banner */}
                 <Routes>

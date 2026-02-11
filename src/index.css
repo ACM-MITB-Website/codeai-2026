@@ -44,21 +44,21 @@ h6 {
 }
 
 h1 {
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-size: clamp(2.25rem, 8vw, 3.5rem);
     font-weight: 800;
     letter-spacing: -0.025em;
     line-height: 1.1;
 }
 
 h2 {
-    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1.2;
 }
 
 h3 {
-    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.125rem, 4vw, 1.5rem);
     font-weight: 600;
     line-height: 1.3;
 }
@@ -379,8 +379,8 @@ html {
 .hero-image-section {
     position: relative;
     width: 100%;
-    height: 60vh;
-    min-height: 400px;
+    height: 35vh;
+    min-height: 250px;
     max-height: 600px;
     overflow: hidden;
 }
@@ -676,8 +676,19 @@ html {
     }
 
     .hero-image-section {
-        height: 50vh;
-        min-height: 300px;
+        height: 30vh;
+        min-height: 200px;
+    }
+
+    .hero-banner {
+        padding: 2rem 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .hero-image-section {
+        height: 60vh;
+        min-height: 400px;
     }
 }
 
@@ -692,7 +703,7 @@ html {
 
 @keyframes scroll-fast {
     0% {
-        transform: translateX(100vw);
+        transform: translateX(100%);
     }
 
     100% {

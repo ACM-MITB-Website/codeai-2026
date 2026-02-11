@@ -33,7 +33,7 @@ function Registration() {
     return (
         <main className="min-h-screen bg-white">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-12 overflow-hidden bg-[#1a2332]">
+            <section className="relative pt-20 sm:pt-32 pb-12 overflow-hidden bg-[#1a2332]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center">
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -52,52 +52,63 @@ function Registration() {
                         Registration Fees
                     </h2>
 
-                    <div className="overflow-x-auto mb-6">
-                        <table className="w-full border-collapse">
-                            <thead>
-                                <tr>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-center border border-gray-300">
-                                        Registration Fee
-                                    </th>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-center border border-gray-300">
-                                        UG / PG / Research Scholars
-                                    </th>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-center border border-gray-300">
-                                        Academicians / Faculty
-                                    </th>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-center border border-gray-300">
-                                        R & D Organizations / Industry
-                                    </th>
-                                    <th className="bg-[#ffd700] text-gray-900 font-semibold p-4 text-center border border-gray-300">
-                                        Attendees
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {registrationFees.map((row, index) => (
-                                    <tr
-                                        key={index}
-                                        className="border-b border-gray-300 hover:bg-[#ffd700]/5"
-                                    >
-                                        <td className="font-medium p-4 text-gray-900 text-center border border-gray-300 whitespace-pre-line">
-                                            {row.category}
-                                        </td>
-                                        <td className="p-4 text-gray-700 text-center border border-gray-300">
-                                            {row.student}
-                                        </td>
-                                        <td className="p-4 text-gray-700 text-center border border-gray-300">
-                                            {row.faculty}
-                                        </td>
-                                        <td className="p-4 text-gray-700 text-center border border-gray-300">
-                                            {row.industry}
-                                        </td>
-                                        <td className="p-4 text-gray-700 text-center border border-gray-300">
-                                            {row.attendee}
-                                        </td>
+                    <div className="relative group overflow-hidden">
+                        <div className="overflow-x-auto mb-6 scrollbar-thin scrollbar-thumb-[#ffd700] pb-2">
+                            <table className="w-full border-collapse min-w-[600px] md:min-w-0">
+                                <thead>
+                                    <tr>
+                                        <th className="bg-[#ffd700] text-gray-900 font-semibold p-2 sm:p-4 text-center border border-gray-300 text-sm sm:text-base">
+                                            Registration Fee
+                                        </th>
+                                        <th className="bg-[#ffd700] text-gray-900 font-semibold p-2 sm:p-4 text-center border border-gray-300 text-sm sm:text-base">
+                                            UG / PG / Research Scholars
+                                        </th>
+                                        <th className="bg-[#ffd700] text-gray-900 font-semibold p-2 sm:p-4 text-center border border-gray-300 text-sm sm:text-base">
+                                            Academicians / Faculty
+                                        </th>
+                                        <th className="bg-[#ffd700] text-gray-900 font-semibold p-2 sm:p-4 text-center border border-gray-300 text-sm sm:text-base">
+                                            R & D Organizations / Industry
+                                        </th>
+                                        <th className="bg-[#ffd700] text-gray-900 font-semibold p-2 sm:p-4 text-center border border-gray-300 text-sm sm:text-base">
+                                            Attendees
+                                        </th>
                                     </tr>
-                                ))}
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    {registrationFees.map((row, index) => (
+                                        <tr
+                                            key={index}
+                                            className="border-b border-gray-300 hover:bg-[#ffd700]/5"
+                                        >
+                                            <td className="font-medium p-2 sm:p-4 text-gray-900 text-center border border-gray-300 whitespace-pre-line text-xs sm:text-sm">
+                                                {row.category}
+                                            </td>
+                                            <td className="p-2 sm:p-4 text-gray-700 text-center border border-gray-300 text-xs sm:text-sm">
+                                                {row.student}
+                                            </td>
+                                            <td className="p-2 sm:p-4 text-gray-700 text-center border border-gray-300 text-xs sm:text-sm">
+                                                {row.faculty}
+                                            </td>
+                                            <td className="p-2 sm:p-4 text-gray-700 text-center border border-gray-300 text-xs sm:text-sm">
+                                                {row.industry}
+                                            </td>
+                                            <td className="p-2 sm:p-4 text-gray-700 text-center border border-gray-300 text-xs sm:text-sm">
+                                                {row.attendee}
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                        {/* Scroll hint for mobile */}
+                        <div className="flex md:hidden items-center justify-center gap-2 text-gray-400 text-xs italic mb-4 animate-pulse">
+                            <span className="flex items-center gap-1">
+                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                                Scroll right to view more
+                            </span>
+                        </div>
                     </div>
 
                     <div className="text-center mb-6">

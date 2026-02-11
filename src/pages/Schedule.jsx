@@ -7,7 +7,7 @@ function Schedule() {
     return (
         <main className="min-h-screen bg-white">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-12 overflow-hidden bg-[#1a2332]">
+            <section className="relative pt-20 sm:pt-32 pb-12 overflow-hidden bg-[#1a2332]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center">
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -25,21 +25,19 @@ function Schedule() {
                 <div className="flex justify-center gap-4 mb-16">
                     <button
                         onClick={() => setActiveTab('day1')}
-                        className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
-                            activeTab === 'day1'
+                        className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${activeTab === 'day1'
                                 ? 'bg-[#ffd700] text-gray-900 shadow-lg shadow-[#ffd700]/20 scale-105'
                                 : 'bg-gray-100 text-gray-600 border border-gray-200 hover:border-[#ffd700] hover:text-[#ccac00]'
-                        }`}
+                            }`}
                     >
                         Day 1 - Apr 7
                     </button>
                     <button
                         onClick={() => setActiveTab('day2')}
-                        className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
-                            activeTab === 'day2'
+                        className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${activeTab === 'day2'
                                 ? 'bg-[#ffd700] text-gray-900 shadow-lg shadow-[#ffd700]/20 scale-105'
                                 : 'bg-gray-100 text-gray-600 border border-gray-200 hover:border-[#ffd700] hover:text-[#ccac00]'
-                        }`}
+                            }`}
                     >
                         Day 2 - Apr 8
                     </button>
