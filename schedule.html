@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conference Schedule for CODE AI 2026.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+    <link rel="icon" type="image/png" href="assets/img/acm-mitb-logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - CODE AI 2026</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .nav-pills .nav-link {
+            color: #6c757d;
+            background-color: #f8f9fa;
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: #ffd700;
+            color: #212529;
+            box-shadow: 0 4px 6px rgba(255, 215, 0, 0.25);
+        }
+
+        .nav-pills .nav-link:hover:not(.active) {
+            background-color: #e9ecef;
+            color: #ccac00;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar Placeholder -->
+    <div id="navbar-container"></div>
+
+    <main class="flex-grow-1" style="padding-top: 100px;">
+        <!-- Page Header -->
+        <section class="position-relative pt-5 pb-5 section-dark text-center overflow-hidden">
+            <!-- Background Grid/Overlay -->
+            <div class="position-absolute w-100 h-100 top-0 start-0 opacity-10"
+                style="background-image: url('assets/img/grid.svg');"></div>
+
+            <div class="container position-relative z-1 py-5">
+                <h1 class="display-3 fw-bold text-white mb-3">Conference <span class="text-warning">Schedule</span></h1>
+                <p class="text-gray-300 lead">Join us for two days of insights, innovation, and inspiration.</p>
+                <div class="divider-gold"></div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="py-5 bg-white">
+            <div class="container py-4">
+
+                <!-- Use Bootstrap Tabs for Schedule Toggling -->
+                <ul class="nav nav-pills justify-content-center mb-5" id="scheduleTab" role="tablist">
+                    <li class="nav-item mx-2" role="presentation">
+                        <button class="nav-link active" id="day1-tab" data-bs-toggle="pill" data-bs-target="#day1"
+                            type="button" role="tab" aria-controls="day1" aria-selected="true">Day 1 - Apr 7</button>
+                    </li>
+                    <li class="nav-item mx-2" role="presentation">
+                        <button class="nav-link" id="day2-tab" data-bs-toggle="pill" data-bs-target="#day2"
+                            type="button" role="tab" aria-controls="day2" aria-selected="false">Day 2 - Apr 8</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content d-flex justify-content-center" id="scheduleTabContent">
+                    <!-- Day 1 Content -->
+                    <div class="tab-pane fade show active text-center w-100" id="day1" role="tabpanel"
+                        aria-labelledby="day1-tab">
+                        <div class="card border-0 shadow-lg rounded-4 overflow-hidden mx-auto"
+                            style="max-width: 800px;">
+                            <div class="position-relative">
+                                <img loading="lazy" decoding="async" src="assets/img/placeholder.png" class="w-100 d-block opacity-75 object-fit-cover"
+                                    alt="Schedule Day 1" style="min-height: 400px; max-height: 600px;">
+
+                                <div
+                                    class="position-absolute top-50 start-50 translate-middle text-center p-4 bg-dark bg-opacity-75 rounded-4 backdrop-blur">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffd700"
+                                        class="bi bi-file-earmark-text mb-3 opacity-75" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                                        <path
+                                            d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+                                    </svg>
+                                    <h3 class="h4 fw-bold text-white mb-2">Brochure View</h3>
+                                    <p class="text-secondary small mb-3">Please replace this placeholder with the actual
+                                        schedule image for <span class="text-warning fw-bold">Day 1</span>.</p>
+                                    <code
+                                        class="d-block p-2 bg-white bg-opacity-10 rounded text-light x-small">static-site/assets/img/schedule-day1.jpg</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 Content -->
+                    <div class="tab-pane fade text-center w-100" id="day2" role="tabpanel" aria-labelledby="day2-tab">
+                        <div class="card border-0 shadow-lg rounded-4 overflow-hidden mx-auto"
+                            style="max-width: 800px;">
+                            <div class="position-relative">
+                                <img loading="lazy" decoding="async" src="assets/img/placeholder.png" class="w-100 d-block opacity-75 object-fit-cover"
+                                    alt="Schedule Day 2" style="min-height: 400px; max-height: 600px;">
+
+                                <div
+                                    class="position-absolute top-50 start-50 translate-middle text-center p-4 bg-dark bg-opacity-75 rounded-4 backdrop-blur">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffd700"
+                                        class="bi bi-file-earmark-text mb-3 opacity-75" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                                        <path
+                                            d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+                                    </svg>
+                                    <h3 class="h4 fw-bold text-white mb-2">Brochure View</h3>
+                                    <p class="text-secondary small mb-3">Please replace this placeholder with the actual
+                                        schedule image for <span class="text-warning fw-bold">Day 2</span>.</p>
+                                    <code
+                                        class="d-block p-2 bg-white bg-opacity-10 rounded text-light x-small">static-site/assets/img/schedule-day2.jpg</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Download Button -->
+                <div class="d-flex justify-content-center mt-5">
+                    <a href="#"
+                        class="btn btn-warning fw-bold px-4 py-3 shadow-lg d-flex align-items-center gap-2 hover-scale transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-download" viewBox="0 0 16 16">
+                            <path
+                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                        </svg>
+                        Download Full PDF
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

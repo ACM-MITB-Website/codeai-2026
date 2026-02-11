@@ -2,22 +2,665 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CODE AI 2026 - International Conference on Data Science & AI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="3rd International Conference on Data Science & Exploration in Artificial Intelligence - April 7-8, 2026 at MIT Bengaluru, MAHE" />
+        content="CODE AI 2026 - 3rd International Conference on Data Science & Exploration in Artificial Intelligence. Organized by Manipal Institute of Technology Bengaluru in collaboration with National Tsing Hua University, Taiwan.">
+    <meta name="keywords"
+        content="CODE AI 2026, Artificial Intelligence, Data Science, Conference, Manipal Institute of Technology, National Tsing Hua University, Machine Learning, Deep Learning">
+    <meta name="author" content="ACM MITB Student Chapter">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codeai.mitb.edu.in/">
+    <meta property="og:title" content="CODE AI 2026 - International Conference on Data Science & AI">
+    <meta property="og:description"
+        content="Join us for the 3rd International Conference on Data Science & Exploration in Artificial Intelligence in Taiwan.">
+    <meta property="og:image" content="https://codeai.mitb.edu.in/assets/img/mahe-blru-logo2.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://codeai.mitb.edu.in/">
+    <meta property="twitter:title" content="CODE AI 2026 - International Conference on Data Science & AI">
+    <meta property="twitter:description"
+        content="Join us for the 3rd International Conference on Data Science & Exploration in Artificial Intelligence in Taiwan.">
+    <meta property="twitter:image" content="https://codeai.mitb.edu.in/assets/img/mahe-blru-logo2.jpeg">
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+
+    <title>CODE AI 2026 - International Conference on Data Science & AI</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/acm-mitb-logo.png">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar Placeholder -->
+    <div id="navbar-container"></div>
+
+    <!-- Announcement Banner -->
+    <div class="fixed-top top-0 w-100 z-3" style="margin-top: 64px; background-color: #ffd700; overflow: hidden;">
+        <div class="py-2 overflow-hidden">
+            <div class="announcement-fast w-100">
+                <span class="fw-semibold text-dark small tracking-wide px-4 text-nowrap">
+                    🎉 Hybrid Mode Paper Presentation Available
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow-1" style="padding-top: 100px;">
+
+        <!-- Hero Section -->
+        <section class="position-relative w-100">
+            <!-- Hero Slideshow -->
+            <div id="heroCarousel" class="carousel slide carousel-fade hero-image-section bg-dark"
+                data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner h-100">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active h-100">
+                        <div class="position-absolute w-100 h-100">
+                            <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5241.JPG"
+                                class="w-100 h-100 object-fit-cover opacity-50 blur-lg scale-110" alt="Background">
+                        </div>
+                        <div
+                            class="carousel-caption d-flex align-items-center justify-content-center h-100 top-0 start-0 w-100">
+                            <div class="container d-flex justify-content-center">
+                                <div class="rounded-4 overflow-hidden shadow-lg"
+                                    style="max-height: 400px; max-width: 800px;">
+                                    <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5241.JPG"
+                                        class="img-fluid object-fit-cover w-100 h-100" alt="Conference Audience">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 (Group of 2) -->
+                    <div class="carousel-item h-100">
+                        <div class="position-absolute w-100 h-100">
+                            <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5205.JPG"
+                                class="w-100 h-100 object-fit-cover opacity-50 blur-lg scale-110" alt="Background">
+                        </div>
+                        <div
+                            class="carousel-caption d-flex align-items-center justify-content-center h-100 top-0 start-0 w-100">
+                            <div class="container d-flex gap-4 justify-content-center align-items-center h-75">
+                                <div class="rounded-4 overflow-hidden shadow-lg w-50 h-100">
+                                    <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5205.JPG" class="w-100 h-100 object-fit-cover"
+                                        alt="Conference Event">
+                                </div>
+                                <div class="rounded-4 overflow-hidden shadow-lg w-50 h-100">
+                                    <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5224.JPG" class="w-100 h-100 object-fit-cover"
+                                        alt="Conference Presentation">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 (Group of 2) -->
+                    <div class="carousel-item h-100">
+                        <div class="position-absolute w-100 h-100">
+                            <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5226.JPG"
+                                class="w-100 h-100 object-fit-cover opacity-50 blur-lg scale-110" alt="Background">
+                        </div>
+                        <div
+                            class="carousel-caption d-flex align-items-center justify-content-center h-100 top-0 start-0 w-100">
+                            <div class="container d-flex gap-4 justify-content-center align-items-center h-75">
+                                <div class="rounded-4 overflow-hidden shadow-lg w-50 h-100">
+                                    <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5226.JPG" class="w-100 h-100 object-fit-cover"
+                                        alt="Conference Interaction">
+                                </div>
+                                <div class="rounded-4 overflow-hidden shadow-lg w-50 h-100">
+                                    <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5228.JPG" class="w-100 h-100 object-fit-cover"
+                                        alt="Keynote Speech">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-item h-100">
+                        <div class="position-absolute w-100 h-100">
+                            <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5236.JPG"
+                                class="w-100 h-100 object-fit-cover opacity-50 blur-lg scale-110" alt="Background">
+                        </div>
+                        <div
+                            class="carousel-caption d-flex align-items-center justify-content-center h-100 top-0 start-0 w-100">
+                            <div class="container d-flex justify-content-center">
+                                <div class="rounded-4 overflow-hidden shadow-lg"
+                                    style="max-height: 400px; max-width: 800px;">
+                                    <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5236.JPG"
+                                        class="img-fluid object-fit-cover w-100 h-100" alt="Conference Talk">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon p-3 bg-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon p-3 bg-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- Hero Banner -->
+            <div class="hero-banner py-5 section-dark">
+                <div class="container">
+                    <h1 class="font-heading fw-bold text-white mb-4 display-3">
+                        CODE-AI <span class="text-warning" id="typing-text"></span><span class="blink-cursor">_</span>
+                    </h1>
+                    <h2 class="h4 text-gray-300 mb-5 mx-auto px-3" style="max-width: 800px;">
+                        3<sup>rd</sup> International Conference on Data Science & Exploration in Artificial Intelligence
+                    </h2>
+
+                    <div class="d-flex justify-content-center gap-3 mb-5">
+                        <span class="date-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-calendar me-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                            </svg>
+                            17th - 19th July 2026
+                        </span>
+                    </div>
+
+                    <!-- Organizers Logos -->
+                    <div class="row justify-content-center align-items-start gap-5 mb-5 mx-auto"
+                        style="max-width: 1000px;">
+                        <div class="col-md-5 d-flex flex-col align-items-center text-center">
+                            <p class="text-warning fw-semibold text-uppercase small mb-3">Organized by</p>
+                            <img loading="lazy" decoding="async" src="assets/img/mahe-blru-logo2.jpeg" alt="MAHE Bengaluru"
+                                class="img-fluid mb-3 rounded" style="max-height: 150px;">
+                            <p class="text-white fw-medium h5 mb-1">School of Computer Engineering,</p>
+                            <p class="text-white fw-medium h5 mb-2">Manipal Institute of Technology Bengaluru</p>
+                            <p class="text-secondary small">Manipal Academy of Higher Education (MAHE) Bengaluru</p>
+                        </div>
+                        <div class="col-md-5 d-flex flex-col align-items-center text-center">
+                            <p class="text-warning fw-semibold text-uppercase small mb-3">In Collaboration with</p>
+                            <img loading="lazy" decoding="async" src="assets/img/nthu-logo.svg" alt="National Tsing Hua University"
+                                class="img-fluid mb-3" style="max-height: 100px;">
+                            <p class="text-white fw-medium h5 mb-2">National Tsing Hua University</p>
+                            <p class="text-secondary small">Hsinchu, Taiwan</p>
+                        </div>
+                    </div>
+
+                    <!-- Countdown -->
+                    <div class="mb-5 d-flex justify-content-center scale-90 sm-scale-100">
+                        <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-4 py-4 w-100"
+                            id="countdown-timer">
+                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 bg-white bg-opacity-10 backdrop-blur rounded border border-warning border-opacity-25"
+                                style="min-width: 90px;">
+                                <span class="display-5 fw-bold text-warning font-heading tabular-nums"
+                                    id="timer-days">00</span>
+                                <span class="small text-uppercase text-secondary fw-medium mt-1">Days</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 bg-white bg-opacity-10 backdrop-blur rounded border border-warning border-opacity-25"
+                                style="min-width: 90px;">
+                                <span class="display-5 fw-bold text-warning font-heading tabular-nums"
+                                    id="timer-hours">00</span>
+                                <span class="small text-uppercase text-secondary fw-medium mt-1">Hours</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 bg-white bg-opacity-10 backdrop-blur rounded border border-warning border-opacity-25"
+                                style="min-width: 90px;">
+                                <span class="display-5 fw-bold text-warning font-heading tabular-nums"
+                                    id="timer-minutes">00</span>
+                                <span class="small text-uppercase text-secondary fw-medium mt-1">Minutes</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 bg-white bg-opacity-10 backdrop-blur rounded border border-warning border-opacity-25"
+                                style="min-width: 90px;">
+                                <span class="display-5 fw-bold text-warning font-heading tabular-nums"
+                                    id="timer-seconds">00</span>
+                                <span class="small text-uppercase text-secondary fw-medium mt-1">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="d-flex flex-column align-items-center mb-4">
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center position-relative">
+                            <a href="registration.html" class="btn btn-primary btn-lg">Register Now</a>
+                            <a href="call-for-papers.html"
+                                class="btn btn-outline btn-outline-warning btn-lg text-white border-warning">Submit
+                                Paper</a>
+                            <div class="position-absolute w-100 text-center" style="bottom: -2rem;">
+                                <span class="text-warning small fst-italic">*Approval Pending</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-5 section-dark border-top border-4 border-warning">
+            <div class="container">
+                <div class="row g-4 row-cols-2 row-cols-md-3 row-cols-lg-6">
+                    <div class="col text-center">
+                        <div class="stat-number">3rd</div>
+                        <div class="stat-label text-secondary">Edition</div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label text-secondary">Papers</div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label text-secondary">Countries</div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label text-secondary">Authors</div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="stat-number">60+</div>
+                        <div class="stat-label text-secondary">Institutions</div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label text-secondary">Awards</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-5 section-cream reveal">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <div class="d-flex flex-column align-items-center justify-content-center gap-2 mb-3">
+                        <!-- Brain Icon CSS-only approximation or SVG -->
+                        <h2 class="display-5 fw-bold text-dark">About CODE-AI</h2>
+                    </div>
+                    <div class="divider-gold"></div>
+                </div>
+
+                <div class="row align-items-center gy-5">
+                    <div class="col-md-6">
+                        <div class="glass-card rounded-4 p-4 bg-white d-flex align-items-center justify-content-center">
+                            <img loading="lazy" decoding="async" src="assets/img/code_ai_taiwan_logo.svg" alt="CODE AI 2026 Taiwan Logo"
+                                class="img-fluid" style="max-height: 400px;">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="vstack gap-3 text-justify fs-5 text-secondary">
+                            <p>CODE AI - 2026 serves as a nexus for global visionaries, uniting to bridge research gaps
+                                and foster international collaborations that shape the trajectory of careers.
+                                Participants are not just attendees; they are catalysts of progress, sharing their
+                                scientific knowledge to ignite future advancements.</p>
+                            <p>The heart of the conference lies in Intelligent Computing, where algorithms like Genetic
+                                Algorithms, Simulated Annealing, and Artificial Fish Swarm take centre stage. Neural
+                                Networks, Machine Learning, and DNA Computing converge, while Quantum Computing and
+                                Fuzzy Logic open doors to uncharted territories. In the realm of AI Applications, CODE
+                                AI - 2026 explores Biometrics, Pattern Recognition, Computer Vision, and Machine Vision,
+                                unravelling the secrets of Fingerprint, Face, and Iris Recognition. Expert Systems,
+                                Speech Recognition, and Smart Robotics pave the way for human-computer synergy.</p>
+                            <p>This conference isn't just about talks it's where minds worldwide come together to bridge
+                                research gaps and build global bonds in the realm of computing. We're all about sparking
+                                that motivation to dive into our conference theme, and we're not shy to show gratitude
+                                for sharing your scientific know-how. With papers covering smart computing's ins and
+                                outs and even the tough spots – we're here to boost the spotlight on gamechanging tech
+                                and how it can crack real-world problems in different fields.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organizers Section -->
+        <section class="py-5 section-light reveal">
+            <div class="container py-4">
+                <h2 class="section-title text-dark">Organizers</h2>
+                <div class="divider-gold"></div>
+
+                <div class="row g-4 mt-4">
+                    <!-- NTHU Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="partner-card h-100 d-flex flex-column">
+                            <img loading="lazy" decoding="async" src="assets/img/venue-taiwan.jpg" alt="National Tsing Hua University"
+                                class="card-img-top object-fit-cover" style="height: 224px;">
+                            <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <h3 class="h4 fw-bold mb-3 text-dark">National Tsing Hua University</h3>
+                                <div class="text-secondary flex-grow-1 d-flex flex-column gap-3 text-justify">
+                                    <p>National Tsing Hua University (NTHU) is a leading public research university
+                                        located in Hsinchu, Taiwan, known for its strong academic and research
+                                        excellence. Originally founded in Beijing in 1911 and re-established in Taiwan
+                                        in 1956, NTHU is especially renowned for its programs in science, engineering,
+                                        and technology.</p>
+                                    <p>The university maintains close ties with Taiwan's high-tech industry and the
+                                        Hsinchu Science Park, fostering innovation and applied research. NTHU
+                                        consistently ranks among the top universities in Asia, promoting
+                                        interdisciplinary learning and offering a global academic environment focused on
+                                        innovation and sustainability.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MIT Bengaluru Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="partner-card h-100 d-flex flex-column">
+                            <img loading="lazy" decoding="async" src="assets/img/mitb.jpg" alt="MIT Bengaluru" class="card-img-top object-fit-cover"
+                                style="height: 224px;">
+                            <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <h3 class="h4 fw-bold mb-3 text-dark">MIT Bengaluru</h3>
+                                <div class="text-secondary flex-grow-1 d-flex flex-column gap-3 text-justify">
+                                    <p>The Garden City of India, Bengaluru, is now home to a new engineering
+                                        institution, "MIT Bengaluru", the latest constituent unit of Manipal Academy of
+                                        Higher Education (MAHE).</p>
+                                    <p>MAHE is recognized as a deemed-to-be university since 1993 and has been accorded
+                                        the status of Institute of Eminence (IoE) by MHRD, Government of India.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ACM Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="partner-card h-100 d-flex flex-column">
+                            <div class="card-img-top bg-dark d-flex align-items-center justify-content-center p-4"
+                                style="height: 224px;">
+                                <img loading="lazy" decoding="async" src="assets/img/acm-mitb-logo.png" alt="ACM MITB"
+                                    class="img-fluid object-fit-contain h-100">
+                            </div>
+                            <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <h3 class="h4 fw-bold mb-3 text-dark">About ACM MITB</h3>
+                                <div class="text-secondary flex-grow-1 d-flex flex-column gap-3 text-justify">
+                                    <p>The MITB ACM student chapter is a community of students passionate about computer
+                                        science and technology. We strive to create a collaborative and inclusive
+                                        environment for students to learn, grow, and make a difference in the world.</p>
+                                    <p>Our chapter is affiliated with the Association for Computing Machinery (ACM), the
+                                        world's largest educational and scientific computing society.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Partners Section -->
+        <section class="py-5 section-cream reveal position-relative overflow-hidden">
+            <!-- Blobs logic skipped for simplicity/cleanliness or can use CSS -->
+            <div class="container py-4 position-relative z-1">
+                <div class="text-center mb-5">
+                    <h2 class="section-title text-dark">Academic Partners</h2>
+                    <div class="divider-gold"></div>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Partner Cards Loop -->
+                    <!-- Sunway -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="partner-card h-100">
+                            <div class="p-4 h-auto d-flex align-items-center justify-content-center border-bottom bg-dark"
+                                style="height: 220px;">
+                                <img loading="lazy" decoding="async" src="assets/img/sponsors/sunway.png" alt="Sunway University"
+                                    class="img-fluid object-fit-contain" style="max-height: 120px; max-width: 80%;">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="h5 fw-bold mb-3 text-dark">Sunway University</h3>
+                                <p class="small text-secondary text-justify">Sunway University, located in Malaysia, is
+                                    a leading private institution known for its focus on research, innovation, and
+                                    holistic education. With a commitment to fostering a world-class learning
+                                    environment, Sunway University excels in areas such as business, computing, health
+                                    sciences, and the arts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Linnaeus -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="partner-card h-100">
+                            <div class="p-4 h-auto d-flex align-items-center justify-content-center border-bottom bg-dark"
+                                style="height: 220px;">
+                                <img loading="lazy" decoding="async" src="assets/img/sponsors/linnaeus.png" alt="Linnaeus University"
+                                    class="img-fluid object-fit-contain" style="max-height: 120px; max-width: 80%;">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="h5 fw-bold mb-3 text-dark">Linnaeus University</h3>
+                                <p class="small text-secondary text-justify">Linnaeus University, situated in Sweden
+                                    with campuses in Växjö and Kalmar, is a dynamic institution recognized for its
+                                    high-quality education and commitment to sustainability, innovation, and
+                                    international collaboration. Named after the renowned scientist Carl Linnaeus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SUPSI -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="partner-card h-100">
+                            <div class="p-4 h-auto d-flex align-items-center justify-content-center border-bottom bg-dark"
+                                style="height: 220px;">
+                                <img loading="lazy" decoding="async" src="assets/img/sponsors/supsi.png" alt="SUPSI"
+                                    class="img-fluid object-fit-contain" style="max-height: 120px; max-width: 80%;">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="h5 fw-bold mb-3 text-dark">SUPSI</h3>
+                                <p class="small text-secondary text-justify">SUPSI, located in the Italian-speaking
+                                    region of Switzerland, is a leading institution renowned for its applied sciences
+                                    programs and practical, hands-on approach to education. With a strong emphasis on
+                                    interdisciplinary research, innovation, and collaboration with industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- UITS -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="partner-card h-100">
+                            <div class="p-4 h-auto d-flex align-items-center justify-content-center border-bottom bg-dark"
+                                style="height: 220px;">
+                                <img loading="lazy" decoding="async" src="assets/img/sponsors/uits.png"
+                                    alt="University of Information Technology and Sciences"
+                                    class="img-fluid object-fit-contain" style="max-height: 120px; max-width: 80%;">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="h5 fw-bold mb-3 text-dark">University of Information Technology and Sciences
+                                </h3>
+                                <p class="small text-secondary text-justify">The University of Information Technology
+                                    and Sciences (UITS) is a beacon of academic excellence, specializing in technology
+                                    and sciences education. Renowned for its innovative approach, UITS provides a
+                                    dynamic learning environment that integrates theoretical knowledge with practical
+                                    skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ACM MITB -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="partner-card h-100">
+                            <div class="p-4 h-auto d-flex align-items-center justify-content-center border-bottom bg-dark"
+                                style="height: 220px;">
+                                <img loading="lazy" decoding="async" src="assets/img/acm-mitb-logo.png" alt="ACM MITB"
+                                    class="img-fluid object-fit-contain" style="max-height: 120px; max-width: 80%;">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="h5 fw-bold mb-3 text-dark">ACM MITB</h3>
+                                <p class="small text-secondary text-justify">The Association for Computing Machinery
+                                    (ACM) Student Chapter at MIT Bengaluru is a dynamic community dedicated to advancing
+                                    computing as a science and profession. It fosters a collaborative environment for
+                                    students to explore emerging technologies, engage in research, and build
+                                    professional networks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- IBM -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="partner-card h-100">
+                            <div class="p-4 h-auto d-flex align-items-center justify-content-center border-bottom bg-dark"
+                                style="height: 220px;">
+                                <img loading="lazy" decoding="async" src="assets/img/sponsors/ibm.png" alt="IBM" class="img-fluid object-fit-contain"
+                                    style="max-height: 120px; max-width: 80%;">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="h5 fw-bold mb-3 text-dark">IBM</h3>
+                                <p class="small text-secondary text-justify">IBM is a global technology and innovation
+                                    leader, pioneering advancements in artificial intelligence, cloud computing, and
+                                    quantum computing. With a legacy of research and development, IBM continues to shape
+                                    the future of technology and empower industries worldwide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Compendex -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="partner-card h-100">
+                            <div class="p-4 h-auto d-flex align-items-center justify-content-center border-bottom bg-dark"
+                                style="height: 220px;">
+                                <img loading="lazy" decoding="async" src="assets/img/sponsors/compendex.png" alt="Compendex"
+                                    class="img-fluid object-fit-contain" style="max-height: 120px; max-width: 80%;">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="h5 fw-bold mb-3 text-dark">Compendex</h3>
+                                <p class="small text-secondary text-justify">Ei Compendex is the broadest and most
+                                    complete engineering literature database in the world. It provides a comprehensive
+                                    and trustworthy view of engineering research, ensuring that scholars and
+                                    professionals access high-quality, peer-reviewed content across various engineering
+                                    disciplines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsors Section -->
+        <section class="py-5 section-light reveal">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="section-title text-dark">Sponsors & Organizers</h2>
+                    <div class="divider-gold"></div>
+                </div>
+
+                <div class="d-flex justify-content-center mb-5">
+                    <a href="#" class="btn btn-primary fw-bold text-dark px-5 py-3 d-flex align-items-center gap-2">
+                        Apply for Sponsorship
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="border-top pt-5">
+                    <div class="row g-5">
+                        <div class="col-md-4">
+                            <h3 class="h5 fw-bold text-center text-uppercase text-dark mb-4">Hosted By</h3>
+                            <div
+                                class="card border-0 shadow-sm p-4 h-auto d-flex align-items-center justify-content-center">
+                                <img loading="lazy" decoding="async" src="assets/img/nthu-logo.svg" alt="NTHU" class="img-fluid"
+                                    style="max-height: 100px;">
+                                <h4 class="h6 fw-semibold text-dark mt-3">National Tsing Hua University</h4>
+                                <p class="small text-muted">Hsinchu, Taiwan</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="h5 fw-bold text-center text-uppercase text-dark mb-4">Organized By</h3>
+                            <div
+                                class="card border-0 shadow-sm p-4 h-auto d-flex align-items-center justify-content-center">
+                                <img loading="lazy" decoding="async" src="assets/img/mahe-blru-logo.png" alt="SoCE" class="img-fluid"
+                                    style="max-height: 100px;">
+                                <h4 class="h6 fw-semibold text-dark mt-3">SoCE</h4>
+                                <p class="small text-muted">Manipal Institute of Technology Bengaluru</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="h5 fw-bold text-center text-uppercase text-dark mb-4">Managed By</h3>
+                            <div
+                                class="card border-0 shadow-sm p-4 h-auto d-flex align-items-center justify-content-center">
+                                <img loading="lazy" decoding="async" src="assets/img/acm-mitb-logo.png" alt="ACM MITB" class="img-fluid"
+                                    style="max-height: 100px;">
+                                <h4 class="h6 fw-semibold text-dark mt-3">ACM MITB Student Chapter</h4>
+                                <p class="small text-muted">Manipal Institute of Technology Bengaluru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Location Section -->
+        <section class="py-5 section-dark position-relative overflow-hidden reveal">
+            <div class="container py-4 position-relative z-1">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-6">
+                        <h2 class="display-4 fw-bold text-white mb-2">Taiwan</h2>
+                        <p class="h4 text-warning fw-medium mb-4">The Silicon Island</p>
+
+                        <div class="vstack gap-3 text-gray-300 fs-5 text-justify">
+                            <p>Taiwan, widely revered as the "Silicon Island" or "AI Island," is a technological
+                                powerhouse located in East Asia. Acknowledged as the undisputed global leader in
+                                semiconductor manufacturing, it serves as the heart of the modern digital economy,
+                                producing the advanced chips that power everything from smartphones to global defense
+                                systems and artificial intelligence.</p>
+                            <p>Beyond its industrial dominance, Taiwan offers a rich tapestry of experiences, blending
+                                ancient temples and indigenous heritage with a vibrant, progressive democracy. The
+                                island is anchored by the bamboo-inspired <span class="text-white fw-semibold">Taipei
+                                    101</span> and is famed for its culinary innovation being the birthplace of <span
+                                    class="text-white fw-semibold">bubble tea</span> as well as its convenient 24 hour
+                                urban lifestyle and breathtaking natural landscapes like <span
+                                    class="text-white fw-semibold">Taroko Gorge</span>.</p>
+                            <p>Its strategic role as a Silicon Shield, highly educated workforce, and robust R&D
+                                ecosystem make Taiwan a critical pivot point for the future of technology, driving
+                                unparalleled advancements in smart manufacturing, green energy, and the global AI supply
+                                chain.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                            <!-- Glow effect -->
+                            <div
+                                class="position-absolute ms-4 mt-4 w-100 h-100 rounded-4 bg-warning opacity-25 blur-lg">
+                            </div>
+                            <div
+                                class="position-relative rounded-4 overflow-hidden border border-white border-opacity-10 shadow-lg">
+                                <img loading="lazy" decoding="async" src="assets/img/venue-taiwan.jpg" alt="Taiwan Venue"
+                                    class="w-100 h-100 object-fit-cover">
+                                <div class="position-absolute bottom-0 start-0 p-4">
+                                    <p class="text-white fw-bold h5 mb-0">Taiwan</p>
+                                    <p class="text-warning small mb-0">Venue Partner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-container"></div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+    <style>
+        .blink-cursor {
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
 </body>
 
 </html>
