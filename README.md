@@ -9,7 +9,7 @@
 CODE AI - 2026 is a premier international conference bringing together global visionaries, researchers, and professionals to explore the frontiers of Intelligent Computing, Artificial Intelligence, and Data Science.
 
 **Conference Dates:** 17th - 19th July 2026
-**Location:** Manipal Institute of Technology, Bengaluru & National Tsing Hua University, Taiwan
+**Location:** Manipal Institute of Technology Bengaluru & National Tsing Hua University, Taiwan
 
 ## 🚀 Features
 

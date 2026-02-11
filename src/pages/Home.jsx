@@ -102,10 +102,10 @@ function Home() {
                                     School of Computer Engineering,
                                 </p>
                                 <p className="text-white font-medium text-base sm:text-lg leading-tight">
-                                    Manipal Institute of Technology, Bengaluru
+                                    Manipal Institute of Technology Bengaluru
                                 </p>
                                 <p className="text-gray-400 text-sm sm:text-base mt-2">
-                                    Manipal Academy of Higher Education (MAHE), Bengaluru
+                                    Manipal Academy of Higher Education (MAHE) Bengaluru
                                 </p>
                             </div>
 
