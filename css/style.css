@@ -636,9 +636,7 @@ html {
     border-color: var(--primary);
 }
 
-.partner-logo-glow {
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.9));
-}
+
 
 .partner-card-body {
     padding: 1.5rem;
