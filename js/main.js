@@ -20,7 +20,6 @@ function loadNavbar() {
                 <div class="d-none d-sm-flex align-items-center gap-3 ms-3 ps-3 border-start border-secondary" style="height: 4.5rem;">
                      <img src="assets/img/springerccis.png" alt="Springer CCIS" class="h-100 object-fit-contain">
                      <img src="assets/img/sponsors/scopus.png" alt="Scopus" class="h-100 object-fit-contain">
-                     <img src="assets/img/sponsors/compendex.png" alt="Ei Compendex" class="h-100 object-fit-contain">
                 </div>
             </div>
 
@@ -51,6 +50,10 @@ function loadNavbar() {
 
                     <li class="nav-item">
                         <a class="nav-link text-white fw-medium px-3" href="committees.html">Committees</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-medium px-3" href="publications.html">Publications</a>
                     </li>
 
                     <!-- Program Dropdown -->
