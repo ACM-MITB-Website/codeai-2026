@@ -67,194 +67,147 @@
     </div>
 
     <!-- Main Content -->
-    <main class="flex-grow-1" style="padding-top: 100px;">
+    <main class="flex-grow-1">
 
-        <!-- Hero Section -->
-        <section class="position-relative w-100">
-            <!-- Hero Slideshow -->
-            <div id="heroCarousel" class="carousel slide carousel-fade hero-image-section bg-dark"
-                data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+        <section class="position-relative w-100 vh-100 d-flex flex-column overflow-hidden">
+            <!-- Hero Slideshow (Background) -->
+            <div id="heroCarousel"
+                class="carousel slide carousel-fade position-absolute w-100 h-100 start-0 top-0 z-0 bg-dark"
+                data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="false">
                 <div class="carousel-inner h-100">
-                    <!-- Slide 1 -->
+                    <!-- Slide 1: MITB -->
                     <div class="carousel-item active h-100">
                         <div class="position-absolute w-100 h-100">
-                            <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5241.JPG"
-                                class="w-100 h-100 object-fit-cover opacity-50 blur-lg scale-110" alt="Background">
-                        </div>
-                        <div
-                            class="carousel-caption d-flex align-items-center justify-content-center h-100 top-0 start-0 w-100">
-                            <div class="container d-flex justify-content-center">
-                                <div class="rounded-4 overflow-hidden shadow-lg"
-                                    style="max-height: 400px; max-width: 800px;">
-                                    <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5241.JPG"
-                                        class="img-fluid object-fit-cover w-100 h-100" alt="Conference Audience">
-                                </div>
-                            </div>
+                            <img loading="lazy" decoding="async" src="assets/img/mitb.jpg"
+                                class="w-100 h-100 object-fit-cover opacity-50 blur-lg scale-110" alt="MIT Bengaluru">
                         </div>
                     </div>
-                    <!-- Slide 2 (Group of 2) -->
+                    <!-- Slide 2: Venue Taiwan -->
                     <div class="carousel-item h-100">
                         <div class="position-absolute w-100 h-100">
-                            <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5205.JPG"
-                                class="w-100 h-100 object-fit-cover opacity-50 blur-lg scale-110" alt="Background">
-                        </div>
-                        <div
-                            class="carousel-caption d-flex align-items-center justify-content-center h-100 top-0 start-0 w-100">
-                            <div class="container d-flex gap-4 justify-content-center align-items-center h-75">
-                                <div class="rounded-4 overflow-hidden shadow-lg w-50 h-100">
-                                    <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5205.JPG"
-                                        class="w-100 h-100 object-fit-cover" alt="Conference Event">
-                                </div>
-                                <div class="rounded-4 overflow-hidden shadow-lg w-50 h-100">
-                                    <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5224.JPG"
-                                        class="w-100 h-100 object-fit-cover" alt="Conference Presentation">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 3 (Group of 2) -->
-                    <div class="carousel-item h-100">
-                        <div class="position-absolute w-100 h-100">
-                            <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5226.JPG"
-                                class="w-100 h-100 object-fit-cover opacity-50 blur-lg scale-110" alt="Background">
-                        </div>
-                        <div
-                            class="carousel-caption d-flex align-items-center justify-content-center h-100 top-0 start-0 w-100">
-                            <div class="container d-flex gap-4 justify-content-center align-items-center h-75">
-                                <div class="rounded-4 overflow-hidden shadow-lg w-50 h-100">
-                                    <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5226.JPG"
-                                        class="w-100 h-100 object-fit-cover" alt="Conference Interaction">
-                                </div>
-                                <div class="rounded-4 overflow-hidden shadow-lg w-50 h-100">
-                                    <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5228.JPG"
-                                        class="w-100 h-100 object-fit-cover" alt="Keynote Speech">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="carousel-item h-100">
-                        <div class="position-absolute w-100 h-100">
-                            <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5236.JPG"
-                                class="w-100 h-100 object-fit-cover opacity-50 blur-lg scale-110" alt="Background">
-                        </div>
-                        <div
-                            class="carousel-caption d-flex align-items-center justify-content-center h-100 top-0 start-0 w-100">
-                            <div class="container d-flex justify-content-center">
-                                <div class="rounded-4 overflow-hidden shadow-lg"
-                                    style="max-height: 400px; max-width: 800px;">
-                                    <img loading="lazy" decoding="async" src="assets/img/slideshow/IMG_5236.JPG"
-                                        class="img-fluid object-fit-cover w-100 h-100" alt="Conference Talk">
-                                </div>
-                            </div>
+                            <img loading="lazy" decoding="async" src="assets/img/venue-taiwan.jpg"
+                                class="w-100 h-100 object-fit-cover opacity-50 blur-lg scale-110"
+                                alt="National Tsing Hua University">
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon p-3 bg-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon p-3 bg-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <!-- Controls (Optional, keeping hidden for cleaner look or adding if user wants) -->
             </div>
 
-            <!-- Hero Banner -->
-            <div class="hero-banner py-5 section-dark">
-                <div class="container">
-                    <h1 class="font-heading fw-bold text-white mb-4 display-3">
-                        CODE-AI <span class="text-warning" id="typing-text"></span><span class="blink-cursor">_</span>
+            <!-- Content Overlay (Flex Column) -->
+            <div class="position-relative z-1 container h-100 d-flex flex-column justify-content-between pb-4"
+                style="padding-top: 100px;">
+
+                <!-- Top Section: Title & Logos (Centered Vertically in available space) -->
+                <div class="d-flex flex-column justify-content-center align-items-center flex-grow-1 text-center">
+
+                    <h1 class="font-heading fw-bold text-white mb-3 display-3 text-shadow-lg">
+                        CODE-AI <span class="text-warning">2026</span>
                     </h1>
-                    <h2 class="h4 text-gray-300 mb-5 mx-auto px-3" style="max-width: 800px;">
+                    <h2 class="h3 font-heading fw-bold text-white mb-4 mx-auto px-3 text-shadow-lg"
+                        style="max-width: 900px; letter-spacing: 0.5px; line-height: 1.4;">
                         3<sup>rd</sup> International Conference on Data Science & Exploration in Artificial Intelligence
                     </h2>
 
-                    <div class="d-flex justify-content-center gap-3 mb-5">
-                        <span class="date-badge home-date-pill">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-calendar me-2" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                            </svg>
-                            17th - 19th July 2026
-                        </span>
+                    <!-- Logos Overlay -->
+
+
+                    <div class="d-flex gap-3 justify-content-center mb-4">
+                        <a href="registration.html" class="btn btn-primary btn-lg px-5 shadow-lg fw-bold">Register
+                            Now</a>
                     </div>
 
-                    <!-- Organizers Logos -->
-                    <div class="row justify-content-center align-items-start gap-5 mb-5 mx-auto home-organizers">
-                        <div class="col-md-5 d-flex flex-column align-items-center text-center organizer-card">
-                            <p class="organizer-label">Organized by</p>
-                            <div class="organizer-logo-box">
-                                <img loading="lazy" decoding="async" src="assets/img/mitb.webp" alt="MAHE Bengaluru"
-                                    class="img-fluid organizer-logo" style="max-height: 140px;">
-                            </div>
-                            <p class="organizer-title">School of Computer Engineering <br>Manipal Institute of
-                                Technology Bengaluru</p>
-                        </div>
-                        <div class="col-md-5 d-flex flex-column align-items-center text-center organizer-card">
-                            <p class="organizer-label">Hosted by</p>
-                            <img loading="lazy" decoding="async" src="assets/img/nthu-logo.svg"
-                                alt="National Tsing Hua University" class="img-fluid organizer-logo-seal"
-                                style="max-height: 110px;">
-                            <p class="organizer-title">National Tsing Hua University</p>
-                            <p class="organizer-subtitle">Hsinchu, Taiwan</p>
-                        </div>
-                    </div>
-
-                    <!-- Countdown -->
-                    <div class="mb-5 d-flex justify-content-center scale-90 sm-scale-100">
-                        <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-4 py-4 w-100"
-                            id="countdown-timer">
-                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 countdown-tile"
-                                style="min-width: 90px;">
-                                <span class="display-5 fw-bold text-warning font-heading tabular-nums countdown-number"
-                                    id="timer-days">00</span>
-                                <span
-                                    class="small text-uppercase text-secondary fw-medium mt-1 countdown-label">Days</span>
-                            </div>
-                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 countdown-tile"
-                                style="min-width: 90px;">
-                                <span class="display-5 fw-bold text-warning font-heading tabular-nums countdown-number"
-                                    id="timer-hours">00</span>
-                                <span
-                                    class="small text-uppercase text-secondary fw-medium mt-1 countdown-label">Hours</span>
-                            </div>
-                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 countdown-tile"
-                                style="min-width: 90px;">
-                                <span class="display-5 fw-bold text-warning font-heading tabular-nums countdown-number"
-                                    id="timer-minutes">00</span>
-                                <span
-                                    class="small text-uppercase text-secondary fw-medium mt-1 countdown-label">Minutes</span>
-                            </div>
-                            <div class="d-flex flex-column align-items-center px-3 px-md-4 py-3 countdown-tile"
-                                style="min-width: 90px;">
-                                <span class="display-5 fw-bold text-warning font-heading tabular-nums countdown-number"
-                                    id="timer-seconds">00</span>
-                                <span
-                                    class="small text-uppercase text-secondary fw-medium mt-1 countdown-label">Seconds</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Buttons -->
-                    <div class="d-flex flex-column align-items-center mb-4">
-                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center align-items-center">
-                            <a href="registration.html" class="btn btn-primary btn-lg">Register Now</a>
-                            <div class="d-flex flex-column align-items-center">
-                                <a href="#"
-                                    class="btn btn-outline btn-outline-warning btn-lg text-white border-warning disabled"
-                                    style="pointer-events: none; opacity: 0.6;">Submit
-                                    Paper</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+
             </div>
         </section>
 
-        <!-- Stats Section -->
-        <section class="py-5 section-dark border-top border-4 border-warning">
+        <!-- Stats Section (with Overlapping Cards) -->
+        <section class="pb-5 pt-0 section-dark border-top border-4 border-warning position-relative">
+
+            <!-- Overlapping Info Cards -->
+            <div class="container position-relative z-3" style="margin-top: -100px;">
+                <div class="row g-0 shadow-lg rounded-4 overflow-hidden mb-5">
+                    <!-- Dates Card -->
+                    <div
+                        class="col-md-4 bg-dark text-white p-3 p-lg-4 d-flex flex-column align-items-center justify-content-center text-center border-end border-white border-opacity-10 position-relative group-hover">
+                        <div class="mb-2 text-warning">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-calendar-event" viewBox="0 0 16 16">
+                                <path
+                                    d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                            </svg>
+                        </div>
+                        <h3 class="h5 fw-bold mb-1">Dates</h3>
+                        <p class="mb-0 text-white-50 small">17th - 19th July 2026</p>
+                    </div>
+
+                    <!-- Organizer Card -->
+                    <div
+                        class="col-md-4 bg-white text-dark p-3 p-lg-4 d-flex flex-column align-items-center justify-content-center text-center position-relative group-hover">
+                        <div class="mb-2 text-warning">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-bank" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z" />
+                            </svg>
+                        </div>
+                        <h3 class="h5 fw-bold mb-1">Organized By</h3>
+                        <p class="mb-0 text-secondary small">School of Computer Engineering<br>MIT Bengaluru</p>
+                    </div>
+
+                    <!-- Venue Card -->
+                    <div
+                        class="col-md-4 bg-dark text-white p-3 p-lg-4 d-flex flex-column align-items-center justify-content-center text-center border-start border-white border-opacity-10 position-relative group-hover">
+                        <div class="mb-2 text-warning">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>
+                        </div>
+                        <h3 class="h5 fw-bold mb-1">Venue</h3>
+                        <p class="mb-0 text-white-50 small">National Tsing Hua University<br>Taiwan</p>
+                    </div>
+                </div>
+
+                <!-- Countdown (Below Cards) -->
+                <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-3 w-100 scale-90 mb-5"
+                    id="countdown-timer">
+                    <div class="d-flex flex-column align-items-center px-3 py-2 bg-white shadow-sm rounded-4 border border-light"
+                        style="min-width: 80px;">
+                        <span class="h2 fw-bold text-dark font-heading tabular-nums countdown-number mb-0"
+                            id="timer-days">00</span>
+                        <span class="small text-uppercase text-secondary fw-bold tracking-wide"
+                            style="font-size: 0.7rem;">Days</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center px-3 py-2 bg-white shadow-sm rounded-4 border border-light"
+                        style="min-width: 80px;">
+                        <span class="h2 fw-bold text-dark font-heading tabular-nums countdown-number mb-0"
+                            id="timer-hours">00</span>
+                        <span class="small text-uppercase text-secondary fw-bold tracking-wide"
+                            style="font-size: 0.7rem;">Hours</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center px-3 py-2 bg-white shadow-sm rounded-4 border border-light"
+                        style="min-width: 80px;">
+                        <span class="h2 fw-bold text-dark font-heading tabular-nums countdown-number mb-0"
+                            id="timer-minutes">00</span>
+                        <span class="small text-uppercase text-secondary fw-bold tracking-wide"
+                            style="font-size: 0.7rem;">Mins</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center px-3 py-2 bg-white shadow-sm rounded-4 border border-light"
+                        style="min-width: 80px;">
+                        <span class="h2 fw-bold text-dark font-heading tabular-nums countdown-number mb-0"
+                            id="timer-seconds">00</span>
+                        <span class="small text-uppercase text-secondary fw-bold tracking-wide"
+                            style="font-size: 0.7rem;">Secs</span>
+                    </div>
+                </div>
+            </div>
+
             <div class="container">
                 <div class="row g-4 row-cols-2 row-cols-md-3 row-cols-lg-6">
                     <div class="col text-center">
