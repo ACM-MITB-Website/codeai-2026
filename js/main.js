@@ -17,9 +17,10 @@ function loadNavbar() {
                 </a>
                 
                 <!-- Logos (Hidden on mobile) -->
-                <div class="d-none d-sm-flex align-items-center gap-3 ms-3 ps-3 border-start border-secondary" style="height: 3.5rem;">
+                <div class="d-none d-sm-flex align-items-center gap-3 ms-3 ps-3 border-start border-secondary" style="height: 4.5rem;">
                      <img src="assets/img/springerccis.png" alt="Springer CCIS" class="h-100 object-fit-contain">
                      <img src="assets/img/sponsors/scopus.png" alt="Scopus" class="h-100 object-fit-contain">
+                     <img src="assets/img/sponsors/compendex.png" alt="Ei Compendex" class="h-100 object-fit-contain">
                 </div>
             </div>
 
@@ -97,7 +98,7 @@ function loadFooter() {
     <footer class="footer text-white pt-5 pb-4" style="background-color: var(--navy);">
         <div class="container">
             <div class="row gy-5">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-xl-3 col-md-6">
                     <h5 class="text-warning fw-bold mb-3">Contact Us</h5>
                     <div class="mb-3">
                         <p class="mb-1 fw-semibold">Dr. Shreyas J</p>
@@ -116,7 +117,7 @@ function loadFooter() {
                                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114V5.383zM14.247 12 9.117 8.927 8 9.6l-1.117-.673L1.753 12H14.247zM1 11.114l4.758-2.876L1 5.383v5.731z"/>
                                 </svg>
                             </span>
-                            <a href="mailto:codeai.mitblr@manipal.edu" class="footer-link">codeai.mitblr@manipal.edu</a>
+                            <a href="mailto:codeai.mitblr@manipal.edu" class="footer-link text-break">codeai.mitblr@manipal.edu</a>
                         </div>
                     </div>
                     <hr class="footer-divider">
@@ -148,7 +149,7 @@ function loadFooter() {
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-xl-3 col-md-6">
                     <h5 class="text-warning fw-bold mb-3">Quick Links</h5>
                     <div class="row">
                         <div class="col-6">
@@ -169,10 +170,10 @@ function loadFooter() {
                             </ul>
                         </div>
                     </div>
-                    <a href="call-for-papers.html" class="btn btn-warning text-navy fw-semibold w-100 mt-3">Submit Paper</a>
+                    <a href="#" class="btn btn-warning text-navy fw-semibold w-100 mt-3 disabled" style="pointer-events: none; opacity: 0.6;">Submit Paper</a>
                     <p class="text-white-50 small text-center mt-2 mb-0">*Approval Pending</p>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-xl-3 col-md-6">
                     <h5 class="text-warning fw-bold mb-3">Resources</h5>
                     <p class="text-white-50 mb-3">Get more information about the conference</p>
                     <ul class="list-unstyled footer-list">
@@ -206,7 +207,7 @@ function loadFooter() {
                         <li><a href="https://conference.manipal.edu/CODE-AI2024/" class="footer-link" target="_blank">CODE AI 2024 Website</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-xl-3 col-md-6">
                     <h5 class="text-warning fw-bold mb-3">Follow Us</h5>
                     <p class="text-white-50 mb-3">Stay connected with us on social media for the latest updates</p>
                     <div class="d-flex gap-3">
