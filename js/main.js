@@ -70,7 +70,7 @@ function loadNavbar() {
 
                     <!-- Register Button -->
                     <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-                        <a class="btn btn-primary fw-bold text-navy px-4 py-2 w-100" href="registration.html">REGISTER NOW</a>
+                        <a class="btn btn-primary fw-bold text-navy px-4 py-2 w-100" href="registration.html">REGISTER</a>
                     </li>
                 </ul>
             </div>
@@ -173,8 +173,7 @@ function loadFooter() {
                             </ul>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-warning text-navy fw-semibold w-100 mt-3 disabled" style="pointer-events: none; opacity: 0.6;">Submit Paper</a>
-                    <p class="text-white-50 small text-center mt-2 mb-0">*Approval Pending</p>
+
                 </div>
                 <div class="col-xl-3 col-md-6">
                     <h5 class="text-warning fw-bold mb-3">Resources</h5>
