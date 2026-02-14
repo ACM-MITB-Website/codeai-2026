@@ -801,8 +801,7 @@ html {
     }
 }
 
-animation: fade-in-up 1s ease-out forwards;
-}
+
 
 .delay-100 {
     animation-delay: 0.1s;
@@ -863,9 +862,10 @@ animation: fade-in-up 1s ease-out forwards;
         transform: translateY(30px);
     }
 
-    opacity: 1;
-    transform: translateY(0);
-}
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero-animate {
