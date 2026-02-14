@@ -801,6 +801,78 @@ html {
     }
 }
 
+animation: fade-in-up 1s ease-out forwards;
+}
+
+.delay-100 {
+    animation-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+/* Zoom In Reveal */
+.reveal.zoom-in {
+    transform: scale(0.9);
+}
+
+.reveal.zoom-in.active {
+    transform: scale(1);
+}
+
+/* Slide Left Reveal */
+.reveal.slide-left {
+    transform: translateX(-30px);
+}
+
+.reveal.slide-left.active {
+    transform: translateX(0);
+}
+
+/* Slide Right Reveal */
+.reveal.slide-right {
+    transform: translateX(30px);
+}
+
+.reveal.slide-right.active {
+    transform: translateX(0);
+}
+
+/* Hero Entrance Animations */
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+.hero-animate {
+    opacity: 0;
+    animation: slideUpFade 0.8s ease-out forwards;
+}
+
 .animate-fade-in-up {
     animation: fade-in-up 0.6s ease-out forwards;
 }
