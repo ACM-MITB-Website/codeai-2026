@@ -144,7 +144,7 @@ function loadFooter() {
                         </li>
                         <li class="d-flex align-items-center justify-content-between">
                             <span class="text-white">Ryan Gupta</span>
-                            <a href="#" class="footer-icon-circle" aria-label="Ryan Gupta LinkedIn">
+                            <a href="https://www.linkedin.com/in/ryan-gupta/" class="footer-icon-circle" aria-label="Ryan Gupta LinkedIn" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
                                     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.21c.837 0 1.358-.554 1.358-1.248-.015-.708-.52-1.248-1.342-1.248-.822 0-1.358.54-1.358 1.248 0 .694.521 1.248 1.327 1.248h.015zm4.908 8.21V9.359c0-.216.016-.432.08-.586.173-.432.568-.88 1.232-.88.87 0 1.218.664 1.218 1.635v3.866h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169H7.451c.03.664 0 7.225 0 7.225h2.4z"/>
                                 </svg>
@@ -213,12 +213,12 @@ function loadFooter() {
                     <h5 class="text-warning fw-bold mb-3">Follow Us</h5>
                     <p class="text-white-50 mb-3">Stay connected with us on social media for the latest updates</p>
                     <div class="d-flex gap-3">
-                        <a href="#" class="footer-icon-circle" aria-label="Instagram">
+                        <a href="https://www.instagram.com/code.ai.mahe/" target="_blank" class="footer-icon-circle" aria-label="Instagram">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.272.216 2.76.42a3.9 3.9 0 0 0-1.41.92A3.9 3.9 0 0 0 .42 2.76C.216 3.272.088 3.85.048 4.703.01 5.556 0 5.829 0 8c0 2.171.01 2.444.048 3.297.04.853.168 1.431.372 1.943a3.9 3.9 0 0 0 .92 1.41 3.9 3.9 0 0 0 1.41.92c.512.204 1.09.332 1.943.372.853.038 1.126.048 3.297.048 2.171 0 2.444-.01 3.297-.048.853-.04 1.431-.168 1.943-.372a3.9 3.9 0 0 0 1.41-.92 3.9 3.9 0 0 0 .92-1.41c.204-.512.332-1.09.372-1.943.038-.853.048-1.126.048-3.297 0-2.171-.01-2.444-.048-3.297-.04-.853-.168-1.431-.372-1.943a3.9 3.9 0 0 0-.92-1.41 3.9 3.9 0 0 0-1.41-.92c-.512-.204-1.09-.332-1.943-.372C10.444.01 10.171 0 8 0zm0 3.897a4.103 4.103 0 1 1 0 8.206 4.103 4.103 0 0 1 0-8.206zm0 1.5a2.603 2.603 0 1 0 0 5.206 2.603 2.603 0 0 0 0-5.206zm4.271-.463a.96.96 0 1 1-1.92 0 .96.96 0 0 1 1.92 0z"/>
                             </svg>
                         </a>
-                        <a href="#" class="footer-icon-circle" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/company/code-ai-mitb/about/" target="_blank" class="footer-icon-circle" aria-label="LinkedIn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.21c.837 0 1.358-.554 1.358-1.248-.015-.708-.52-1.248-1.342-1.248-.822 0-1.358.54-1.358 1.248 0 .694.521 1.248 1.327 1.248h.015zm4.908 8.21V9.359c0-.216.016-.432.08-.586.173-.432.568-.88 1.232-.88.87 0 1.218.664 1.218 1.635v3.866h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169H7.451c.03.664 0 7.225 0 7.225h2.4z"/>
                             </svg>
