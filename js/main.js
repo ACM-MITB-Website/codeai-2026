@@ -187,7 +187,7 @@ function loadFooter() {
                     <p class="text-white-50 mb-3">Get more information about the conference</p>
                     <ul class="list-unstyled footer-list">
                         <li>
-                            <a href="assets/file/CODE AI - 3rd Conference (4).pdf" target="_blank" class="footer-link d-flex align-items-center gap-2">
+                            <a href="assets/file/Joint - CODE AI - 3rd Conference (2).pdf" target="_blank" class="footer-link d-flex align-items-center gap-2">
                                 <span class="footer-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                         <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5z"/>
@@ -195,7 +195,7 @@ function loadFooter() {
                                     </svg>
                                 </span>
                                 Download Brochure
-                            </a>
+                             </a>
                         </li>
                         <li>
                             <a href="#" class="footer-link d-flex align-items-center gap-2">
