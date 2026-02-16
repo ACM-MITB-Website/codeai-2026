@@ -74,7 +74,7 @@ function loadNavbar() {
 
                     <!-- Submit Paper Button -->
                     <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-                        <a class="btn btn-primary fw-bold text-navy px-4 py-2 w-100" href="https://cmt3.research.microsoft.com/CODEAI2026/">Submit Paper</a>
+                        <a class="btn btn-primary fw-bold text-navy px-4 py-2 w-100 w-lg-auto" style="white-space: nowrap;" href="https://cmt3.research.microsoft.com/CODEAI2026/">Submit Paper</a>
                     </li>
                 </ul>
             </div>
@@ -91,6 +91,11 @@ function loadNavbar() {
         .hover-border-warning:hover {
             border-left-color: var(--primary) !important;
             background-color: rgba(255, 215, 0, 0.1);
+        }
+        @media (min-width: 992px) {
+            .w-lg-auto {
+                width: auto !important;
+            }
         }
     </style>
     `;
