@@ -44,7 +44,7 @@ function loadNavbar() {
                         </a>
                         <ul class="dropdown-menu shadow-lg border-top border-3 border-warning rounded-0 rounded-bottom mt-0 p-0 overflow-hidden">
                             <li><a class="dropdown-item py-2 px-4 border-start border-4 border-transparent hover-border-warning" href="call-for-papers.html">Call for Papers</a></li>
-                            <li><a class="dropdown-item py-2 px-4 border-start border-4 border-transparent hover-border-warning" href="assets/file/CODE AI - 3rd Conference (4).pdf" target="_blank">Download Brochure</a></li>
+                            <li><a class="dropdown-item py-2 px-4 border-start border-4 border-transparent hover-border-warning" href="assets/file/Joint - CODE AI - 3rd Conference (2).pdf" target="_blank">Download Brochure</a></li>
                         </ul>
                     </li>
 
