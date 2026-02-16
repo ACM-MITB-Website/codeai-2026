@@ -32,10 +32,10 @@ def minify_css(content):
 
 def minify_js(content):
     # Very basic minification: remove comments and leading/trailing whitespace
-    # Real JS minification is hard with regex, so we'll be conservative
-    content = re.sub(r'//.*', '', content)
+    # Skip // comment removal within lines as it breaks strings containing URLs
     content = re.sub(r'/\*.*?\*/', '', content, flags=re.DOTALL)
-    lines = [line.strip() for line in content.split('\n') if line.strip()]
+    # Only remove lines that are entirely comments
+    lines = [line.strip() for line in content.split('\n') if line.strip() and not line.strip().startswith('//')]
     return '\n'.join(lines)
 
 def process_files():
