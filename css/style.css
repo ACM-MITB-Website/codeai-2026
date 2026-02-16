@@ -963,3 +963,28 @@ html {
 .group-hover:hover .text-secondary {
     color: rgba(0, 0, 0, 0.7) !important;
 }
+/* ====================================
+   COMMITTEE PAGE STYLES
+   ==================================== */
+
+.committee-heading {
+    position: relative;
+    display: inline-block;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1a1a1a;
+    padding-bottom: 12px;
+    margin-bottom: 3rem;
+}
+
+.committee-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
+}
