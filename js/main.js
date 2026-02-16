@@ -91,6 +91,16 @@ function loadNavbar() {
                 pointer-events: none;
                 margin-top: 0;
             }
+            /* Bridge the gap between nav item and dropdown */
+            .dropdown-menu::before {
+                content: '';
+                position: absolute;
+                top: -10px;
+                left: 0;
+                width: 100%;
+                height: 10px;
+                background: transparent;
+            }
             .dropdown:hover .dropdown-menu {
                 opacity: 1;
                 visibility: visible;
