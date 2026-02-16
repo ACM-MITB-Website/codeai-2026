@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function loadNavbar() {
     const navbarHTML = `
-    <nav class="navbar navbar-expand-lg fixed-top transition-all" style="background-color: var(--navy); border-bottom: 3px solid var(--primary); font-family: 'Inter', sans-serif;">
+    <nav class="navbar navbar-expand-xl fixed-top transition-all" style="background-color: var(--navy); border-bottom: 3px solid var(--primary); font-family: 'Inter', sans-serif;">
         <div class="container-xl">
             <!-- Brand & Logos -->
             <div class="d-flex align-items-center gap-3">
@@ -32,7 +32,7 @@ function loadNavbar() {
 
             <!-- Links -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-lg-center gap-1 gap-lg-3 mt-3 mt-lg-0">
+                <ul class="navbar-nav align-items-xl-center gap-1 gap-xl-3 mt-3 mt-xl-0">
                     <li class="nav-item">
                         <a class="nav-link text-white fw-medium px-3" href="index.html">Home</a>
                     </li>
@@ -73,8 +73,8 @@ function loadNavbar() {
                     </li>
 
                     <!-- Submit Paper Button -->
-                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-                        <a class="btn btn-primary fw-bold text-navy px-4 py-2 w-100 w-lg-auto" style="white-space: nowrap;" href="https://cmt3.research.microsoft.com/CODEAI2026/">Submit Paper</a>
+                    <li class="nav-item ms-xl-2 mt-2 mt-xl-0">
+                        <a class="btn btn-primary fw-bold text-navy px-4 py-2 w-100 w-xl-auto" style="white-space: nowrap;" href="https://cmt3.research.microsoft.com/CODEAI2026/">Submit Paper</a>
                     </li>
                 </ul>
             </div>
@@ -82,20 +82,18 @@ function loadNavbar() {
     </nav>
     <style>
         /* CSS to make dropdowns hover on desktop and handle custom hover effects */
-        @media (min-width: 992px) {
+        @media (min-width: 1200px) {
             .dropdown:hover .dropdown-menu {
                 display: block;
                 margin-top: 0;
+            }
+            .w-xl-auto {
+                width: auto !important;
             }
         }
         .hover-border-warning:hover {
             border-left-color: var(--primary) !important;
             background-color: rgba(255, 215, 0, 0.1);
-        }
-        @media (min-width: 992px) {
-            .w-lg-auto {
-                width: auto !important;
-            }
         }
     </style>
     `;
