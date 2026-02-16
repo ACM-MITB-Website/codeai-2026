@@ -44,10 +44,10 @@ function loadNavbar() {
                         <a class="nav-link dropdown-toggle text-white fw-medium px-3 d-flex align-items-center gap-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Authors
                         </a>
-                        <ul class="dropdown-menu shadow-lg border-top border-3 border-warning rounded-0 rounded-bottom mt-0 p-0 overflow-hidden">
-                            <li><a class="dropdown-item py-2 px-4 border-start border-4 border-transparent hover-border-warning" href="call-for-papers.html">Call for Papers</a></li>
-                            <li><a class="dropdown-item py-2 px-4 border-start border-4 border-transparent hover-border-warning" href="registration.html">Registration</a></li>
-                            <li><a class="dropdown-item py-2 px-4 border-start border-4 border-transparent hover-border-warning" href="assets/file/Joint - CODE AI - 3rd Conference (2).pdf" target="_blank">Download Brochure</a></li>
+                        <ul class="dropdown-menu shadow-lg border-0 rounded-3 mt-2 p-2 overflow-hidden">
+                            <li><a class="dropdown-item py-2 px-3 fw-medium" href="call-for-papers.html">Call for Papers</a></li>
+                            <li><a class="dropdown-item py-2 px-3 fw-medium" href="registration.html">Registration</a></li>
+                            <li><a class="dropdown-item py-2 px-3 fw-medium" href="assets/file/Joint - CODE AI - 3rd Conference (2).pdf" target="_blank">Download Brochure</a></li>
                         </ul>
                     </li>
 
@@ -60,15 +60,14 @@ function loadNavbar() {
                     </li>
 
 
-                    <!-- Program Dropdown -->
                     <li class="nav-item dropdown" id="program-dropdown">
                         <a class="nav-link dropdown-toggle text-white fw-medium px-3 d-flex align-items-center gap-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Program
                         </a>
-                        <ul class="dropdown-menu shadow-lg border-top border-3 border-warning rounded-0 rounded-bottom mt-0 p-0 overflow-hidden">
-                            <li><a class="dropdown-item py-2 px-4 border-start border-4 border-transparent hover-border-warning" href="schedule.html">Schedule</a></li>
-                            <li><a class="dropdown-item py-2 px-4 border-start border-4 border-transparent hover-border-warning" href="speakers.html">Speakers</a></li>
-                             <li><a class="dropdown-item py-2 px-4 border-start border-4 border-transparent hover-border-warning" href="awards.html">Awards</a></li>
+                        <ul class="dropdown-menu shadow-lg border-0 rounded-3 mt-2 p-2 overflow-hidden">
+                            <li><a class="dropdown-item py-2 px-3 fw-medium" href="schedule.html">Schedule</a></li>
+                            <li><a class="dropdown-item py-2 px-3 fw-medium" href="speakers.html">Speakers</a></li>
+                             <li><a class="dropdown-item py-2 px-3 fw-medium" href="awards.html">Awards</a></li>
                         </ul>
                     </li>
 
@@ -83,17 +82,35 @@ function loadNavbar() {
     <style>
         /* CSS to make dropdowns hover on desktop and handle custom hover effects */
         @media (min-width: 1200px) {
-            .dropdown:hover .dropdown-menu {
+            .dropdown-menu {
                 display: block;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(10px);
+                transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                pointer-events: none;
                 margin-top: 0;
+            }
+            .dropdown:hover .dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+                pointer-events: auto;
             }
             .w-xl-auto {
                 width: auto !important;
             }
         }
-        .hover-border-warning:hover {
-            border-left-color: var(--primary) !important;
-            background-color: rgba(255, 215, 0, 0.1);
+        .dropdown-item {
+            border-radius: 6px;
+            margin-bottom: 2px;
+            transition: all 0.2s ease;
+            color: var(--navy);
+        }
+        .dropdown-item:hover {
+            background-color: rgba(255, 215, 0, 0.15);
+            color: var(--navy) !important;
+            transform: translateX(4px);
         }
     </style>
     `;
