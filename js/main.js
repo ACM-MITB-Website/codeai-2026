@@ -40,13 +40,13 @@ function loadNavbar() {
                         <a class="nav-link text-white fw-medium px-3" href="index.html">Home</a>
                     </li>
                     
-                    <!-- Authors Dropdown -->
                     <li class="nav-item dropdown" id="authors-dropdown">
                         <a class="nav-link dropdown-toggle text-white fw-medium px-3 d-flex align-items-center gap-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Authors
                         </a>
                         <ul class="dropdown-menu shadow-lg border-top border-3 border-warning rounded-0 rounded-bottom mt-0 p-0 overflow-hidden">
                             <li><a class="dropdown-item py-2 px-4 border-start border-4 border-transparent hover-border-warning" href="call-for-papers.html">Call for Papers</a></li>
+                            <li><a class="dropdown-item py-2 px-4 border-start border-4 border-transparent hover-border-warning" href="registration.html">Registration</a></li>
                             <li><a class="dropdown-item py-2 px-4 border-start border-4 border-transparent hover-border-warning" href="assets/file/Joint - CODE AI - 3rd Conference (2).pdf" target="_blank">Download Brochure</a></li>
                         </ul>
                     </li>
@@ -59,9 +59,6 @@ function loadNavbar() {
                         <a class="nav-link text-white fw-medium px-3" href="publications.html">Publications</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-white fw-medium px-3" href="registration.html">Registration</a>
-                    </li>
 
                     <!-- Program Dropdown -->
                     <li class="nav-item dropdown" id="program-dropdown">
