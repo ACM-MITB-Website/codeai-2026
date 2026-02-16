@@ -68,9 +68,9 @@ function loadNavbar() {
                         </ul>
                     </li>
 
-                    <!-- Register Button -->
+                    <!-- Submit Paper Button -->
                     <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-                        <a class="btn btn-primary fw-bold text-navy px-4 py-2 w-100" href="registration.html">REGISTER</a>
+                        <a class="btn btn-primary fw-bold text-navy px-4 py-2 w-100" href="registration.html">Submit Paper</a>
                     </li>
                 </ul>
             </div>
