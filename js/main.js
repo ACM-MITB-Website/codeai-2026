@@ -56,6 +56,10 @@ function loadNavbar() {
                         <a class="nav-link text-white fw-medium px-3" href="publications.html">Publications</a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-medium px-3" href="registration.html">Registration</a>
+                    </li>
+
                     <!-- Program Dropdown -->
                     <li class="nav-item dropdown" id="program-dropdown">
                         <a class="nav-link dropdown-toggle text-white fw-medium px-3 d-flex align-items-center gap-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
