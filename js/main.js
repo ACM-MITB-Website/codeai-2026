@@ -185,7 +185,7 @@ function loadFooter() {
                                 <li><a href="speakers.html" class="footer-link">Speakers</a></li>
                                 <li><a href="publications.html" class="footer-link">Publications</a></li>
                                 <li><a href="schedule.html" class="footer-link">Schedule</a></li>
-                                <li><a href="#" class="footer-link">Call for Posters</a></li>
+
                             </ul>
                         </div>
                         <div class="col-6">
