@@ -17,9 +17,12 @@ function loadNavbar() {
                 </a>
                 
                 <!-- Logos (Hidden on mobile) -->
-                <div class="d-none d-sm-flex align-items-center gap-3 ms-3 ps-3 border-start border-secondary" style="height: 4.5rem;">
-                     <img src="assets/img/springerccis.png" alt="Springer CCIS" class="h-100 object-fit-contain">
-                     <img src="assets/img/sponsors/scopus.png" alt="Scopus" class="h-100 object-fit-contain">
+                <div class="d-none d-sm-flex flex-column justify-content-center ms-3 ps-3 border-start border-secondary">
+                     <div class="d-flex align-items-center gap-3" style="height: 3.5rem;">
+                        <img src="assets/img/springerccis.png" alt="Springer CCIS" class="h-100 object-fit-contain">
+                        <img src="assets/img/sponsors/scopus.png" alt="Scopus" class="h-100 object-fit-contain">
+                     </div>
+                     <div class="text-white-50 fst-italic" style="font-size: 0.65rem; margin-top: 2px;">*Approval pending</div>
                 </div>
             </div>
 
