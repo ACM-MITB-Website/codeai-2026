@@ -1002,11 +1002,13 @@ html {
     width: 60px;
     height: 4px;
     background: var(--primary);
-}/* Marquee Animation */
+}
+
+/* Marquee Animation */
 .announcement-marquee {
     display: inline-block;
     white-space: nowrap;
-    animation: marquee 15s linear infinite;
+    animation: marquee 10s linear infinite;
     padding-left: 100%;
     /* Start off-screen right */
 }
