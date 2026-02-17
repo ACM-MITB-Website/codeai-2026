@@ -89,7 +89,7 @@ function loadNavbar() {
                 transform: translateY(10px);
                 transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
                 pointer-events: none;
-                margin-top: 0;
+                margin-top: 0 !important;
             }
             /* Bridge the gap between nav item and dropdown */
             .dropdown-menu::before {
