@@ -78,49 +78,10 @@ function loadNavbar() {
                 </ul>
             </div>
         </div>
-    </nav>
     <style>
-        /* CSS to make dropdowns hover on desktop and handle custom hover effects */
-        @media (min-width: 1200px) {
-            .dropdown-menu {
-                display: block;
-                opacity: 0;
-                visibility: hidden;
-                transform: translateY(10px);
-                transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-                pointer-events: none;
-                margin-top: 0;
-            }
-            /* Bridge the gap between nav item and dropdown */
-            .dropdown-menu::before {
-                content: '';
-                position: absolute;
-                top: -10px;
-                left: 0;
-                width: 100%;
-                height: 10px;
-                background: transparent;
-            }
-            .dropdown:hover .dropdown-menu {
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0);
-                pointer-events: auto;
-            }
-            .w-xl-auto {
-                width: auto !important;
-            }
-        }
-        .dropdown-item {
-            border-radius: 6px;
-            margin-bottom: 2px;
-            transition: all 0.2s ease;
-            color: var(--navy);
-        }
-        .dropdown-item:hover {
-            background-color: rgba(255, 215, 0, 0.15);
+        .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active {
+            background-color: var(--primary) !important;
             color: var(--navy) !important;
-            transform: translateX(4px);
         }
     </style>
     `;

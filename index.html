@@ -75,19 +75,19 @@
                 class="carousel slide carousel-fade position-absolute w-100 h-100 start-0 top-0 z-0 bg-dark"
                 data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="false">
                 <div class="carousel-inner h-100">
-                    <!-- Slide 1: MITB -->
+                    <!-- Slide 1: Venue Taiwan -->
                     <div class="carousel-item active h-100">
-                        <div class="position-absolute w-100 h-100">
-                            <img loading="lazy" decoding="async" src="assets/img/mitb.jpg"
-                                class="w-100 h-100 object-fit-cover opacity-50 blur-lg scale-110" alt="MIT Bengaluru">
-                        </div>
-                    </div>
-                    <!-- Slide 2: Venue Taiwan -->
-                    <div class="carousel-item h-100">
                         <div class="position-absolute w-100 h-100">
                             <img loading="lazy" decoding="async" src="assets/img/venue-taiwan.jpg"
                                 class="w-100 h-100 object-fit-cover opacity-50 blur-lg scale-110"
                                 alt="National Tsing Hua University">
+                        </div>
+                    </div>
+                    <!-- Slide 2: MITB -->
+                    <div class="carousel-item h-100">
+                        <div class="position-absolute w-100 h-100">
+                            <img loading="lazy" decoding="async" src="assets/img/mitb.jpg"
+                                class="w-100 h-100 object-fit-cover opacity-50 blur-lg scale-110" alt="MIT Bengaluru">
                         </div>
                     </div>
                 </div>
@@ -95,14 +95,13 @@
             </div>
 
             <!-- Content Overlay (Flex Column) -->
-            <div
-                class="position-relative z-1 container h-100 d-flex flex-column justify-content-between pb-4 hero-content-container">
+            <div class="position-relative z-1 container h-100 d-flex flex-column justify-content-between pb-4">
 
                 <!-- Top Section: Title & Logos (Centered Vertically in available space) -->
-                <div class="d-flex flex-column justify-content-center align-items-center flex-grow-1 text-center">
+                <div class="d-flex flex-column justify-content-start align-items-center flex-grow-1 text-center pt-0">
 
-                    <h1 class="font-heading fw-bold text-white mb-3 display-3 text-shadow-lg hero-animate delay-100"
-                        style="margin-top: -60px;">
+                    <h1 class="font-heading fw-bold text-white mb-2 display-3 text-shadow-lg hero-animate delay-100"
+                        style="margin-top: 0;">
                         CODE-AI <span class="text-warning">2026</span>
                     </h1>
                     <h2 class="h3 font-heading fw-bold text-white mb-3 mx-auto px-3 text-shadow-lg hero-animate delay-200"
@@ -113,15 +112,22 @@
                         GCSI)
                     </h2>
 
-
-
-                    <!-- Logos Overlay -->
-
+                    <!-- Venue Section -->
+                    <div class="mt-4 mb-3 hero-animate delay-250">
+                        <div class="d-flex align-items-center justify-content-center gap-2 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffd700"
+                                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                            </svg>
+                            <span class="h5 mb-0 fw-semibold text-shadow-sm">National Tsing Hua University,
+                                Taiwan</span>
+                        </div>
+                    </div>
 
                     <div class="d-flex gap-3 justify-content-center mb-4 hero-animate delay-300">
                         <a href="https://cmt3.research.microsoft.com/CODEAI2026/"
-                            class="btn btn-primary btn-lg px-5 shadow-lg fw-bold text-nowrap">Submit
-                            Paper</a>
+                            class="btn btn-primary btn-lg px-5 shadow-lg fw-bold text-nowrap">Submit Paper</a>
                     </div>
 
                 </div>
@@ -134,7 +140,7 @@
 
             <!-- Overlapping Info Cards -->
             <div class="container position-relative z-3" style="margin-top: -100px;">
-                <div class="row g-0 shadow-lg rounded-4 overflow-hidden mb-5 row-cols-1 row-cols-md-2 row-cols-lg-5">
+                <div class="row g-0 shadow-lg rounded-4 overflow-hidden mb-5 row-cols-1 row-cols-md-2 row-cols-lg-4">
                     <!-- Dates Card -->
                     <div
                         class="col bg-dark text-white p-3 p-lg-4 d-flex flex-column align-items-center justify-content-center text-center border-end border-white border-opacity-10 position-relative group-hover reveal slide-left delay-100">
@@ -161,9 +167,11 @@
                                     d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z" />
                             </svg>
                         </div>
-                        <h3 class="h5 fw-bold mb-1">Co-Organized By</h3>
-                        <p class="mb-0 text-secondary small" style="font-size: 0.75rem;">SoCE MIT Bengaluru<br>Society
-                            of Systematic Innovation</p>
+                        <h3 class="h5 fw-bold mb-1">Joint Conference co-organised by</h3>
+                        <p class="mb-0 text-secondary small" style="font-size: 0.75rem;">SoCE MIT Bengaluru and
+                            <br>Society
+                            of Systematic Innovation
+                        </p>
                     </div>
 
                     <!-- In Collaboration With Card -->
@@ -191,70 +199,58 @@
                             </svg>
                         </div>
                         <h3 class="h5 fw-bold mb-1">Co-Sponsors</h3>
-                        <p class="mb-0 text-secondary small">I-SIM, MIT Bengaluru, Society of Systematic Innovation</p>
-                    </div>
-
-                    <!-- Venue Card -->
-                    <div
-                        class="col bg-dark text-white p-3 p-lg-4 d-flex flex-column align-items-center justify-content-center text-center border-start border-dark border-opacity-10 position-relative group-hover reveal slide-right delay-300">
-                        <div class="mb-2 text-warning">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                            </svg>
-                        </div>
-                        <h3 class="h5 fw-bold mb-1">Venue</h3>
-                        <p class="mb-0 text-white-50 small">National Tsing Hua University, Taiwan</p>
+                        <p class="mb-0 text-secondary small">I-SIM, MIT Bengaluru and Society of Systematic Innovation
+                        </p>
                     </div>
                 </div>
+            </div>
 
-                <!-- Countdown (Below Cards) -->
-                <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-3 w-100 scale-90 mb-5 position-relative"
-                    id="countdown-timer">
+            <!-- Countdown (Below Cards) -->
+            <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-3 w-100 scale-90 mb-5 position-relative"
+                id="countdown-timer">
 
-                    <!-- Left Corner Logo -->
-                    <div class="position-absolute start-0 top-50 translate-middle-y d-none d-lg-block" style="left: 0;">
-                        <img src="assets/img/mitb.webp" alt="MIT Bengaluru"
-                            class="img-fluid bg-white rounded-circle p-2 shadow-sm"
-                            style="height: 150px; width: 150px; object-fit: contain;">
-                    </div>
-
-                    <!-- Right Corner Logo -->
-                    <div class="position-absolute end-0 top-50 translate-middle-y d-none d-lg-block" style="right: 0;">
-                        <img src="assets/img/nthu-logo.svg" alt="NTHU Taiwan"
-                            class="img-fluid bg-white rounded-circle p-2 shadow-sm"
-                            style="height: 150px; width: 150px; object-fit: contain;">
-                    </div>
-                    <div class="d-flex flex-column align-items-center px-3 py-2 bg-white shadow-sm rounded-4 border border-light"
-                        style="min-width: 80px;">
-                        <span class="h2 fw-bold text-dark font-heading tabular-nums countdown-number mb-0"
-                            id="timer-days">00</span>
-                        <span class="small text-uppercase text-secondary fw-bold tracking-wide"
-                            style="font-size: 0.7rem;">Days</span>
-                    </div>
-                    <div class="d-flex flex-column align-items-center px-3 py-2 bg-white shadow-sm rounded-4 border border-light"
-                        style="min-width: 80px;">
-                        <span class="h2 fw-bold text-dark font-heading tabular-nums countdown-number mb-0"
-                            id="timer-hours">00</span>
-                        <span class="small text-uppercase text-secondary fw-bold tracking-wide"
-                            style="font-size: 0.7rem;">Hours</span>
-                    </div>
-                    <div class="d-flex flex-column align-items-center px-3 py-2 bg-white shadow-sm rounded-4 border border-light"
-                        style="min-width: 80px;">
-                        <span class="h2 fw-bold text-dark font-heading tabular-nums countdown-number mb-0"
-                            id="timer-minutes">00</span>
-                        <span class="small text-uppercase text-secondary fw-bold tracking-wide"
-                            style="font-size: 0.7rem;">Mins</span>
-                    </div>
-                    <div class="d-flex flex-column align-items-center px-3 py-2 bg-white shadow-sm rounded-4 border border-light"
-                        style="min-width: 80px;">
-                        <span class="h2 fw-bold text-dark font-heading tabular-nums countdown-number mb-0"
-                            id="timer-seconds">00</span>
-                        <span class="small text-uppercase text-secondary fw-bold tracking-wide"
-                            style="font-size: 0.7rem;">Secs</span>
-                    </div>
+                <!-- Left Corner Logo -->
+                <div class="position-absolute start-0 top-50 translate-middle-y d-none d-lg-block" style="left: 0;">
+                    <img src="assets/img/mitb.webp" alt="MIT Bengaluru"
+                        class="img-fluid bg-white rounded-circle p-2 shadow-sm"
+                        style="height: 150px; width: 150px; object-fit: contain;">
                 </div>
+
+                <!-- Right Corner Logo -->
+                <div class="position-absolute end-0 top-50 translate-middle-y d-none d-lg-block" style="right: 0;">
+                    <img src="assets/img/nthu-logo.svg" alt="NTHU Taiwan"
+                        class="img-fluid bg-white rounded-circle p-2 shadow-sm"
+                        style="height: 150px; width: 150px; object-fit: contain;">
+                </div>
+                <div class="d-flex flex-column align-items-center px-3 py-2 bg-white shadow-sm rounded-4 border border-light"
+                    style="min-width: 80px;">
+                    <span class="h2 fw-bold text-dark font-heading tabular-nums countdown-number mb-0"
+                        id="timer-days">00</span>
+                    <span class="small text-uppercase text-secondary fw-bold tracking-wide"
+                        style="font-size: 0.7rem;">Days</span>
+                </div>
+                <div class="d-flex flex-column align-items-center px-3 py-2 bg-white shadow-sm rounded-4 border border-light"
+                    style="min-width: 80px;">
+                    <span class="h2 fw-bold text-dark font-heading tabular-nums countdown-number mb-0"
+                        id="timer-hours">00</span>
+                    <span class="small text-uppercase text-secondary fw-bold tracking-wide"
+                        style="font-size: 0.7rem;">Hours</span>
+                </div>
+                <div class="d-flex flex-column align-items-center px-3 py-2 bg-white shadow-sm rounded-4 border border-light"
+                    style="min-width: 80px;">
+                    <span class="h2 fw-bold text-dark font-heading tabular-nums countdown-number mb-0"
+                        id="timer-minutes">00</span>
+                    <span class="small text-uppercase text-secondary fw-bold tracking-wide"
+                        style="font-size: 0.7rem;">Mins</span>
+                </div>
+                <div class="d-flex flex-column align-items-center px-3 py-2 bg-white shadow-sm rounded-4 border border-light"
+                    style="min-width: 80px;">
+                    <span class="h2 fw-bold text-dark font-heading tabular-nums countdown-number mb-0"
+                        id="timer-seconds">00</span>
+                    <span class="small text-uppercase text-secondary fw-bold tracking-wide"
+                        style="font-size: 0.7rem;">Secs</span>
+                </div>
+            </div>
             </div>
 
             <div class="container">
