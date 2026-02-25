@@ -7,22 +7,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function loadNavbar() {
     const navbarHTML = `
-    <nav class="navbar navbar-expand-xl fixed-top transition-all" style="background-color: var(--navy); border-bottom: 3px solid var(--primary); font-family: 'Inter', sans-serif;">
-        <div class="container-xl">
+    <nav class="navbar navbar-expand-xl fixed-top transition-all nav-fluid" style="background-color: var(--navy); border-bottom: 3px solid var(--primary); font-family: 'Inter', sans-serif;">
+        <div class="container-fluid nav-fluid-container">
             <!-- Brand & Logos -->
             <div class="d-flex align-items-center gap-3">
                 <a class="navbar-brand d-flex align-items-center gap-2 me-0" href="index.html">
-                    <span class="text-white fw-bold fs-4 font-heading tracking-wide">CODE-AI</span>
-                    <span class="text-warning fw-bold fs-4 font-heading">2026</span>
+                    <span class="text-white fw-bold font-heading tracking-wide nav-brand-text">CODE-AI</span>
+                    <span class="text-warning fw-bold font-heading nav-brand-text">2026</span>
                 </a>
                 
                 <!-- Logos (Hidden on mobile) -->
                 <div class="d-none d-sm-flex flex-column justify-content-center ms-3 ps-3 border-start border-secondary">
-                     <div class="d-flex align-items-center gap-3" style="height: 3.5rem;">
+                     <div class="d-flex align-items-center gap-3 nav-logo-row">
                         <img src="assets/img/springerccis.png" alt="Springer CCIS" class="h-100 object-fit-contain">
                         <img src="assets/img/sponsors/scopus.png" alt="Scopus" class="h-100 object-fit-contain">
                      </div>
-                     <div class="text-white-50 fst-italic" style="font-size: 0.65rem; margin-top: 2px;">*Approval pending</div>
+                     <div class="text-white-50 fst-italic nav-approval-text" style="margin-top: 2px;">*Approval pending</div>
                 </div>
             </div>
 
@@ -35,7 +35,7 @@ function loadNavbar() {
 
             <!-- Links -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-xl-center gap-1 gap-xl-3 mt-3 mt-xl-0">
+                <ul class="navbar-nav align-items-xl-center gap-1 mt-3 mt-xl-0 nav-links-list">
                     <li class="nav-item">
                         <a class="nav-link text-white fw-medium px-3" href="index.html">Home</a>
                     </li>
@@ -73,7 +73,7 @@ function loadNavbar() {
 
                     <!-- Submit Paper Button -->
                     <li class="nav-item ms-xl-2 mt-2 mt-xl-0">
-                        <a class="btn btn-primary fw-bold text-navy px-4 py-2 w-100 w-xl-auto" style="white-space: nowrap;" href="https://cmt3.research.microsoft.com/CODEAI2026/">Submit Paper</a>
+                        <a class="btn btn-primary fw-bold text-navy w-100 w-xl-auto nav-submit-btn" style="white-space: nowrap;" href="https://cmt3.research.microsoft.com/CODEAI2026/">Submit Paper</a>
                     </li>
                 </ul>
             </div>
