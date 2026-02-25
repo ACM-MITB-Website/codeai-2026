@@ -616,6 +616,7 @@ html {
 .nav-fluid {
     padding-top: clamp(0.35rem, 0.5vw, 0.75rem);
     padding-bottom: clamp(0.35rem, 0.5vw, 0.75rem);
+    box-shadow: none !important;
 }
 
 @media (min-width: 1400px) {
@@ -1057,6 +1058,13 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Remove white line separator between navbar and announcement */
+#navbar-container + .w-100 {
+    border-top: none !important;
+    box-shadow: none !important;
+    margin-top: 92px;
 }
 
 @media (max-width: 576px) {
